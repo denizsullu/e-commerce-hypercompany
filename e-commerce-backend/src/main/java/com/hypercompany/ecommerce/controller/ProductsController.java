@@ -1,0 +1,50 @@
+package com.hypercompany.ecommerce.controller;
+
+import com.hypercompany.ecommerce.model.dto.requests.CreateBrandRequest;
+import com.hypercompany.ecommerce.model.dto.requests.CreateProductRequest;
+import com.hypercompany.ecommerce.model.dto.requests.UpdateBrandRequest;
+import com.hypercompany.ecommerce.model.dto.requests.UpdateProductRequest;
+import com.hypercompany.ecommerce.model.dto.responses.GetAllProductResponse;
+import com.hypercompany.ecommerce.model.dto.responses.GetByIdBrandResponse;
+import com.hypercompany.ecommerce.model.dto.responses.GetByIdProductResponse;
+import com.hypercompany.ecommerce.service.ProductService;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/products")
+@AllArgsConstructor
+public class ProductsController {
+    private final ProductService productService;
+    @PostMapping()
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public void add( CreateProductRequest request){
+        this.productService.add(request);
+    }
+
+    @GetMapping("/{id}")
+    public GetByIdProductResponse getById(@PathVariable int id){
+        return this.productService.getById(id);
+    }
+
+    @PutMapping()
+    public void update( UpdateProductRequest UpdateProductRequest){
+
+        this.productService.update(UpdateProductRequest);
+    }
+
+    @GetMapping()
+    public List<GetAllProductResponse> getAllProductResponses(){
+        return this.productService.getAll();
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id){
+        this.productService.delete(id);
+    }
+}
