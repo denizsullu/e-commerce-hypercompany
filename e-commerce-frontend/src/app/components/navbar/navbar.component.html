@@ -1,0 +1,31 @@
+<div class="bg-brand-color">
+  <div class="container h-14 flex items-center justify-between md:flex-row">
+    <!-- Hyper Company Logo -->
+    <a href="#" class="w-40">
+      <img src="assets/navbar/header-icons/hyperCompany.svg" alt="Logo">
+    </a>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="md:hidden flex items-center">
+      <button id="menuButton">
+        <fa-icon [icon]="faBars" class="text-white fa-2xl"></fa-icon>
+      </button>
+    </div>
+
+    <!-- Navigition -->
+    <nav class="md:flex gap-x-8 text-sm font-semibold hidden">
+      <a href="" class="flex items-center gap-x-2  text-white text-opacity-80 transition-all hover:text-opacity-100 ">
+        <fa-icon [icon]="faGlobe" class="text-white"></fa-icon>
+        Türkçe (TR)
+      </a>
+      <a href="" class="flex items-center gap-x-2  text-white text-opacity-80 transition-all hover:text-opacity-100 ">
+        <fa-icon [icon]="faUser" class="text-white"></fa-icon>
+        Giriş Yap
+      </a>
+      <a href="" class="flex items-center gap-x-2  text-white text-opacity-80 transition-all  hover:text-opacity-100 ">
+        <fa-icon [icon]="faUserPlus" class="text-white"></fa-icon>
+        Kayıt Ol
+      </a>
+    </nav>
+  </div>
+</div>

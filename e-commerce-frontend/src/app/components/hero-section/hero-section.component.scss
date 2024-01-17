@@ -1,0 +1,37 @@
+.hypercompany{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+
+}
+
+.loginh4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+:host ::ng-deep .slick-dots {
+  position: absolute;
+  bottom: 25px;
+}
+
+
+:host ::ng-deep .slick-dots li button:before{
+  color: white;
+  font-size: .6rem;
+}
+
+
+@media (max-width: 600px) {
+  :host ::ng-deep .slick-dots {
+    bottom: 15px;
+  }
+
+  :host ::ng-deep .slick-dots li button:before{
+    font-size: .4rem;
+  }
+}
+
+
+
