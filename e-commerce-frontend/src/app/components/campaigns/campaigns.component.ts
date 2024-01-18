@@ -45,7 +45,7 @@ export class CampaignsComponent{
     dots: false,
     responsive: [
       {
-        breakpoint: 1024, // Tablet ve daha büyük cihazlar için
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -54,7 +54,7 @@ export class CampaignsComponent{
         }
       },
       {
-        breakpoint: 600, // 600px'e kadar olan küçük ekranlar ve tabletler için
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -62,7 +62,7 @@ export class CampaignsComponent{
         }
       },
       {
-        breakpoint: 480, // 480px'e kadar olan mobil cihazlar için
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
