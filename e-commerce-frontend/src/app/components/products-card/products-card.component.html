@@ -1,22 +1,28 @@
-<div class="container">
-  <h3 class="font-semibold text-sm mb-3">Favoriler</h3>
+<button *ngIf="dataLoaded==false" type="button" class="bg-indigo-500" disabled>
 
-  <div class="overflow-hidden rounded-lg grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-0.1">
-    @for(product of products;track product.id){
+  Processing...
+</button>
+
+<div class="container mb-10">
+  <h3 class="font-semibold text-sm mb-3">Favoriler</h3>
+  <div
+    class="overflow-hidden rounded-lg grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-0.1">
+    @for (product of products; track product.productId) {
       <a href="">
-      <div class="bg-white flex flex-col items-center text-center text-sm font-semibold gap-y-2 p-3 relative">
-        <button class="w-8 h-8 flex absolute top-2 right-2 border shadow-md rounded-lg border-gray-200 text-purple-700 transition-colors bg-white hover:bg-purple-50 items-center justify-center">
-          <fa-icon [icon]="faPlus" class="text-black"></fa-icon>
-        </button>
-        <img [src]="product.image" [alt]="product.title">
-        <div class=" text-brand-color">{{product.title}}</div>
-        <div class=" text-gray-900">{{product.price | currency}}</div>
-        <div class="text-gray-500">{{product.alt}}</div>
-      </div>
+        <div class="bg-white flex flex-col items-center text-center text-sm font-semibold gap-y-2 p-3 relative">
+          <button
+            class="w-8 h-8 flex absolute top-2 right-2 border shadow-md rounded-lg border-gray-200 text-purple-700 transition-colors bg-white hover:bg-purple-50 items-center justify-center">
+            <fa-icon [icon]="faPlus" class="text-black"></fa-icon>
+          </button>
+          <img [src]="product.productImage" [alt]="product.productName">
+          <div class=" text-brand-color">{{ product.productName }}</div>
+          <div class=" text-gray-900">{{ product.productPrice | currency }}</div>
+          <div class="text-gray-500">{{ product.productDescription }}</div>
+        </div>
       </a>
 
     }
-    </div>
 
 
+  </div>
 </div>

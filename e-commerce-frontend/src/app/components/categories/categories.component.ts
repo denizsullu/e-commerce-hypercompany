@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Category} from "../../models/category";
+
 
 @Component({
   selector: 'app-categories',
@@ -9,7 +9,7 @@ import {Category} from "../../models/category";
   styleUrl: './categories.component.scss',
 })
 export class CategoriesComponent {
-  categories: Category[] = [
+  categories = [
     {
       id: 1,
       title: 'Su & İçecek',

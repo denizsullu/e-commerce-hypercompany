@@ -4,6 +4,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+
 @Component({
   selector: 'app-hero-section',
   standalone: true,
@@ -12,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+
   ],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss',

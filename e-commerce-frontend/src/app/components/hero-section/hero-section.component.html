@@ -2,7 +2,7 @@
   <!-- before:h-5 before:bg-white before:absolute before:bottom-[-2rem] before:z-50 before:w-1/2 before:rotate-1 after:content-[''] after:absolute after:bottom-[-2rem] after:right-0 after:w-1/2 after:h-5 after:bg-white after:-rotate-1 -->
 
   <!-- Slider  -->
-  @defer (on timer(10ms)) {
+  @defer (on timer(500ms)) {
     <!-- Slider implementation with ngx-slick-carousel -->
     <ngx-slick-carousel
       class="carousel"
@@ -20,12 +20,12 @@
       }
     </ngx-slick-carousel>
   } @placeholder (minimum 500ms) {
-    <div class="flex justify-center items-center h-[500px]">
-      <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
+
     </div>
   } @loading (after 150ms; minimum 1500ms) {
-    <div class="flex justify-center items-center h-[500px]">
-      <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
+
     </div>
   } @error {
     <div class="flex justify-center items-center h-[500px]">
@@ -35,7 +35,7 @@
 
   <!-- Slider text and sign up -->
   <div
-    class="container justify-between items-center absolute top-1/4 left-1/2 -translate-x-1/2 hidden lg:flex">
+    class="container justify-between items-center absolute top-14 left-1/2 -translate-x-1/2 hidden lg:flex">
     <!-- Slider logo and text -->
     <div class="flex flex-col gap-y-6">
       <img
@@ -50,24 +50,34 @@
       <h4 class="text-primary-brand-color text-center loginh4">
         Giriş yap veya kayıt ol
       </h4>
-      <div class="flex gap-x-3">
-        <!-- Content for sign-up/login including input fields and buttons -->
+      <div class="flex gap-x-3 flex-col">
+<!--         Content for sign-up/login including input fields and buttons-->
         <mat-form-field class="flex-1">
-          <mat-label>Telefon Numarası</mat-label>
-          <input maxlength="10" matInput placeholder="Telefon Numarası"/>
+          <mat-label>E-posta Adresi</mat-label>
+          <input maxlength="34" matInput placeholder="E-posta Adresi"/>
+        </mat-form-field>
+        <mat-form-field class="flex-1">
+          <mat-label>Parola</mat-label>
+          <input maxlength="34" type="password"  matInput placeholder="Parola"/>
         </mat-form-field>
       </div>
       <button
         type="button"
         class="py-3 px-6 flex justify-center items-center bg-yellow-300 hover:bg-secondary-brand-color hover:text-yellow-300 text-secondary-brand-color w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
       >
-        Telefon Numarası ile devam et
+        Giriş Yap
       </button>
       <div
         class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600"
       >
         Or
       </div>
+      <button
+        type="button"
+        class="py-3 px-6 flex justify-center items-center bg-secondary-brand-color hover:bg-yellow-300 hover:text-secondary-brand-color text-yellow-300 w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
+      >
+        Kayıt Ol
+      </button>
 
 
     </div>

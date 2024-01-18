@@ -2,7 +2,7 @@
 <div class="container py-8 ">
     <h3 class="text-sm font-semibold mb-3">Kampanyalar</h3>
 
-  @defer(on timer(1s)){
+  @defer (on timer(500ms)) {
     <ngx-slick-carousel
       class="carousel"
       [config]="slideConfig"
@@ -17,7 +17,6 @@
             class="w-full rounded-lg"
           />
         </div>
-
       }
     </ngx-slick-carousel>
   } @placeholder (minimum 500ms){
