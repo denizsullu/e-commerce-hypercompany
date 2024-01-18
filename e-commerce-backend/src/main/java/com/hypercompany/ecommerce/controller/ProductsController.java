@@ -19,9 +19,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/products")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class ProductsController {
     private final ProductService productService;
-    @PostMapping()
+    @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
     public void add( CreateProductRequest request){
         this.productService.add(request);
@@ -32,13 +33,13 @@ public class ProductsController {
         return this.productService.getById(id);
     }
 
-    @PutMapping()
+    @PutMapping("/update")
     public void update( UpdateProductRequest UpdateProductRequest){
 
         this.productService.update(UpdateProductRequest);
     }
 
-    @GetMapping()
+    @GetMapping("/getAll")
     public List<GetAllProductResponse> getAllProductResponses(){
         return this.productService.getAll();
     }

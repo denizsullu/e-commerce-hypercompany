@@ -17,22 +17,23 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/categories")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class CategoriesController {
 
     private CategoryService categoryService;
 
-    @GetMapping()
+    @GetMapping("/getAll")
     public List<GetAllCategoryResponse> getAll(){
         return this.categoryService.getAll();
     }
 
-    @PostMapping()
+    @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
     public void add( CreateCategoryRequest createCategoryRequest){
         this.categoryService.add(createCategoryRequest);
     }
 
-    @PutMapping()
+    @PutMapping("/update")
     public void update( UpdateCategoryRequest updateCategoryRequest){
         this.categoryService.update(updateCategoryRequest);
     }

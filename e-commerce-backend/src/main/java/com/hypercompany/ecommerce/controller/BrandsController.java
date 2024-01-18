@@ -15,10 +15,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/brands")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class BrandsController {
     private BrandService brandService;
 
-    @GetMapping()
+    @GetMapping("/getAll")
     public List<GetAllBrandsResponse> getAll(){
         return brandService.getAll();
     }
@@ -28,13 +29,13 @@ public class BrandsController {
         return brandService.getById(id);
     }
 
-    @PostMapping()
+    @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
     public void add( CreateBrandRequest request){
         brandService.add(request);
     }
 
-    @PutMapping()
+    @PutMapping("/update")
     public void update( UpdateBrandRequest updateBrandRequest){
         brandService.update(updateBrandRequest);
     }
