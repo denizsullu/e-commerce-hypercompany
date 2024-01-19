@@ -7,30 +7,28 @@ import {HttpClient} from "@angular/common/http";
 import {ProductService} from "../../services/product.service";
 
 @Component({
-  selector: 'app-products-card',
+  selector: 'app-favorite-products',
   standalone: true,
   imports: [
     CurrencyPipe, FontAwesomeModule, NgIf
   ],
-  templateUrl: './products-card.component.html',
-  styleUrl: './products-card.component.scss'
+  templateUrl: './favorite-products.component.html',
+  styleUrl: './favorite-products.component.scss'
 })
-export class ProductsCardComponent implements OnInit {
+export class FavoriteProductsComponent implements OnInit {
   faPlus = faPlus;
   products: Product[];
-  dataLoaded = false;
-
   constructor(private productService: ProductService) {
   }
 
   ngOnInit(): void {
     this.getProduct();
+
   }
 
   getProduct() {
     this.productService.getProducts().subscribe(response => {
       this.products = response;
-      this.dataLoaded = true;
     })}
 
 
