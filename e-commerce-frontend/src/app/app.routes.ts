@@ -1,7 +1,7 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from "./pages/home/home.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
-import {ProductsCardComponent} from "./components/products-card/products-card.component";
+import {FavoriteProductsComponent} from "./components/favorite-products/favorite-products.component";
 import {ProductComponent} from "./pages/product/product.component";
 import {ProductDetailsComponent} from "./components/product-details/product-details.component";
 

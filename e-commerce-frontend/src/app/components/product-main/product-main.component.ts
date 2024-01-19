@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
-import {CurrencyPipe} from "@angular/common";
+import {CurrencyPipe, TitleCasePipe, UpperCasePipe} from "@angular/common";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 
 @Component({
@@ -9,7 +9,9 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
   standalone: true,
   imports: [
     CurrencyPipe,
-    RouterLink
+    RouterLink,
+    UpperCasePipe,
+    TitleCasePipe
   ],
   templateUrl: './product-main.component.html',
   styleUrl: './product-main.component.scss'

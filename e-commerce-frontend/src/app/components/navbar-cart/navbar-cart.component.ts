@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-navbar-cart',
@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarCartComponent {
 
+  @Output() closeCart = new EventEmitter<void>();
+  onClose() {
+    this.closeCart.emit();
+  }
 }
