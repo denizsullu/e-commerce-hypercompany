@@ -28,10 +28,25 @@ public class ProductsController {
         this.productService.add(request);
     }
 
+    @PostMapping("/addMultiple")
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public void addMultiple(@RequestBody List<CreateProductRequest> requestList){
+        for (CreateProductRequest request : requestList) {
+            this.productService.add(request);
+        }
+    }
+
+    @GetMapping("/getAllByCategoryId/{id}")
+    public List<GetAllProductResponse> getAllByCategoryId(@PathVariable int id){
+        return this.productService.getAllByCategoryId(id);
+    }
+
     @GetMapping("/{id}")
     public GetByIdProductResponse getById(@PathVariable int id){
         return this.productService.getById(id);
     }
+
+
 
     @PutMapping("/update")
     public void update( UpdateProductRequest UpdateProductRequest){

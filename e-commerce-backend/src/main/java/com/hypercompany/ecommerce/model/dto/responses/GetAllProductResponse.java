@@ -15,5 +15,6 @@ public class GetAllProductResponse {
     private String productImage;
     private int productQuantity;
     private String brandName;
+    private int categoryId;
     private String categoryName;
 }

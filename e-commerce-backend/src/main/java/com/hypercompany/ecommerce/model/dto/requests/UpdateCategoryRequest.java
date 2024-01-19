@@ -13,6 +13,6 @@ public class UpdateCategoryRequest {
     @NotEmpty
     private int id;
     @NotEmpty
-    @Size(min = 2, max = 30)
+    @Size(min = 2, max = 100)
     private String name;
 }

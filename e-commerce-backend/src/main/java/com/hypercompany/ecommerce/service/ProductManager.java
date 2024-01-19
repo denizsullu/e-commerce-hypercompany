@@ -49,4 +49,12 @@ public class ProductManager implements ProductService{
     public void delete(int id) {
         this.productRepository.deleteById(id);
     }
+
+    @Override
+    public List<GetAllProductResponse> getAllByCategoryId(int id) {
+        List<Product> products = this.productRepository.findAllByCategory_CategoryId(id);
+        return products.stream()
+                .map(product -> this.modelMapperService.forResponse()
+                        .map(product, GetAllProductResponse.class)).toList();
+    }
 }
