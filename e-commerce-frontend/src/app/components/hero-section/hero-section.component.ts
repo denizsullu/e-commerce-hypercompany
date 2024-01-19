@@ -22,16 +22,16 @@ export class HeroSectionComponent {
 
   slides = [
     {
-      img: 'https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg',
+      img: 'assets/navbar/header-icons/getir-mainpage-1.webp',
     },
     {
-      img: 'https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg',
+      img: 'assets/navbar/header-icons/getir-mainpage-2.webp',
     },
     {
-      img: 'https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg',
+      img: 'assets/navbar/header-icons/getir-mainpage-3.webp',
     },
     {
-      img: 'https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg',
+      img: 'assets/navbar/header-icons/getir-mainpage-4.webp',
     },
   ];
 

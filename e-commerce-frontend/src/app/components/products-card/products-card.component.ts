@@ -31,9 +31,7 @@ export class ProductsCardComponent implements OnInit {
     this.productService.getProducts().subscribe(response => {
       this.products = response;
       this.dataLoaded = true;
-    })
-
-  }
+    })}
 
 
 }
