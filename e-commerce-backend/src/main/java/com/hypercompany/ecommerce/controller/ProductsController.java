@@ -1,5 +1,6 @@
 package com.hypercompany.ecommerce.controller;
 
+import com.hypercompany.ecommerce.model.dto.ApiResponse;
 import com.hypercompany.ecommerce.model.dto.requests.CreateBrandRequest;
 import com.hypercompany.ecommerce.model.dto.requests.CreateProductRequest;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateBrandRequest;
@@ -24,19 +25,18 @@ import java.util.List;
 public class ProductsController {
     private final ProductService productService;
     @PostMapping("/add")
-    @ResponseStatus(code = HttpStatus.CREATED)
-    public ResponseEntity<String> add(@RequestBody CreateProductRequest request){
+    public ResponseEntity<ApiResponse> add(@RequestBody CreateProductRequest request){
         this.productService.add(request);
-        return new ResponseEntity<>("Product Added",HttpStatus.CREATED);
+        return new ResponseEntity<>(new ApiResponse(true,"Ürün Başarıyla Eklendi"), HttpStatus.CREATED);
     }
 
     @PostMapping("/addMultiple")
     @ResponseStatus(code = HttpStatus.CREATED)
-    public ResponseEntity<String> addMultiple(@RequestBody List<CreateProductRequest> requestList){
+    public  ResponseEntity<ApiResponse> addMultiple(@RequestBody List<CreateProductRequest> requestList){
         for (CreateProductRequest request : requestList) {
             this.productService.add(request);
         }
-        return new ResponseEntity<>("Products successfully added",HttpStatus.CREATED);
+        return new ResponseEntity<>(new ApiResponse(true,"Products successfully added"), HttpStatus.CREATED);
     }
 
     @GetMapping("/getAllByCategoryId/{id}")
@@ -52,10 +52,10 @@ public class ProductsController {
 
 
     @PutMapping("/update")
-    public ResponseEntity<String> update(@RequestBody UpdateProductRequest UpdateProductRequest){
+    public  ResponseEntity<ApiResponse> update(@RequestBody UpdateProductRequest UpdateProductRequest){
 
         this.productService.update(UpdateProductRequest);
-        return new ResponseEntity<>("Product successfully updated",HttpStatus.OK);
+        return new ResponseEntity<>(new ApiResponse(true,"Product successfully updated"), HttpStatus.OK);
     }
 
     @GetMapping("/getAll")
@@ -64,9 +64,9 @@ public class ProductsController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> delete(@PathVariable int id){
+    public ResponseEntity<ApiResponse> delete(@PathVariable int id){
 
         this.productService.delete(id);
-        return new ResponseEntity<>("Product successfully deleted",HttpStatus.OK);
+        return new ResponseEntity<>(new ApiResponse(true,"Product successfully deleted"), HttpStatus.OK);
     }
 }
