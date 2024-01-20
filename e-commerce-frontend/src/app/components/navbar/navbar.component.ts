@@ -4,13 +4,17 @@ import {faBars, faGlobe, faShoppingCart, faSignOutAlt, faUser, faUserPlus} from 
 import {RouterLink} from "@angular/router";
 import {ClickOutsideDirective} from "../../directives/click-outside.directive";
 import {NavbarCartComponent} from "../navbar-cart/navbar-cart.component";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatIcon} from "@angular/material/icon";
+import {CartService} from "../../services/cart.service";
+import {CartItems} from "../../models/cartItems";
 
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [FontAwesomeModule, RouterLink, ClickOutsideDirective,NavbarCartComponent],
+  imports: [FontAwesomeModule, RouterLink, ClickOutsideDirective, NavbarCartComponent, MatBadgeModule, MatIcon],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -19,12 +23,13 @@ export class NavbarComponent {
   faUser = faUser;
   faUserPlus = faUserPlus;
   faBars = faBars;
-  faSignOutAlt = faSignOutAlt;
   faShoppingCart = faShoppingCart;
 
   isUserLoggedIn: boolean = true;
   isMenuVisible: boolean = false;
   isCartVisible:boolean = false;
+  constructor() {
+  }
 
   toggleMenu(): void {
     this.isMenuVisible = !this.isMenuVisible;
@@ -34,4 +39,5 @@ export class NavbarComponent {
   }
 
 
+  protected readonly CartItems = CartItems;
 }

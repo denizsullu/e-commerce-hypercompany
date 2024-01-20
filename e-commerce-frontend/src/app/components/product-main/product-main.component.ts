@@ -1,8 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
-import {CurrencyPipe, TitleCasePipe, UpperCasePipe} from "@angular/common";
+import {CurrencyPipe, TitleCasePipe} from "@angular/common";
 import {ActivatedRoute, RouterLink} from "@angular/router";
+import {MatIcon} from "@angular/material/icon";
+import {ToastrService} from "ngx-toastr";
+import {CartService} from "../../services/cart.service";
+
 
 @Component({
   selector: 'app-product-main',
@@ -10,8 +14,9 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
   imports: [
     CurrencyPipe,
     RouterLink,
-    UpperCasePipe,
-    TitleCasePipe
+    TitleCasePipe,
+    MatIcon,
+
   ],
   templateUrl: './product-main.component.html',
   styleUrl: './product-main.component.scss'
@@ -19,9 +24,13 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
 export class ProductMainComponent implements OnInit {
   products: Product[];
 
-  constructor(private productService: ProductService
-    , private activatedRoute: ActivatedRoute) {
+  constructor(
+    private productService: ProductService,
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
+    private cartService: CartService) {
   }
+
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -45,5 +54,15 @@ export class ProductMainComponent implements OnInit {
       this.products = response;
     })
   }
+
+  addToCart(product: Product) {
+    this.toastr.success("Sepete Eklendi", product.productName)
+    this.cartService.addToCart(product)
+  }
+
+  addToFavorite(product: Product) {
+    this.toastr.info("Favorilere eklendi", product.productName)
+  }
+
 
 }

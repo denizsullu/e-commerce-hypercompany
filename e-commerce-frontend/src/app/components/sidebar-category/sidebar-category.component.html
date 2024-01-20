@@ -1,4 +1,4 @@
-<aside class="w-64" aria-label="Sidebar">
+<aside class="w-64 hidden md:block" aria-label="Sidebar">
   <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
     <ul class="space-y-2">
       <li>
@@ -6,14 +6,6 @@
           Kategori
         </h3>
         <ul class="mt-2">
-<!--          <li-->
-<!--            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"-->
-<!--              routerLink="/products"-->
-<!--              >-->
-<!--            <button [class]="getAllCategoryClass()" >-->
-<!--             Tüm Ürünler-->
-<!--            </button>-->
-<!--          </li>-->
           @for (category of categories; track category.categoryId) {
             <li
               class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -28,7 +20,7 @@
 
         </ul>
       </li>
-      <!-- Diğer bölümler (Marka, Fiyat Aralığı vs.) burada eklenebilir -->
+      <!-- Diğer bölümler -->
     </ul>
   </div>
 </aside>
