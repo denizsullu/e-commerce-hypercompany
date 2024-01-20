@@ -19,9 +19,17 @@ export class SidebarCategoryComponent implements OnInit{
     this.getCategories();
   }
   getCategories() {
-    this.categoryService.getCategories().subscribe(response => {
-      this.categories = response;
-    })
+    this.categoryService.getCategories().subscribe({
+      next: (response) => {
+        this.categories = response;
+      },
+      error: (error) => {
+        console.error('Kategoriler yüklenirken bir hata oluştu:', error);
+
+      },
+      complete: () => {}
+    });
+
   }
 
   setCurrentCategory(category: Category) {

@@ -19,15 +19,27 @@ import {RouterLink} from "@angular/router";
 export class CategoriesComponent implements OnInit {
   categories: Category[];
   currentCategory: Category;
+
   constructor(private categoryService: CategoryService) {
   }
+
   ngOnInit(): void {
     this.getCategories();
   }
+
   getCategories() {
-    this.categoryService.getCategories().subscribe(response => {
-      this.categories = response;
-    })
+    this.categoryService.getCategories().subscribe({
+      next: (response) => {
+        this.categories = response;
+      },
+      error: (error) => {
+        console.error('Kategoriler yüklenirken bir hata oluştu:', error);
+
+      },
+      complete: () => {
+      }
+    });
+
   }
 
 

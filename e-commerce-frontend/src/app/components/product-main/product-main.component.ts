@@ -6,6 +6,7 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
 import {MatIcon} from "@angular/material/icon";
 import {ToastrService} from "ngx-toastr";
 import {CartService} from "../../services/cart.service";
+import {switchMap} from "rxjs";
 
 
 @Component({
@@ -33,26 +34,48 @@ export class ProductMainComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
-      if (params["categoryId"]) {
-        this.getAllByCategoryId(params["categoryId"])
-      } else {
-        this.getProduct()
-      }
-    })
+    this.activatedRoute.params.pipe(
+      switchMap(params => {
+        if (params['categoryId']) {
+          return this.productService.getProductsByCategory(params['categoryId']);
+        } else {
+          return this.productService.getProducts();
+        }
+      })
+    ).subscribe(products => {
+      this.products = products;
+    });
 
   }
 
   getProduct() {
-    this.productService.getProducts().subscribe(response => {
-      this.products = response;
-    })
+    this.productService.getProducts().subscribe({
+      next: (response) => {
+        this.products = response;
+      },
+      error: (error) => {
+        console.error('Ürünler yüklenirken bir hata oluştu:', error);
+      },
+      complete: () => {
+
+      }
+    });
+
   }
 
   getAllByCategoryId(categoryId: number) {
-    this.productService.getProductsByCategory(categoryId).subscribe(response => {
-      this.products = response;
-    })
+    this.productService.getProductsByCategory(categoryId).subscribe({
+      next: (response) => {
+        this.products = response;
+      },
+      error: (error) => {
+        console.error('Kategoriye göre ürünler yüklenirken bir hata oluştu:', error);
+
+      },
+      complete: () => {
+      }
+    });
+
   }
 
   addToCart(product: Product) {

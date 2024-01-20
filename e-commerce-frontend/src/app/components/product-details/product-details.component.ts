@@ -28,9 +28,17 @@ export class ProductDetailsComponent implements OnInit{
     })
   }
   getProductDetail(productId: number) {
-    this.productService.getProductDetail(productId).subscribe(response => {
-      this.product = response;
-    })
+    this.productService.getProductDetail(productId).subscribe({
+      next: (response) => {
+        this.product = response;
+      },
+      error: (error) => {
+        console.error('Ürün detayı yüklenirken bir hata oluştu:', error);
+      },
+      complete: () => {
+      }
+    });
+
   }
 
 

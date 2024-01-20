@@ -27,9 +27,19 @@ export class FavoriteProductsComponent implements OnInit {
   }
 
   getProduct() {
-    this.productService.getProducts().subscribe(response => {
-      this.products = response;
-    })}
+    this.productService.getProducts().subscribe({
+      next: (response) => {
+        this.products = response;
+      },
+      error: (error) => {
+        console.error('Ürünler yüklenirken bir hata oluştu:', error);
+      },
+      complete: () => {
+      }
+    });
+
+
+  }
 
 
 }
