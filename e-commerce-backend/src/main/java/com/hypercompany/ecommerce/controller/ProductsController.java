@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,16 +25,18 @@ public class ProductsController {
     private final ProductService productService;
     @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
-    public void add( CreateProductRequest request){
+    public ResponseEntity<String> add(@RequestBody CreateProductRequest request){
         this.productService.add(request);
+        return new ResponseEntity<>("Product Added",HttpStatus.CREATED);
     }
 
     @PostMapping("/addMultiple")
     @ResponseStatus(code = HttpStatus.CREATED)
-    public void addMultiple(@RequestBody List<CreateProductRequest> requestList){
+    public ResponseEntity<String> addMultiple(@RequestBody List<CreateProductRequest> requestList){
         for (CreateProductRequest request : requestList) {
             this.productService.add(request);
         }
+        return new ResponseEntity<>("Products successfully added",HttpStatus.CREATED);
     }
 
     @GetMapping("/getAllByCategoryId/{id}")
@@ -49,9 +52,10 @@ public class ProductsController {
 
 
     @PutMapping("/update")
-    public void update( UpdateProductRequest UpdateProductRequest){
+    public ResponseEntity<String> update(@RequestBody UpdateProductRequest UpdateProductRequest){
 
         this.productService.update(UpdateProductRequest);
+        return new ResponseEntity<>("Product successfully updated",HttpStatus.OK);
     }
 
     @GetMapping("/getAll")
@@ -60,7 +64,9 @@ public class ProductsController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id){
+    public ResponseEntity<String> delete(@PathVariable int id){
+
         this.productService.delete(id);
+        return new ResponseEntity<>("Product successfully deleted",HttpStatus.OK);
     }
 }

@@ -31,12 +31,12 @@ public class BrandsController {
 
     @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
-    public void add( CreateBrandRequest request){
+    public void add(@RequestBody CreateBrandRequest request){
         brandService.add(request);
     }
 
     @PutMapping("/update")
-    public void update( UpdateBrandRequest updateBrandRequest){
+    public void update(@RequestBody UpdateBrandRequest updateBrandRequest){
         brandService.update(updateBrandRequest);
     }
 

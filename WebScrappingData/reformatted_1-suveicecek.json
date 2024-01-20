@@ -1,0 +1,2324 @@
+[
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "330 ml",
+    "productPrice": 599.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2d72b49a-2678-4924-bbfd-5d548c2adf57.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "12 x 330 ml",
+    "productPrice": 4999.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ed6e9d66-cfdc-41ca-b8b5-4edbea360e99.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "500 ml",
+    "productPrice": 750.0,
+    "productImage": "https://cdn.getir.com/product/5a7b1f608e19da0004bb2706_tr_1615375841236.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "12 x 500 ml",
+    "productPrice": 7499.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/66e7dd47-4c48-4257-ae62-0721489ffa6d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "1 L",
+    "productPrice": 1199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4d69ecc0-4278-45f4-862e-303b998a48a0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "1,5 L",
+    "productPrice": 1380.0,
+    "productImage": "https://cdn.getir.com/product/5a7b20fd8e19da0004bb27f8_tr_1615375864268.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "6 x 1,5 L",
+    "productPrice": 6499.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/958a1407-24b4-4a99-ad6a-2904dea638ad.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kuzeyden",
+    "productDescription": "5 L",
+    "productPrice": 2599.0,
+    "productImage": "https://cdn.getir.com/product/5a7b21f69ccf1d00040084bf_tr_1615375877213.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli",
+    "productDescription": "500 ml",
+    "productPrice": 820.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2116702f-b809-4543-9646-a624335f2e04.png",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Su",
+    "productDescription": "12 x 500 ml",
+    "productPrice": 6480.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/20501646-0fb7-4701-bd63-f9b42bcccaf1.png",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli",
+    "productDescription": "6 x 1 L",
+    "productPrice": 5020.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/06158810-366b-4b81-b96c-3db625dcfb4b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Su",
+    "productDescription": "6 x 1,5 L",
+    "productPrice": 6820.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c9b05523-8e61-4936-a22f-cc1564836ef9.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli",
+    "productDescription": "1,5 L",
+    "productPrice": 1480.0,
+    "productImage": "https://cdn.getir.com/product/5981eac3ffae51000428afc9_tr_1617811825745.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli",
+    "productDescription": "5 L",
+    "productPrice": 2810.0,
+    "productImage": "https://cdn.getir.com/product/5981ec31e97e8b000484eb96_tr_1617811848867.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Premium",
+    "productDescription": "330 ml",
+    "productPrice": 860.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/63815cc1-185d-43d2-b973-13b33b31ce47.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Premium",
+    "productDescription": "750 ml",
+    "productPrice": 1630.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3ca26f92-ea23-4abe-a717-d85f0b3d8c1d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Saka",
+    "productDescription": "6 x 500 ml",
+    "productPrice": 3620.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/89a69fa4-aff5-4103-a54e-08ed6b971d2e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Saka",
+    "productDescription": "6 x 1,5 L",
+    "productPrice": 6710.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/733c1623-9284-47cd-85e3-6fc0cc7c8ef6.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Saka",
+    "productDescription": "5 L",
+    "productPrice": 2480.0,
+    "productImage": "https://cdn.getir.com/product/60a665514cdd597f7d60b6b3_tr_1621955092175.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Hayat Su",
+    "productDescription": "12 x 500 ml",
+    "productPrice": 6210.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4bb2a36b-0310-4686-941e-fd278615bc00.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Hayat",
+    "productDescription": "1,5 L",
+    "productPrice": 550.0,
+    "productImage": "https://cdn.getir.com/product/5618d4bb599c160c007d63e6_tr_1574846185864.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pürsu",
+    "productDescription": "6 x 1,5 L",
+    "productPrice": 4499.0,
+    "productImage": "https://cdn.getir.com/product/5fc8baaebf59f6fc84d65429_tr_1660318485699.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Hayat Bebekler",
+    "productDescription": "6 x 330 ml",
+    "productPrice": 4699.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6da878fb-9442-45d7-acbe-57cf8ca2cd10.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Cam",
+    "productDescription": "330 ml",
+    "productPrice": 1380.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a026ad44-d5be-4c34-b9c5-53cba6748c98.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Cam",
+    "productDescription": "750 ml",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4ba6f7bf-7a4e-41b6-b53a-ae01d9f53f91.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Cam",
+    "productDescription": "330 ml",
+    "productPrice": 2040.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a257b6de-ba9a-4455-9051-32c860cc5097.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Erikli Cam",
+    "productDescription": "750 ml",
+    "productPrice": 3499.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/90f23045-27f2-4fdb-b3f1-02c8e4afaecc.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pürsu Cam",
+    "productDescription": "750 ml",
+    "productPrice": 2399.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/da74230c-d573-4881-9649-4eb431837308.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pürsu Cam",
+    "productDescription": "750 ml",
+    "productPrice": 1930.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/74f4658c-407b-4e00-adb6-b949570c1c56.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Acqua Panna Cam",
+    "productDescription": "750 ml",
+    "productPrice": 3880.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/551f5b8c-743c-4864-afc7-948cf64e01ab.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Narpump Şarjlı Su Pompası (Beyaz)",
+    "productDescription": null,
+    "productPrice": 9160.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/43083641-fa3b-4c03-9522-86c6e0927b6f.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Narpump Şarjlı Su Pompası (Siyah)",
+    "productDescription": null,
+    "productPrice": 10070.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0dc6cd1a-34ab-471d-85c1-2bf70889082e.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Brita Akıllı Sürahi Mavi",
+    "productDescription": "3,5 L",
+    "productPrice": 107795.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/358600fd-cd61-418f-8232-9f6ccfbe8404.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Brita Maxtra Plus Filtre",
+    "productDescription": "2'li",
+    "productPrice": 38490.0,
+    "productImage": "https://cdn.getir.com/product/591310f0c09f96000416531c_tr_1609947365702.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Keyf-i Buz Hazır Buz Küpü",
+    "productDescription": "24 Adet",
+    "productPrice": 2099.0,
+    "productImage": "https://cdn.getir.com/product/5f0c2b8ca42b49505e4f6da4_tr_1609947384973.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Max",
+    "productDescription": "250 ml",
+    "productPrice": 2040.0,
+    "productImage": "https://cdn.getir.com/product/5c73d40ba194970001855433_1551185494917.jpeg?v=1551185503101",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Max",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 7799.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a996a2f9-7ea3-457f-8b85-9beee3a2407a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi",
+    "productDescription": "250 ml",
+    "productPrice": 2040.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/edc54240-5ed8-4009-9bec-80d32dfb3576.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 7799.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3000282c-4ded-4604-aac5-63273a98e688.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Twist",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 6160.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/279b3a34-582f-4e44-9bbe-62fc356a0895.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Cola",
+    "productDescription": "1 L",
+    "productPrice": 2370.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a4a764cf-fd3b-41cc-bbd2-a6e6eb5a6955.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Max",
+    "productDescription": "1 L",
+    "productPrice": 2370.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4b066223-d023-4892-ab46-a137f024e61e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Twist",
+    "productDescription": "1 L",
+    "productPrice": 2370.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/08e385db-3e2f-4a43-b19f-1741a6c327bd.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Cola",
+    "productDescription": "4 x 1 L",
+    "productPrice": 8280.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/06aa3d49-a8c3-48ce-99a5-bd55d5771fb6.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pepsi Max",
+    "productDescription": "4 x 1 L",
+    "productPrice": 8280.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a44a9969-0b2d-4ea0-99ed-6bc972793357.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "7up Gazoz",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8e6fb92b-d787-42b3-9326-5bc8759e2ad4.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola",
+    "productDescription": "250 ml",
+    "productPrice": 2150.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ce14a967-e2db-4328-acdc-3d5f763ded51.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 12095.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/219303cc-d65f-4d19-a9a2-c84c77022704.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Zero Sugar",
+    "productDescription": "250 ml",
+    "productPrice": 2150.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/be0c5a41-f793-4ebf-a0b1-34dfc0cb3db6.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Zero Sugar",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 12095.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d1e301ff-73a5-4425-a717-2682e6d6f358.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Light",
+    "productDescription": "250 ml",
+    "productPrice": 2150.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/37c157b6-f5a8-43f7-98d7-d23e97b122f8.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Light",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 12095.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1b9550ff-77a3-4642-9799-b7eb58b107bc.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6027e85a-4ec5-47ec-8436-7d10ad9b379b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Zero Sugar",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4691c9da-a6ba-47c1-8917-4c3530155f08.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Light",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2565e217-c3b5-488e-8d9d-799f832ef299.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola",
+    "productDescription": "4 x 1 L",
+    "productPrice": 12540.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/fd4fdb42-64ac-4652-8eab-44a68ba8c68e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Zero Sugar",
+    "productDescription": "4 x 1 L",
+    "productPrice": 12540.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/621ed805-67db-418b-befc-3387ea21b9ea.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Coca-Cola Light",
+    "productDescription": "4 x 1 L",
+    "productPrice": 12540.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8fe0ab96-792e-42c8-a6c7-9128109e13b1.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Mountain Dew Gazlı İçecek",
+    "productDescription": "450 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a015069b-b234-4a62-bef8-c9296bdd854d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fanta",
+    "productDescription": "250 ml",
+    "productPrice": 2150.0,
+    "productImage": "https://cdn.getir.com/product/628cd7f4517d7756efaf7d74_tr_1653460571480.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fanta",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 8170.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/662adfff-67f4-4311-88c9-bfecab9d8976.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fanta",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 12350.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/7cb87a92-2cc7-4de5-a5ff-86d43005d24a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fanta",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3e45e6cb-e55e-4009-8cd7-5366794bca56.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fanta",
+    "productDescription": "4 x 1 L",
+    "productPrice": 12540.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/23c6f5db-d9d9-49e1-9dd2-29523548ffb5.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Yedigün",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/bb1fe00d-97c7-4423-926f-57b4af1e7e24.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Yedigün Bodrum Mandalina",
+    "productDescription": "1,5 L",
+    "productPrice": 2545.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2df8d93f-9b01-4757-9070-8fce3b282620.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Yedigün",
+    "productDescription": "4 x 1 L",
+    "productPrice": 9899.0,
+    "productImage": "https://cdn.getir.com/product/5ce65821a72a950001cc8862_tr_1641906056854.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite",
+    "productDescription": "250 ml",
+    "productPrice": 2150.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d0b04eb1-e254-49ea-87a6-1aa27d8964cf.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 8170.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4c2c2d7d-502d-4f9a-9feb-1df32f6489e3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 12350.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0e41f83f-fa39-4fee-b3b0-2d371f8fcf8b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite Şekersiz",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/172de309-3b15-4115-9c87-b12161ea5a6a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite Limon",
+    "productDescription": "1 L",
+    "productPrice": 3300.0,
+    "productImage": "https://cdn.getir.com/product/5f92b8362d5b18aa0fddd8d0_tr_1655123281528.png",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sprite",
+    "productDescription": "4 x 1 L",
+    "productPrice": 12540.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/f70b836e-47b5-4c91-a4dc-b932249f6bfb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fruko Cool Lime",
+    "productDescription": "1 L",
+    "productPrice": 2108.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1027fd4b-e7e0-4e9c-abf5-a49187250f8b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fruko",
+    "productDescription": "1 L",
+    "productPrice": 1996.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/9938969c-75d4-4c66-8f33-7f7f330511dd.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Uludağ Efsane Gazoz",
+    "productDescription": "1 L",
+    "productPrice": 2280.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/64eb5725-05c5-47d8-b182-f904e9a013e2.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Uludağ Efsane Gazoz Şekersiz",
+    "productDescription": "1 L",
+    "productPrice": 2280.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cba5c027-fe7e-4a6d-a128-257c92c79d89.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Çamlıca Gazoz",
+    "productDescription": "1 L",
+    "productPrice": 2480.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6247f776-b7bc-4700-bf5d-798e06207cd0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Çamlıca Gazoz Şekersiz",
+    "productDescription": "1 L",
+    "productPrice": 2480.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/52663ae9-9ae7-45f6-b25a-f73e535b9742.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Çamlıca Gazoz Şekersiz",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 6770.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4a169f48-2d28-47b4-ae5f-8f9483a96aeb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Çamlıca Gazoz",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 6770.0,
+    "productImage": "https://cdn.getir.com/product/60a6621b4e75ca733ddcffa5_tr_1663857969878.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Klasik Frambuaz",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 9280.0,
+    "productImage": "https://cdn.getir.com/product/60a6616077290c2a043032b3_tr_1663857954453.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Siyah Şekersiz",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 8892.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c6ab2df7-e14c-4b53-8ace-b5ceda4dc829.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Turunçgiller",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 6999.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5a93ff66-6880-4111-922e-46ef6e338619.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Limonlu Naneli Gazlı İçecek",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 10960.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/30210e2b-e91b-4396-8f9c-7255b1d52d51.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Zencefilli Gazoz",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 8892.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a9aad570-fa2d-42d0-960a-b8b36b50234e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beyoğlu Zencefilli Gazlı İçecek",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 10960.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c4de2bcc-e6e9-46fe-bf17-bb68c796d1f2.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sarıyer Gazozu",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 5399.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c9f7ee8e-efea-4442-847a-f275f4c7760f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Tonik",
+    "productDescription": "250 ml",
+    "productPrice": 1323.0,
+    "productImage": "https://cdn.getir.com/product/6089082f9afaac83713e0731_tr_1641906267051.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Mandalina",
+    "productDescription": "200 ml",
+    "productPrice": 1764.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a64a0e6a-28b0-485b-aca9-940fff4a1d43.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Mandalina",
+    "productDescription": "1 L",
+    "productPrice": 4400.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a7bcf9b0-fa0a-40e3-911b-a75c91e2adc3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Bitter Limon",
+    "productDescription": "1 L",
+    "productPrice": 4400.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/32be1768-f924-470f-a448-94205871a2b4.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Tonik",
+    "productDescription": "1 L",
+    "productPrice": 4400.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/39eb62a5-b88e-4ab5-b8be-e7a01b0bf217.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Schweppes Tonik Şekersiz",
+    "productDescription": "1 L",
+    "productPrice": 4400.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/7179ab3f-62cf-4b74-9859-5329bd683e4d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Organics Easy Lemon",
+    "productDescription": "250 ml",
+    "productPrice": 3080.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ab1ea467-471a-4c7d-8b44-40eb8fcf7f28.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Organics by Red Bull Tonic",
+    "productDescription": "250 ml",
+    "productPrice": 3080.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8fd624f8-8600-4c65-97e5-707f74314ef3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Organics Dark Orange",
+    "productDescription": "250 ml",
+    "productPrice": 3080.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/29584375-52b5-40c4-9993-0835ce187ec3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Krombacher Alkolsüz Bira",
+    "productDescription": "330 ml",
+    "productPrice": 5750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c85a1d29-77c1-4380-a852-ac8d6322b26d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Maltana Ananas",
+    "productDescription": "250 ml",
+    "productPrice": 2530.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/afb4ff5d-734b-4067-9289-86115abeda4c.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Maltana Mojito",
+    "productDescription": "250 ml",
+    "productPrice": 2299.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/369cb9b2-0957-4ad6-b970-4dd0370e2487.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Maltana Ginseng",
+    "productDescription": "250 ml",
+    "productPrice": 2530.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c5c3bd59-a312-4d62-b445-d0f64de58605.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Erzincan",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 2920.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2942175b-22a3-423c-a4c2-c81c43f5b541.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Afyonkarahisar",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 2920.0,
+    "productImage": "https://cdn.getir.com/product/60018c5bca2126d84459c47f_tr_1661336793029.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beypazarı Maden Suyu",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 2920.0,
+    "productImage": "https://cdn.getir.com/product/5bbdbbbaa6e9de25524a27fc_tr_1661336720944.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kınık Sade",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 2699.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1adeacf8-6dfd-4fff-86e2-bd88f8bf0777.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sırma Sade",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 3250.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5f5e087b-447c-419e-89d1-a9e9e674079b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Uludağ Premium Sade",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 11220.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ce615da1-9af7-4c5f-90df-bc04990572e8.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "S.Pellegrino Sade",
+    "productDescription": "6 x 250 ml",
+    "productPrice": 19799.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8c8b9393-9a67-498f-91ae-378846dd77c4.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Perrier Sade",
+    "productDescription": "4 x 330 ml",
+    "productPrice": 15950.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8a9ea878-d6cc-483b-ae54-c95bd3902356.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Plus Açai & Çilek",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4299.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d6763942-a3db-480f-a8ea-b47e6fe2a087.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Plus Karamürverli",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4299.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/b94190d0-f975-4a8f-bf5f-c4d23d3e0870.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Plus Yeşil Çay",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4299.0,
+    "productImage": "https://cdn.getir.com/product/623b35267191e035c03569a1_tr_1661336849197.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay +C Limon",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4320.0,
+    "productImage": "https://cdn.getir.com/product/623c1bf144bb5973394f4aab_tr_1661336882705.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Karpuz & Çilek",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/b7348034-052d-46d9-84a1-5f96b22632c8.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kızılay Mandalina",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4060.0,
+    "productImage": "https://cdn.getir.com/product/606c4c971b254d492e1eb028_tr_1661332346113.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beypazarı Limon & Fesleğen",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4570.0,
+    "productImage": "https://cdn.getir.com/product/623b341456e475425f96b2ca_tr_1661336821472.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beypazarı Karadut",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4570.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/de4a97f1-8422-4c3a-ae63-17fa2949c313.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kınık B+ Karadut & Frenk Üzümü",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 3799.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5c4d621d-c089-47cf-8726-e5676c6cbedd.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kınık C+ Mandalina",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4320.0,
+    "productImage": "https://cdn.getir.com/product/62667953e3979d7466f43303_tr_1661337055444.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kınık C+Limon",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 3799.0,
+    "productImage": "https://cdn.getir.com/product/626677fed920d95f91175136_tr_1661332379579.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Minera Limon",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4380.0,
+    "productImage": "https://cdn.getir.com/product/5e564968fbe26f28652822ca_tr_1661337080905.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Minera Elma Aromalı",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4380.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ea464081-5374-4101-87a5-e7cbb6ccfb36.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Karpuz-Çilek",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4380.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/983ea92e-0f55-4b11-aba4-44982abece08.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Minera Mango-Ananas",
+    "productDescription": "6 x 200 ml",
+    "productPrice": 4380.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6208a43b-0b6e-4450-90f3-bf5a0bade319.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Damla Minera Sade",
+    "productDescription": "330 ml",
+    "productPrice": 1440.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4322924f-728a-457d-bb33-e74c678461df.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "S.Pellegrino Sade",
+    "productDescription": "750 ml",
+    "productPrice": 7150.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/891cbdc7-165b-4350-935a-4e4911b11dd3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Beypazarı Premium",
+    "productDescription": "750 ml",
+    "productPrice": 2660.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a03a5e81-0f69-4397-b87e-bec6ad9e56a0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Perrier Sade",
+    "productDescription": "750 ml",
+    "productPrice": 3599.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ccb40b08-f46c-45c3-b7f8-5f6ce2c75850.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Uludağ Premium",
+    "productDescription": "750 ml",
+    "productPrice": 4680.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2a937693-f6d5-4c1e-b4af-23f97a38d43a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sırma Doğal Maden Suyu",
+    "productDescription": "1 L",
+    "productPrice": 1980.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8d891052-a6b7-4373-aac0-cd3f30b8295f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Akmina Sade",
+    "productDescription": "1 L",
+    "productPrice": 2040.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3e5769c1-6222-40c1-b9c1-6044bba52516.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sırma Maden Suyu Limon",
+    "productDescription": "1 L",
+    "productPrice": 2580.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/54522b57-8d2f-45f7-8b7f-f5b125a86c21.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sırma Karadut & Frenk Üzümü",
+    "productDescription": "1 L",
+    "productPrice": 2580.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c01fe1a5-97ca-4c2f-a495-1498a914a049.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Perrier Misket Limonu",
+    "productDescription": "250 ml",
+    "productPrice": 3780.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/24b5b3f3-ccfb-40e4-93f0-e749faab8e66.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Perrier Greyfurt",
+    "productDescription": "250 ml",
+    "productPrice": 3780.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c6977555-8760-4895-9ef3-9c917002b329.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "S.Pellegrino Aranciata",
+    "productDescription": "200 ml",
+    "productPrice": 500.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/42f2e39c-d5b9-4f33-a20f-b1f0af8417bc.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Metaltex Jolly Şişe Açacağı",
+    "productDescription": null,
+    "productPrice": 2399.0,
+    "productImage": "https://cdn.getir.com/product/5fbb8c6b74c8dac6ac113a13_tr_1606224954727.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Ayran",
+    "productDescription": "6 x 195 ml",
+    "productPrice": 4950.0,
+    "productImage": "https://cdn.getir.com/product/5ceae037c461e70001cc97f8_tr_1560255462225.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Ayran",
+    "productDescription": "293 ml",
+    "productPrice": 1350.0,
+    "productImage": "https://cdn.getir.com/product/5a004ce7c99cc70004c78a7e_tr_1659598832831.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Ayran",
+    "productDescription": "1 L",
+    "productPrice": 3199.0,
+    "productImage": "https://cdn.getir.com/product/5ee8b4e650f6470187dbba00_tr_1605471852228.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Ayran",
+    "productDescription": "1,5 L",
+    "productPrice": 4620.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cb991154-3e0e-48f9-807c-99ac573e546a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran Genç Şişe",
+    "productDescription": "250 ml",
+    "productPrice": 1180.0,
+    "productImage": "https://cdn.getir.com/product/5cf3d88c4b58210001f49579_tr_1560328947134.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "200 ml",
+    "productPrice": 720.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c95964aa-db83-416e-be92-9177c16f8735.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "4 x 200 ml",
+    "productPrice": 2599.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5517a93b-43f6-42f9-a152-d0009a5c2c51.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "3 x 300 ml",
+    "productPrice": 2760.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2b9b0023-fd70-4d21-ad06-0a3e56364373.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "300 ml",
+    "productPrice": 1020.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/97c34912-7989-4be2-98cb-21076c234a63.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "2 L",
+    "productPrice": 4650.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/584f5d8f-3d31-467e-9f68-90c2dd689032.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Ayran",
+    "productDescription": "1,5 L",
+    "productPrice": 3820.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/275eb5ef-8852-4370-94f9-419208c17aa4.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Sütaş Ayran",
+    "productDescription": "1 L",
+    "productPrice": 2810.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3d0faf16-9ffa-400b-875a-c7dfd362f2fa.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Bardak Ayran",
+    "productDescription": "200 ml",
+    "productPrice": 660.0,
+    "productImage": "https://cdn.getir.com/product/58231af45b31d60004488619_tr_1609124337356.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Ayran",
+    "productDescription": "1 L",
+    "productPrice": 3070.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/de041126-a424-4e41-8197-887fcd30d24e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Özerhisar Ayran",
+    "productDescription": "245 ml",
+    "productPrice": 2520.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/54ee2b16-d334-4673-bedf-b480e90ccacc.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Probiyotik Ayran",
+    "productDescription": "195 ml",
+    "productPrice": 870.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/29d4950f-50b5-4667-b1a9-b0f2d9676898.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Probiyotik Ayran",
+    "productDescription": "1 L",
+    "productPrice": 2825.0,
+    "productImage": "https://cdn.getir.com/product/5d70c4fd8bc0cb00010cd010_tr_1604781635747.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Altınkılıç Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/da1156dd-ed94-4637-8797-0b5bd1b66a9c.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Altınkılıç Sade Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4350.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d9ff3f5b-d95c-47fd-b9dd-fc07586276b8.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Altınkılıç Laktozsuz Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/386f916d-ca08-4a06-b4f1-95c87fc82c95.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Altınkılıç Laktozsuz Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4899.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4dc6e211-3acc-467b-89e1-a69536f4439a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kefirix Çilekli",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/59d73a98-976a-4382-861d-088f29e5d6bb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kefirix Orman Meyveli",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5107c89c-a8f9-4023-989f-9bf0f57499a4.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kefirix Yaban Mersini",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8219e1cd-79a1-4cf5-83b0-793cf015fe66.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Kefirix Ballı Muzlu",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6a4d761d-9a34-43b1-b82e-9c502d0d5878.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/bbdb7c29-7710-487f-9a8c-9cce752196cd.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Sade Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4350.0,
+    "productImage": "https://cdn.getir.com/product/5ce6581ea72a950001cc87f0_tr_1594323867464.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Çilekli",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/aaa1932a-3a87-401f-9a48-cdeb8ffc5041.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Çilekli",
+    "productDescription": "1 L",
+    "productPrice": 5450.0,
+    "productImage": "https://cdn.getir.com/product/5ce6581cfd9b330001c4a882_tr_1604342498949.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Orman Meyveli",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ede1cc75-3d48-4364-a128-bb5b6b996c38.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Orman Meyveli",
+    "productDescription": "1 L",
+    "productPrice": 5450.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c1e40c2b-dae5-47a9-92a7-d0dde888f535.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Şeftali Kayısı",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/39e598a8-8c08-477a-8aa4-ff09d57dad03.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Ananaslı",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://cdn.getir.com/product/5ce6581bfd9b330001c4a86e_tr_1604342469306.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Eker Kefir Elmalı Tarçınlı",
+    "productDescription": "200 ml",
+    "productPrice": 1650.0,
+    "productImage": "https://cdn.getir.com/product/5f04195d10448a4a6d5b2909_tr_1604342552549.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Danone Kefirhüp Çilekli",
+    "productDescription": "70 g",
+    "productPrice": 1310.0,
+    "productImage": "https://cdn.getir.com/product/5ce65819fd9b330001c4a84d_tr_1604782179444.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Danone Kefirhüp Orman Meyveli",
+    "productDescription": "70 g",
+    "productPrice": 1310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/626ed603-b31c-43bb-a4c9-c3b5d8380137.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Danone Kefirhüp Orman Meyveli",
+    "productDescription": "70 g",
+    "productPrice": 1310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6494798c-764f-4b36-a15e-24ee026dc5e2.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Danone Kefirhüp Çilekli",
+    "productDescription": "70 g",
+    "productPrice": 1310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/9488dd02-5b1e-4aee-a219-88ad6927f603.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Aronyalı Karadutlu Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/77988e94-934a-49a4-b935-d6084ba85c1f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Orman Meyveli Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 1899.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/613bcabe-ed7e-4fad-9e35-4c8f8285f0a7.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Çilekli Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4b88ae23-c665-4d3d-94e7-e00a41f11f99.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Şeftalili Ananaslı Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0a4dcfde-f7a7-449b-abda-49017f4ed41b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Sade Kefir",
+    "productDescription": "250 ml",
+    "productPrice": 2010.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ae5b72fa-d74c-4d39-8079-ca55bec0ae99.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Sade Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4350.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cc9ca5b8-b8a2-434a-97c0-998360e48cb8.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Çilekli Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4680.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/47a496cd-4c6c-4441-90e1-c6134ed8b540.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Orman Meyveli Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4680.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c39c1514-e8ef-423a-941e-395bacbea370.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "İçim Laktozsuz Kefir",
+    "productDescription": "1 L",
+    "productPrice": 4899.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/72ea7242-bedc-4519-b4be-a6f20da823aa.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Sade Probiyotik Shot",
+    "productDescription": "80 ml",
+    "productPrice": 1330.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/acafdc7a-5db5-4883-9f53-350133edd548.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Ahududu Probiyotik Shot",
+    "productDescription": "80 ml",
+    "productPrice": 1330.0,
+    "productImage": "https://cdn.getir.com/product/5df76c8566d8c9523cefbb6e_tr_1601150563717.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Limonlu Probiyotik Shot",
+    "productDescription": "80 ml",
+    "productPrice": 1150.0,
+    "productImage": "https://cdn.getir.com/product/5f18366211699086a99af632_tr_1601150547606.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Shot+ Nar",
+    "productDescription": "80 ml",
+    "productPrice": 1430.0,
+    "productImage": "https://cdn.getir.com/product/5df770818fe2b9dccc8a785a_tr_1601150555314.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Shot+ Turunçgiller",
+    "productDescription": "80 ml",
+    "productPrice": 1430.0,
+    "productImage": "https://cdn.getir.com/product/6053b855b1eb6d22404024e7_tr_1616155707901.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Shot+ Kara Mürver",
+    "productDescription": "80 ml",
+    "productPrice": 1430.0,
+    "productImage": "https://cdn.getir.com/product/6053b9e275116b07a295652b_tr_1616155720423.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Activia Smoothie",
+    "productDescription": "200 ml",
+    "productPrice": 3299.0,
+    "productImage": "https://cdn.getir.com/product/6053b68ca5c963515dd585e7_tr_1616155728712.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Vivo Kefir Mayası",
+    "productDescription": "4 x 1 g",
+    "productPrice": 3840.0,
+    "productImage": "https://cdn.getir.com/product/618e69badac662eb7dd3abd2_tr_1636965332085.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "330 ml",
+    "productPrice": 2099.0,
+    "productImage": "https://cdn.getir.com/product/5e9566790fbd690ff635954b_tr_1605472424957.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Limon",
+    "productDescription": "330 ml",
+    "productPrice": 2099.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6fe4c5ef-6067-433c-ba26-2a7cb14b5ed0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali Light",
+    "productDescription": "330 ml",
+    "productPrice": 2099.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2f574613-8129-4f90-a976-2bdf65252b00.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 7870.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/18fec072-deb2-47f0-9334-bd981faa5c96.png",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Limon",
+    "productDescription": "4 x 250 ml",
+    "productPrice": 7870.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2f9dcc14-8eaa-4822-93f8-4d1fa259a8fb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "6 x 330 ml",
+    "productPrice": 11940.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/240b6ea4-8526-4f89-bfb3-76868ca76080.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali Light",
+    "productDescription": "6 x 330 ml",
+    "productPrice": 11940.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/11e9561b-a017-4c49-a288-9176f25fec8f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Limon",
+    "productDescription": "6 x 330 ml",
+    "productPrice": 11940.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1fe72080-289f-4f7a-9a77-d24ecaeab2ea.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Mango",
+    "productDescription": "6 x 330 ml",
+    "productPrice": 11940.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8f523ea6-fba0-40ec-8f6f-026a346f60b2.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Şeftali",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3adcdfa8-a530-45ec-9bab-8c59ed1be4cb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Limon",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/e91e61d3-c0df-4a64-af9a-2b8c3b7baf05.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Mango & Ananas",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3f465c17-c398-4b67-9f13-1527e70cec2b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Karpuz",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/97467f5b-b328-4490-8ccb-82b2cf74dfe9.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 2599.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/7e9fa7ff-ee11-4a8a-9ef9-da03f11f90fd.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Limon",
+    "productDescription": "1 L",
+    "productPrice": 2599.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/23c9365a-5472-4c29-aef5-990184231f83.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "1,5 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5ad107a6-f2de-45ce-bfdb-068fcf1eb9ff.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Limon",
+    "productDescription": "1,5 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3a29392c-9c99-4fb3-be63-476b7fb904df.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Mango",
+    "productDescription": "1,5 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/433997c1-35f0-407e-b30e-1bf9b4bc3d98.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Lipton Ice Tea Şeftali",
+    "productDescription": "4 x 1 L",
+    "productPrice": 9899.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/62580025-aeed-4943-a37b-ee62e1b3f12d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/195498e9-5d40-4cf7-bc5d-7e8e430d5b69.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Limon",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/23447281-365f-491d-a165-ebb967f67190.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Mango & Ananas",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ad1c6fac-6cdc-4581-bf59-acb652632331.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Yeşil Çay & Lime",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a7e896a4-67f2-4c29-b62a-4640df271086.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Mango & Papatya",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/81bb710b-f445-4bc9-b62f-5a4f3002f644.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Fuse Tea Karpuz",
+    "productDescription": "1 L",
+    "productPrice": 2750.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6812a80c-0a09-4859-92be-cf2b6427b88f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Cool Lime Özü",
+    "productDescription": "310 ml",
+    "productPrice": 3299.0,
+    "productImage": "https://cdn.getir.com/product/5f9171d579d9116df06e6cdf_tr_1603872690360.jpeg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pin Cool Lime",
+    "productDescription": "1 L",
+    "productPrice": 3310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/f2c341e8-fcd1-4722-834d-d9d4cba9a8b3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pin Soğuk Çay Hibiscus",
+    "productDescription": "1 L",
+    "productPrice": 3310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/989b1807-fa22-49fa-a0af-b3cc037611a0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pin Soğuk Çay Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 3310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4c46c8bd-ce76-44ad-9be9-1aafab589d9f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Pin Portakal Mango",
+    "productDescription": "1 L",
+    "productPrice": 3310.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/7dc209a4-3807-4eca-8c66-555fb7ca98f9.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Portakal",
+    "productDescription": "330 ml",
+    "productPrice": 4180.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/13d0690b-65ce-4033-8a3b-5cc4bca3294f.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Portakal & Nar Suyu",
+    "productDescription": "330 ml",
+    "productPrice": 5060.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c1b3d333-764c-45cd-bf1d-043fad738442.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Nar Suyu",
+    "productDescription": "330 ml",
+    "productPrice": 2970.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8c874a22-9482-4b65-8637-7ff9a4e05582.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Bağışıklık",
+    "productDescription": "330 ml",
+    "productPrice": 3830.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/126abc42-6aed-4463-b489-e6d62e307f5c.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Portakal",
+    "productDescription": "750 ml",
+    "productPrice": 7040.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2ec19c3c-74fd-4c95-a060-be2140fa2d5b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Portakal & Havuç",
+    "productDescription": "750 ml",
+    "productPrice": 7480.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c116ae9c-3590-4aa3-ad06-e394c564a357.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Exotic Portakal & Nar",
+    "productDescription": "750 ml",
+    "productPrice": 7810.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/b43ea637-c61b-41d9-b17f-843714bfbaf2.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Doğanay Karadut Suyu",
+    "productDescription": "1 L",
+    "productPrice": 2810.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4634131a-66df-4c62-8832-0d3eebcf56ab.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Atom",
+    "productDescription": "200 ml",
+    "productPrice": 880.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/4b4ee98e-d16e-4d63-9fe2-8efd52948499.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Şeftali",
+    "productDescription": "200 ml",
+    "productPrice": 880.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a38bccc9-c33c-4047-bffe-2e6239a40df0.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Vişne",
+    "productDescription": "200 ml",
+    "productPrice": 880.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c45fdb7d-4f4c-4d81-ab85-c783da139e44.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Şeftali",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/fa113d17-95ae-4de8-8a08-da0a40885cf1.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Vişne",
+    "productDescription": "330 ml",
+    "productPrice": 2199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/aeea7b3b-2751-46a2-b321-32a2365ac305.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Pulpy",
+    "productDescription": "330 ml",
+    "productPrice": 1710.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c1dbd8e1-16d6-4a40-95d9-ff9c5dfaa029.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Karışık",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3cf12cbb-1461-48ab-8347-1bc4ed497496.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Atom",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/70ebe59c-438e-43ad-82a7-648cfac83ab3.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Pulpy Portakal",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a98ac35a-0a5c-4f6c-ba6a-d940dcba2883.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Pulpy Karışık",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c4e103f3-4d89-4302-8e74-f0c355bca3bc.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Kayısı Nektar",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/e78579dc-7add-44c3-b969-2e46dda2b1e6.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Vişne",
+    "productDescription": "1 L",
+    "productPrice": 3630.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/9b874101-43cc-41e4-bd56-d382c05eb61e.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/990dd9d7-22b3-4b1e-9059-67719e3842d5.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Cappy Portakal",
+    "productDescription": "1L",
+    "productPrice": 3850.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/536ad417-46bb-4278-9418-f970c61ca958.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Tropicana Malatya Kayısı",
+    "productDescription": "1 L",
+    "productPrice": 2577.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/f8c6380f-5d54-4dcc-8db5-2fb3984cdeeb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Tropicana Bursa Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 2577.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/c73953ee-e151-4160-bdbd-d823a5fbc533.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Capri-Sun Safari Fruits",
+    "productDescription": "200 ml",
+    "productPrice": 1299.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/e12e63d7-c349-4eaf-b115-d428983ded02.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Capri-Sun Multi Vitamin",
+    "productDescription": "200 ml",
+    "productPrice": 1299.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a2054be6-51dc-495c-b037-cca8343c31cb.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Şeftali",
+    "productDescription": "200 ml",
+    "productPrice": 830.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/712f759a-cdde-4754-a1e1-c5c2ff427f4a.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Vişne",
+    "productDescription": "200 ml",
+    "productPrice": 830.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6587825b-76e7-4baa-afe8-05bdf2e201f7.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Karışık",
+    "productDescription": "200 ml",
+    "productPrice": 830.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5ea97097-9e68-460e-b2ea-5096732f9150.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Şeftali",
+    "productDescription": "1 L",
+    "productPrice": 3170.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/dbcfb1e3-c667-4824-8183-5f55c7d3572d.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Multivitamin Meyve Suyu",
+    "productDescription": "1 L",
+    "productPrice": 3960.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/926a5b34-5998-4f9f-9c51-d04293b08097.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Ekşi Elma",
+    "productDescription": "1 L",
+    "productPrice": 3170.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/260cdd09-2d96-4430-9505-4efd6baa7767.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Karpuz & Çilek",
+    "productDescription": "1 L",
+    "productPrice": 3520.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0d0e778e-a666-4807-9679-3cc40f08a92b.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Karışık Meyve Suyu",
+    "productDescription": "1 L",
+    "productPrice": 3960.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d30c82c0-1bc7-4da4-abf6-b8d10a725efe.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Şeftali & Elma",
+    "productDescription": "1 L",
+    "productPrice": 3199.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/3c9b759a-3e85-4325-9b8a-969fe037065c.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  },
+  {
+    "productName": "Dimes Vişne & Elma",
+    "productDescription": "1 L",
+    "productPrice": 4180.0,
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/6b92c742-d497-4928-806e-036cb112d5ba.jpg",
+    "productQuantity": 100,
+    "brandId": 5,
+    "categoryId": 1
+  }
+]

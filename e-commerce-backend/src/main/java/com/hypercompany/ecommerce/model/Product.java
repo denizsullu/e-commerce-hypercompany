@@ -17,18 +17,18 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private int productId;
+
     private String productName;
     private String productDescription;
     private double productPrice;
     private String productImage;
     private int productQuantity;
 
-
-
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "brand_id")
     private Brand brand;
-    @ManyToOne
+
+    @ManyToOne()
     @JoinColumn(name = "category_id")
     private Category category;
 }

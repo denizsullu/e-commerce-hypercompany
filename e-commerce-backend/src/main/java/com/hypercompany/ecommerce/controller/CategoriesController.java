@@ -7,6 +7,7 @@ import com.hypercompany.ecommerce.model.dto.responses.GetAllBrandsResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllCategoryResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByIdCategoryResponse;
 import com.hypercompany.ecommerce.service.CategoryService;
+import jakarta.persistence.Entity;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -29,12 +30,12 @@ public class CategoriesController {
 
     @PostMapping("/add")
     @ResponseStatus(code = HttpStatus.CREATED)
-    public void add( CreateCategoryRequest createCategoryRequest){
+    public void add(@RequestBody CreateCategoryRequest createCategoryRequest){
         this.categoryService.add(createCategoryRequest);
     }
 
     @PutMapping("/update")
-    public void update( UpdateCategoryRequest updateCategoryRequest){
+    public void update(@RequestBody UpdateCategoryRequest updateCategoryRequest){
         this.categoryService.update(updateCategoryRequest);
     }
     @GetMapping("/{id}")

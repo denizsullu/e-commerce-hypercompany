@@ -1,0 +1,461 @@
+[
+  {
+    "productName": "Mandalina",
+    "productDescription": "1 kg",
+    "productPrice": "33.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/9c998184-e39d-4b1f-837d-c7c66c712a04.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Portakal",
+    "productDescription": "1 kg",
+    "productPrice": "42.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/025836d8-ea1b-47e4-b88a-d0462d32dd82.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Sıkmalık Portakal",
+    "productDescription": "1 kg",
+    "productPrice": "42.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cc5c5009-4084-4871-b1bb-030ee9700058.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Sıkmalık Portakal",
+    "productDescription": "2 kg",
+    "productPrice": "44.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1d42e31f-d5f6-4901-af3d-3cc9c05e32bc.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Yerli Muz",
+    "productDescription": "750 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/9877a421-e4c3-45aa-9131-ccfb69ca9ef7.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "İthal Muz",
+    "productDescription": "650 g",
+    "productPrice": "59.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/91137e07-534b-48e7-b368-5d1fd4e7f1f8.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kivi",
+    "productDescription": "500 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/8201bb77-fced-4ffc-a235-630b4976cbb7.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Granny Smith Elma",
+    "productDescription": "750 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cc08810c-4d54-4742-9501-697636474b6f.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Starking Elma",
+    "productDescription": "750 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/278c0185-cacd-47cb-a92b-900abdf2cf6e.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Golden Elma",
+    "productDescription": "750 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/02f2d10d-ad7c-4740-90a7-de3c27f5b840.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Yeşil Elma",
+    "productDescription": "750 g",
+    "productPrice": "29.99",
+    "productImage": "https://cdn.getir.com/product/5cac8dce2cacac00016e3327_1554919653256.jpeg?v=1554919655942",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Gala Elma",
+    "productDescription": "750 g",
+    "productPrice": "39.99",
+    "productImage": "https://cdn.getir.com/product/5f460b49cde7d32ab1ef4b85_tr_1631085438698.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Deveci Armudu",
+    "productDescription": "1 kg",
+    "productPrice": "62.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d7f1fda0-b08a-4a2b-a5af-4c67afbf4a91.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Santa Maria Armut",
+    "productDescription": "900 g",
+    "productPrice": "64.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/262c09f6-bde8-408f-baa5-0e4b24a949be.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Ayva",
+    "productDescription": "800 g",
+    "productPrice": "42.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/32bb4ad9-e7d9-4037-9c0f-4fcf1a7cc800.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Yaban Mersini",
+    "productDescription": "125 g",
+    "productPrice": "94.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/64df047f-3c73-4cd4-89fb-0a7772550122.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Olgun Avokado",
+    "productDescription": "1 Adet",
+    "productPrice": "57.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/677f4537-06ce-43a5-8d74-403f148d3bf2.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Ananas",
+    "productDescription": "1 Adet",
+    "productPrice": "74.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cf124c25-3206-4418-b9fa-dc342ac680fe.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Dilimlenmiş Hindistan Cevizi",
+    "productDescription": "40 g",
+    "productPrice": "19.99",
+    "productImage": "https://cdn.getir.com/product/5ce6581ffd9b330001c4a925_tr_1561363752890.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kırkağaç Kavunu",
+    "productDescription": "3 - 3,5 kg",
+    "productPrice": "64.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/772afc11-fd1b-4933-aab2-73ace010cfe9.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Üzüm",
+    "productDescription": "500 g",
+    "productPrice": "42.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0c8abb02-517a-436c-af6d-deac57029d74.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kokteyl Domates",
+    "productDescription": "500 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/95783b09-abe4-482e-af6e-099329cc45f3.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Cherry Domates",
+    "productDescription": "250 g",
+    "productPrice": "44.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cc340f7d-ca10-437a-b9a2-63d9e0c043a0.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Domates",
+    "productDescription": "1 kg",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d661148d-8391-4e57-b375-9fccb50d3797.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Yerli Tohum Vitrin Domates",
+    "productDescription": "250 g",
+    "productPrice": "29.99",
+    "productImage": "https://cdn.getir.com/product/60d1cf99213cb5f0429e7427_tr_1625758556137.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kahvaltılık Domates",
+    "productDescription": "250 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/376e0355-55e2-4231-bc33-8ada75066b13.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Salkım Domates",
+    "productDescription": "600 g",
+    "productPrice": "32.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/f1f982c0-b7a8-433f-b09e-ea08f1c3c163.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Salkım Domates",
+    "productDescription": "1 kg",
+    "productPrice": "54.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/d36456bc-f8b0-4f82-8bb1-283f1cc0832c.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Çengelköy Salatalık",
+    "productDescription": "500 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/87b4fbc8-bde0-494d-a7f7-d6c835476fa0.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Mini Hıyar",
+    "productDescription": "250 g",
+    "productPrice": "22.99",
+    "productImage": "https://cdn.getir.com/product/5fa90cf62a72e46707272614_tr_1625548196905.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Sivri Biber",
+    "productDescription": "250 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/18b323ab-9099-460a-9cbd-e3d1f1bbedc7.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kapya Biber",
+    "productDescription": "500 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/28d63fd5-4b0f-408c-87c9-b3d75c8f95cd.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kabak",
+    "productDescription": "1 kg",
+    "productPrice": "52.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/43e4af46-4973-4acc-8404-3ebfe86a728d.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Patlıcan",
+    "productDescription": "1 kg",
+    "productPrice": "52.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/f1183eae-b1dd-4e07-ba67-e7663811338e.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Limon",
+    "productDescription": "500 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/ab4ba90a-dab1-49d8-ac1b-d73e398a8eb6.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Limon",
+    "productDescription": "1 kg",
+    "productPrice": "24.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/5dac8585-fab2-4eaf-83f2-48920b6f750b.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Lime",
+    "productDescription": "3 Adet",
+    "productPrice": "49.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/83b4d2a7-3c83-42e7-9afd-80b33f47c9fa.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Havuç",
+    "productDescription": "500 g",
+    "productPrice": "20.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/1209dd41-362f-4a23-bd4f-52ac419257d6.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Mini Patates",
+    "productDescription": "1 kg",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/7b4a673f-6908-4fe8-b458-247fcf9f0424.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kızartmalık Patates",
+    "productDescription": "2 kg",
+    "productPrice": "64.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/0d29f95d-8b72-4ada-916c-cc90448db3a1.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kuru Soğan",
+    "productDescription": "2 kg",
+    "productPrice": "36.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/045e5a0e-6ae9-482d-b2ad-d43da672a88a.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Karnabahar",
+    "productDescription": "1 - 1,5 kg",
+    "productPrice": "49.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/b2c84777-72f5-4761-8eb9-4ee80ba6645f.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Brokoli",
+    "productDescription": "500 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/092826c8-6cd5-4e53-ae93-a687e1d64e82.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Pırasa",
+    "productDescription": "1 kg",
+    "productPrice": "44.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/fdca5680-a989-44b9-a1b7-eb4ea867524d.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Kereviz",
+    "productDescription": "1 kg",
+    "productPrice": "47.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/b35a7681-69f4-41c4-a300-9298c014033a.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Mantar",
+    "productDescription": "250 g",
+    "productPrice": "29.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/2b29383a-24a6-462b-9b3a-cd76685dc957.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Taze Zencefil",
+    "productDescription": "250 g",
+    "productPrice": "69.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/cb5ab59f-d976-4d47-9d3b-d192a7c0681f.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Sarımsak",
+    "productDescription": "250 g",
+    "productPrice": "39.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/e514a081-0748-4e0f-8d6b-53c880062f85.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Soyulmuş Sarımsak",
+    "productDescription": "100 g",
+    "productPrice": "19.99",
+    "productImage": "https://cdn.getir.com/product/5ced4833d349d10001e705b4_tr_1561377481745.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Ayıklanmış Sebze Tabağı",
+    "productDescription": "500 g",
+    "productPrice": "69.99",
+    "productImage": "https://market-product-images-cdn.getirapi.com/product/a614e779-2df0-4f84-ba8b-df1d766855cb.jpg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  },
+  {
+    "productName": "Bee Chef Şarjlı Doğrayıcı",
+    "productDescription": "250 ml",
+    "productPrice": "274.50",
+    "productImage": "https://cdn.getir.com/product/60ad0e61ceaacf93567de73c_tr_1624286086278.jpeg",
+    "productQuantity": 100,
+    "brandId": 2,
+    "categoryId": 2
+  }
+]

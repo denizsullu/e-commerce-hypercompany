@@ -52,7 +52,7 @@ public class ProductManager implements ProductService{
 
     @Override
     public List<GetAllProductResponse> getAllByCategoryId(int id) {
-        List<Product> products = this.productRepository.findAllByCategory_CategoryId(id);
+        List<Product> products = this.productRepository.findAllByCategory_CategoryIdOrderByProductIdDesc(id);
         return products.stream()
                 .map(product -> this.modelMapperService.forResponse()
                         .map(product, GetAllProductResponse.class)).toList();
