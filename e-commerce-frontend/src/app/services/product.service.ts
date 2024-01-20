@@ -2,6 +2,7 @@ import {Injectable, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Product} from "../models/product";
 import {Observable} from "rxjs";
+import * as dgram from "dgram";
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,10 @@ export class ProductService{
   getProductDetail(productId:number): Observable<Product> {
     let newPath = this.apiUrl + "products/" + productId;
     return this.httpClient.get<Product>(newPath);
+  }
+
+  add(product:Product){
+    return this.httpClient.post(this.apiUrl+"products/add",product)
   }
 
 
