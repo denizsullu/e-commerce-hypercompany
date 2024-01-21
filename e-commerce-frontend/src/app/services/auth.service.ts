@@ -2,6 +2,8 @@ import {Injectable} from '@angular/core';
 import {LoginModel} from "../models/loginModel";
 import {HttpClient} from "@angular/common/http";
 import {TokenModel} from "../models/TokenModel";
+import {Observable} from "rxjs";
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +14,7 @@ export class AuthService {
   constructor(private httpClienService: HttpClient) {
   }
 
-  login(user: LoginModel) {
+  login(user: LoginModel):Observable<TokenModel> {
     return this.httpClienService.post<TokenModel>(this.apiUrl + "login", user)
   }
   isAuthenticated(){

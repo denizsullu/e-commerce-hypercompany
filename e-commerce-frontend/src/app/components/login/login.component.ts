@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {FormGroup, FormControl, Validators, FormBuilder, ReactiveFormsModule} from "@angular/forms"
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {AuthService} from "../../services/auth.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-login',
@@ -15,11 +16,15 @@ import {AuthService} from "../../services/auth.service";
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
   loginForm:FormGroup;
-  constructor(private formBuilder:FormBuilder,private authService:AuthService) {
+  constructor(private formBuilder:FormBuilder,private authService:AuthService,private toastrService:ToastrService, private router:Router) {
     this.createLoginForm();
   }
+
+  ngOnInit(): void {
+        this.createLoginForm();
+    }
 
   createLoginForm(){
     this.loginForm = this.formBuilder.group({
@@ -32,9 +37,22 @@ export class LoginComponent {
     if(this.loginForm.valid){
       console.log(this.loginForm.value);
       let loginModel = Object.assign({},this.loginForm.value)
-      this.authService.login(loginModel).subscribe(data =>{
-        console.log(data)
-      })
+      this.authService.login(loginModel).subscribe({
+        next: (response) => {
+          this.toastrService.info(response.message);
+          localStorage.setItem("token", response.token);
+          console.log(response.token)
+          this.router.navigate(["/products"])
+        },
+        error: (error) => {
+          this.toastrService.error('Giriş başarısız', 'Kullanıcı adı veya parola hatalı');
+          console.error(error);
+        },
+        complete: () => {
+
+        }
+      });
+
     }
   }
 
