@@ -1,4 +1,4 @@
-package com.hypercompany.ecommerce.model.dto;
+package com.hypercompany.ecommerce.model.dto.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,8 +9,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ApiResponse {
-    private boolean success;
-    private String message;
-
+public class TokenResponse {
+    private String token;
 }

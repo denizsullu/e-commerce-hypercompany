@@ -5,9 +5,9 @@ import com.hypercompany.ecommerce.model.dto.requests.UpdateBrandRequest;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllBrandsResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByIdBrandResponse;
 import com.hypercompany.ecommerce.service.BrandService;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

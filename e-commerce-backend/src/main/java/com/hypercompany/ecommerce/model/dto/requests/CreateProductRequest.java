@@ -1,6 +1,5 @@
 package com.hypercompany.ecommerce.model.dto.requests;
 
-import com.hypercompany.ecommerce.model.Brand;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

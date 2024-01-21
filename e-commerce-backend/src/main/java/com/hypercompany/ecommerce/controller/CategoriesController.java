@@ -1,14 +1,10 @@
 package com.hypercompany.ecommerce.controller;
 
-import com.hypercompany.ecommerce.model.dto.requests.CreateBrandRequest;
 import com.hypercompany.ecommerce.model.dto.requests.CreateCategoryRequest;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateCategoryRequest;
-import com.hypercompany.ecommerce.model.dto.responses.GetAllBrandsResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllCategoryResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByIdCategoryResponse;
 import com.hypercompany.ecommerce.service.CategoryService;
-import jakarta.persistence.Entity;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

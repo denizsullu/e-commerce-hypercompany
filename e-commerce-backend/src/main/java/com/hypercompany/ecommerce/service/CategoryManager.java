@@ -1,15 +1,12 @@
 package com.hypercompany.ecommerce.service;
 
 import com.hypercompany.ecommerce.core.utilities.mappers.ModelMapperService;
-import com.hypercompany.ecommerce.model.Brand;
 import com.hypercompany.ecommerce.model.Category;
 import com.hypercompany.ecommerce.model.dto.requests.CreateCategoryRequest;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateCategoryRequest;
-import com.hypercompany.ecommerce.model.dto.responses.GetAllBrandsResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllCategoryResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByIdCategoryResponse;
 import com.hypercompany.ecommerce.repository.CategoryRepository;
-import jakarta.persistence.Access;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,6 @@ package com.hypercompany.ecommerce.service;
 
 import com.hypercompany.ecommerce.core.utilities.mappers.ModelMapperService;
 import com.hypercompany.ecommerce.model.Brand;
-
 import com.hypercompany.ecommerce.model.dto.requests.CreateBrandRequest;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateBrandRequest;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllBrandsResponse;
@@ -10,7 +9,6 @@ import com.hypercompany.ecommerce.model.dto.responses.GetByIdBrandResponse;
 import com.hypercompany.ecommerce.repository.BrandRepository;
 import com.hypercompany.ecommerce.service.rules.BrandBusinessRules;
 import lombok.AllArgsConstructor;
-
 import org.springframework.stereotype.Service;
 
 import java.util.List;
