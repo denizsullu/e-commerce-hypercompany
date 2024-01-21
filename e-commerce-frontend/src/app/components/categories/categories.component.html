@@ -5,9 +5,11 @@
 
       @for (category of categories; track category.categoryId) {
         <a class="flex group justify-center items-center rounded transition-colors hover:bg-purple-50 flex-col p-4"
-          routerLink="/products/category/{{category.categoryId}}">
-          <img src="{{ category.categoryImage }}" [alt]="category.categoryName" class="size-12 rounded-lg border border-gray-200 object-cover">
-          <span class="text-sm font-medium group-hover:text-brand-color tracking-tight whitespace-nowrap">{{category.categoryName}}</span>
+           routerLink="/products/category/{{category.categoryId}}">
+          <img src="{{ category.categoryImage }}" [alt]="category.categoryName"
+               class="size-12 rounded-lg border border-gray-200 object-cover">
+          <span
+            class="text-sm font-medium group-hover:text-brand-color tracking-tight whitespace-nowrap">{{ category.categoryName }}</span>
         </a>
       }
 

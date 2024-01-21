@@ -6,9 +6,9 @@
     </a>
 
     <!-- Hamburger Icon for Mobile -->
-    <div class="md:hidden flex items-center">
+    <div class="md:hidden flex items-center justify-between">
       <button id="menuButton">
-        <fa-icon [icon]="faBars" class="text-white fa-2xl"></fa-icon>
+        <mat-icon class="text-white fa-2xl">menu</mat-icon>
       </button>
     </div>
     <nav>
@@ -17,23 +17,23 @@
     <!-- Navigaation -->
     <nav class="md:flex gap-x-8 text-sm font-semibold hidden">
       <button class="flex items-center gap-x-2  text-white text-opacity-80 transition-all hover:text-opacity-100 ">
-        <fa-icon [icon]="faGlobe" class="text-white"></fa-icon>
+        <mat-icon class="text-white">public</mat-icon>
         Türkçe (TR)
       </button>
       @if (!isUserLoggedIn) {
         <button class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
-          <fa-icon [icon]="faUser" class="text-white"></fa-icon>
+          <mat-icon class="text-white">person</mat-icon>
           Giriş Yap
         </button>
         <button class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
-          <fa-icon [icon]="faUserPlus" class="text-white"></fa-icon>
+          <mat-icon class="text-white">person_add</mat-icon>
           Kayıt Ol
         </button>
       } @else {
         <div class="relative">
           <button (click)="toggleMenu()"
                   class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
-            <i class="fas fa-user text-white"></i>
+            <mat-icon class="text-white">person</mat-icon>
             Profil
             @if (!isMenuVisible) {
               <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -54,7 +54,8 @@
             <div class="w-64 absolute z-50 right-0 top-7 tracking-wide">
               <div class="flex items-center p-4 bg-custom-lavender">
                 <div class="rounded size-12 bg-white flex items-center justify-center overflow-hidden">
-                  <fa-icon [icon]="faUser" class="text-violet-200 text-2xl"></fa-icon>
+                  <mat-icon class="text-violet-200 text-2xl">person</mat-icon>
+
                 </div>
                 <div class="ml-3 space-y-2">
                   <div class="font-thin text-md text-black">Deniz Sullu</div>
@@ -85,10 +86,12 @@
         <!-- Cart-->
         <button (click)="toggleCart()"
                 class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100 relative">
-          <fa-icon [icon]="faShoppingCart" class="text-white"></fa-icon>
+          <mat-icon class="text-white">shopping_cart</mat-icon>
+
           Sepet
-          @if(CartItems.length){
-            <div [matBadge]="CartItems.length" matBadgeSize="medium" class="absolute top-0 -left-2" matBadgeColor="accent"></div>
+          @if (CartItems.length) {
+            <div [matBadge]="CartItems.length" matBadgeSize="medium" class="absolute top-0 -left-2"
+                 matBadgeColor="accent"></div>
           }
 
         </button>

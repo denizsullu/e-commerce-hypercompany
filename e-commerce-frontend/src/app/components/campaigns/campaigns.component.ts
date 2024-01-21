@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {Component} from '@angular/core';
 import {SlickCarouselModule} from "ngx-slick-carousel";
 
 
@@ -11,10 +11,10 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
   templateUrl: './campaigns.component.html',
   styleUrl: './campaigns.component.scss'
 })
-export class CampaignsComponent{
+export class CampaignsComponent {
 
 
-  campaigns= [
+  campaigns = [
     {
       "id": 1,
       "image": "https://cdn.getir.com/misc/611e55d33ea65bef40f9ba05_banner_tr_1629378026496.jpeg"
@@ -69,8 +69,8 @@ export class CampaignsComponent{
           dots: false
         }
       }
-  ]
-    }
+    ]
+  }
 
 
 };

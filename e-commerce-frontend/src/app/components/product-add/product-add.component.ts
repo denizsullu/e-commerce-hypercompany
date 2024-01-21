@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ReactiveFormsModule, FormGroup, FormControl, FormBuilder, Validators} from "@angular/forms";
-import {Product} from "../../models/product";
+import {ReactiveFormsModule, FormGroup, FormBuilder, Validators} from "@angular/forms";
+
 import {ProductService} from "../../services/product.service";
 import {ToastrService} from "ngx-toastr";
 

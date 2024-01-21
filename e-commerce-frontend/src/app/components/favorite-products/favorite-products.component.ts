@@ -3,7 +3,6 @@ import {CurrencyPipe, NgIf} from "@angular/common";
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {faPlus} from '@fortawesome/free-solid-svg-icons';
 import {Product} from "../../models/product";
-import {HttpClient} from "@angular/common/http";
 import {ProductService} from "../../services/product.service";
 
 @Component({

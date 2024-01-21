@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Category} from "../../models/category";
 import {CategoryService} from "../../services/category.service";
-import {NgIf, NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
 
@@ -9,8 +8,6 @@ import {RouterLink} from "@angular/router";
   selector: 'app-categories',
   standalone: true,
   imports: [
-    NgOptimizedImage,
-    NgIf,
     RouterLink
   ],
   templateUrl: './categories.component.html',

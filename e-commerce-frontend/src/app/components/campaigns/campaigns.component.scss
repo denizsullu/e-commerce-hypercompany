@@ -1,4 +1,4 @@
-:host  ::ng-deep .slick-prev::before {
+:host ::ng-deep .slick-prev::before {
   color: #fcba03;
   font-size: 26px;
   line-height: 1;
@@ -7,7 +7,8 @@
   z-index: 100;
   fill: red;
 }
-:host ::ng-deep .slick-next::before{
+
+:host ::ng-deep .slick-next::before {
   color: #fcba03;
   font-size: 26px;
   line-height: 1;
