@@ -7,6 +7,8 @@ import com.hypercompany.ecommerce.model.dto.responses.GetAllProductResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByIdProductResponse;
 import com.hypercompany.ecommerce.service.ProductService;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -23,6 +25,7 @@ public class ProductsController {
 
     @PostMapping("/add")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     public ResponseEntity<ApiResponse> add(@RequestBody CreateProductRequest request){
         this.productService.add(request);
         return new ResponseEntity<>(new ApiResponse(true,"Ürün Başarıyla Eklendi"), HttpStatus.CREATED);
@@ -30,6 +33,7 @@ public class ProductsController {
 
     @PostMapping("/addMultiple")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     @ResponseStatus(code = HttpStatus.CREATED)
     public  ResponseEntity<ApiResponse> addMultiple(@RequestBody List<CreateProductRequest> requestList){
         for (CreateProductRequest request : requestList) {
@@ -39,6 +43,7 @@ public class ProductsController {
     }
 
     @GetMapping("/getAllByCategoryId/{id}")
+    @Cacheable(value = "products")
     public List<GetAllProductResponse> getAllByCategoryId(@PathVariable int id){
         return this.productService.getAllByCategoryId(id);
     }
