@@ -37,15 +37,15 @@ public class UserController {
         );
 
         if(authentication.isAuthenticated()) {
-            // Kullanıcı adını ve rollerini al
+
             String userName = ((UserDetails) authentication.getPrincipal()).getUsername();
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
-            // JWT oluştur
+
             String token = jwtService.generateToken(userDetails);
 
             // TokenResponse oluştur ve dön
-            return ResponseEntity.ok(new TokenResponse(token));
+            return ResponseEntity.ok(new TokenResponse(true,"Başarılı",token));
         }
         throw new UsernameNotFoundException("Invalid username or password: " + request.username());
     }

@@ -9,6 +9,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TokenResponse {
+public class TokenResponse extends ApiResponse{
     private String token;
+
+    public TokenResponse(boolean success, String message, String token) {
+        super(success, message);
+        this.token = token;
+    }
 }
