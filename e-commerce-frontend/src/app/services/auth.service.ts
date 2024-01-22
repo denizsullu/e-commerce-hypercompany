@@ -1,9 +1,10 @@
-import {Injectable} from '@angular/core';
+import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {LoginModel} from "../models/loginModel";
 import {HttpClient} from "@angular/common/http";
 import {TokenModel} from "../models/TokenModel";
 import {BehaviorSubject, Observable, tap} from "rxjs";
 import {RegisterModel} from "../models/registerModel";
+import {isPlatformBrowser} from "@angular/common";
 
 
 @Injectable({
@@ -11,9 +12,10 @@ import {RegisterModel} from "../models/registerModel";
 })
 export class AuthService {
   apiUrl = "http://localhost:8080/auth/";
-  private isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
+  private isAuthenticatedSubject = new BehaviorSubject<boolean>(this.isAuthenticated());
   public isAuthenticated$ = this.isAuthenticatedSubject.asObservable();
   constructor(private httpClienService: HttpClient) {
+
   }
 
   login(user: LoginModel): Observable<TokenModel> {
