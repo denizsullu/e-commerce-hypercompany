@@ -6,6 +6,7 @@ import {ProductAddComponent} from "./components/product-add/product-add.componen
 import {LoginComponent} from "./components/login/login.component";
 import {loginGuard} from "./guards/login.guard";
 import {CartComponent} from "./components/cart/cart.component";
+import {RegisterComponent} from "./components/register/register.component";
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +15,7 @@ export const routes: Routes = [
   {path: 'product/:productId', component: ProductDetailsComponent},
   {path: 'products/add', component:ProductAddComponent, canActivate: [loginGuard]},
   {path: 'login', component:LoginComponent},
+  {path: 'register',component:RegisterComponent},
   {path: 'cart', component:CartComponent}
   // {path: '**', component: PageNotFoundComponent}
 ];

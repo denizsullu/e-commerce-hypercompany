@@ -34,6 +34,7 @@
   }
 
   <!-- Slider text and sign up -->
+
   <div
     class="container justify-between items-center absolute top-14 left-1/2 -translate-x-1/2 hidden lg:flex">
     <!-- Slider logo and text -->
@@ -45,42 +46,50 @@
       />
       <h3 class="hypercompany hidden xl:block">Dakikalar içinde kargoda</h3>
     </div>
-    <!-- Slider text and sign up -->
-    <div class="w-[500px] rounded-lg bg-gray-50 p-4">
-      <h4 class="text-primary-brand-color text-center loginh4">
-        Giriş yap veya kayıt ol
-      </h4>
-      <div class="flex gap-x-3 flex-col">
-<!--         Content for sign-up/login including input fields and buttons-->
-        <mat-form-field class="flex-1">
-          <mat-label>E-posta Adresi</mat-label>
-          <input maxlength="34" matInput placeholder="E-posta Adresi"/>
-        </mat-form-field>
-        <mat-form-field class="flex-1">
-          <mat-label>Parola</mat-label>
-          <input maxlength="34" type="password"  matInput placeholder="Parola"/>
-        </mat-form-field>
-      </div>
-      <button
-        type="button"
-        class="py-3 px-6 flex justify-center items-center bg-yellow-300 hover:bg-secondary-brand-color hover:text-yellow-300 text-secondary-brand-color w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
-      >
-        Giriş Yap
-      </button>
-      <div
-        class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600"
-      >
-        Or
-      </div>
-      <button
-        type="button"
-        class="py-3 px-6 flex justify-center items-center bg-secondary-brand-color hover:bg-yellow-300 hover:text-secondary-brand-color text-yellow-300 w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
-      >
-        Kayıt Ol
-      </button>
+    @if (authService.isAuthenticated$ | async) {
+
+    } @else {
+      <!-- Slider text and sign up -->
+      <div class="w-[500px] rounded-lg bg-gray-50 p-4">
+        <h4 class="text-primary-brand-color text-center loginh4">
+          Giriş yap veya kayıt ol
+        </h4>
+          <!--         Content for sign-up/login including input fields and buttons-->
+          <form class="flex gap-x-3 flex-col" [formGroup]="loginForm">
+            <mat-form-field class="flex-1">
+              <mat-label>E-posta Adresi</mat-label>
+              <input formControlName="username"  matInput />
+            </mat-form-field>
+            <mat-form-field class="flex-1">
+              <mat-label>Parola</mat-label>
+              <input formControlName="password" type="password" matInput/>
+            </mat-form-field>
+            <button
+              (click)="login()"
+              type="button"
+              class="py-3 px-6 flex justify-center items-center bg-yellow-300 hover:bg-secondary-brand-color hover:text-yellow-300 text-secondary-brand-color w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
+            >
+              Giriş Yap
+            </button>
+          </form>
 
 
-    </div>
+        <div
+          routerLink="/register"
+          class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600"
+        >
+          Or
+        </div>
+        <button
+          type="button"
+          class="py-3 px-6 flex justify-center items-center bg-secondary-brand-color hover:bg-yellow-300 hover:text-secondary-brand-color text-yellow-300 w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
+        >
+          Kayıt Ol
+        </button>
+
+
+      </div>
+    }
 
   </div>
 </div>

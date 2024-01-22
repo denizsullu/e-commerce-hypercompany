@@ -3,6 +3,7 @@ import {LoginModel} from "../models/loginModel";
 import {HttpClient} from "@angular/common/http";
 import {TokenModel} from "../models/TokenModel";
 import {BehaviorSubject, Observable, tap} from "rxjs";
+import {RegisterModel} from "../models/registerModel";
 
 
 @Injectable({
@@ -23,6 +24,10 @@ export class AuthService {
       })
     );
   }
+  register(user: RegisterModel): Observable<any> {
+    return this.httpClienService.post<any>(this.apiUrl + "register", user);
+  }
+
   logout(): void {
     localStorage.removeItem("token");
     this.isAuthenticatedSubject.next(false);

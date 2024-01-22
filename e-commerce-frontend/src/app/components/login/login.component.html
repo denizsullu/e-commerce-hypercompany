@@ -33,14 +33,17 @@
 
       <div>
         <button (click)="login()"
-                class="flex w-full justify-center rounded-md bg-indigo-700 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-          Giriş yap
+                class="flex w-full justify-center rounded-md bg-indigo-700 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 items-center">
+          <mat-icon class="mr-2">login</mat-icon>Giriş yap
         </button>
       </div>
       <p class="text-center text-white">Hesabınız yok mu?</p>
-      <button type="button"
-              class="flex w-full justify-center rounded-md bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
-        Kayıt ol
+      <button
+        routerLink="/register"
+        type="button"
+              class="flex w-full justify-center rounded-md bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 items-center">
+        <mat-icon class="text-white mr-2">person_add</mat-icon>Kayıt ol
+
       </button>
     </form>
   </div>
