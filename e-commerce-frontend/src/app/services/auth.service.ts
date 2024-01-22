@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {LoginModel} from "../models/loginModel";
 import {HttpClient} from "@angular/common/http";
 import {TokenModel} from "../models/TokenModel";
-import {Observable} from "rxjs";
+import {BehaviorSubject, Observable, tap} from "rxjs";
 
 
 @Injectable({
@@ -10,19 +10,28 @@ import {Observable} from "rxjs";
 })
 export class AuthService {
   apiUrl = "http://localhost:8080/auth/";
-
+  private isAuthenticatedSubject = new BehaviorSubject<boolean>(false);
+  public isAuthenticated$ = this.isAuthenticatedSubject.asObservable();
   constructor(private httpClienService: HttpClient) {
   }
 
-  login(user: LoginModel):Observable<TokenModel> {
-    return this.httpClienService.post<TokenModel>(this.apiUrl + "login", user)
+  login(user: LoginModel): Observable<TokenModel> {
+    return this.httpClienService.post<TokenModel>(this.apiUrl + "login", user).pipe(
+      tap((tokenModel: TokenModel) => {
+        localStorage.setItem("token", tokenModel.token);
+        this.isAuthenticatedSubject.next(true);
+      })
+    );
   }
-  isAuthenticated(){
-    if(localStorage.getItem("token")){
-      return true;
-    }
-    else{
-      return false;
-    }
+  logout(): void {
+    localStorage.removeItem("token");
+    this.isAuthenticatedSubject.next(false);
+
+  }
+
+  isAuthenticated() {
+    return localStorage.getItem("token") !== null;
+
   }
 }
+

@@ -5,22 +5,24 @@ import {NavbarCartComponent} from "../navbar-cart/navbar-cart.component";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatIcon} from "@angular/material/icon";
 import {CartItems} from "../../models/cartItems";
+import {AuthService} from "../../services/auth.service";
+import {AsyncPipe} from "@angular/common";
+import {routes} from "../../app.routes";
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, ClickOutsideDirective, NavbarCartComponent, MatBadgeModule, MatIcon],
+  imports: [RouterLink, ClickOutsideDirective, NavbarCartComponent, MatBadgeModule, MatIcon, AsyncPipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
 
-  isUserLoggedIn: boolean = true;
   isMenuVisible: boolean = false;
   isCartVisible: boolean = false;
 
-  constructor() {
+  constructor(public  authService:AuthService) {
   }
 
   toggleMenu(): void {
@@ -30,7 +32,11 @@ export class NavbarComponent {
   toggleCart(): void {
     this.isCartVisible = !this.isCartVisible
   }
-
+  logout() {
+    this.authService.logout();
+    this.isMenuVisible =false
+    this.isCartVisible = false;
+  }
 
   protected readonly CartItems = CartItems;
 }

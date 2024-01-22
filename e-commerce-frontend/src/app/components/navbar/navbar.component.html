@@ -20,16 +20,7 @@
         <mat-icon class="text-white">public</mat-icon>
         Türkçe (TR)
       </button>
-      @if (!isUserLoggedIn) {
-        <button class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
-          <mat-icon class="text-white">person</mat-icon>
-          Giriş Yap
-        </button>
-        <button class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
-          <mat-icon class="text-white">person_add</mat-icon>
-          Kayıt Ol
-        </button>
-      } @else {
+      @if (authService.isAuthenticated$ | async) {
         <div class="relative">
           <button (click)="toggleMenu()"
                   class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
@@ -76,7 +67,9 @@
                 <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">İletişim
                   Tercihlerim</a>
                 <hr class="">
-                <a href="#" class="block px-4 py-3 mb-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Çıkış
+                <a
+                  (click)="logout()"
+                  class="block px-4 py-3 mb-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Çıkış
                   yap
                 </a>
               </div>
@@ -98,8 +91,19 @@
         @if (isCartVisible) {
           <app-navbar-cart (closeCart)="toggleCart()"></app-navbar-cart>
         }
-
-
+      } @else {
+        <button
+          routerLink="/login"
+          class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
+          <mat-icon class="text-white">person</mat-icon>
+          Giriş Yap
+        </button>
+        <button
+          routerLink="/register"
+          class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
+          <mat-icon class="text-white">person_add</mat-icon>
+          Kayıt Ol
+        </button>
       }
 
 
