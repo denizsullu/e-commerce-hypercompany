@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ReactiveFormsModule, FormGroup, FormBuilder, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 
 import {ProductService} from "../../services/product.service";
 import {ToastrService} from "ngx-toastr";

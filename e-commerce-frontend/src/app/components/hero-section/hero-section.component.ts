@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { MatInputModule } from '@angular/material/input';
+import {Component} from '@angular/core';
+import {SlickCarouselModule} from 'ngx-slick-carousel';
+import {MatInputModule} from '@angular/material/input';
 
 
 @Component({

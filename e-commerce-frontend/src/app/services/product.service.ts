@@ -1,8 +1,7 @@
-import {Injectable, OnInit} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Product} from "../models/product";
 import {Observable} from "rxjs";
-import * as dgram from "dgram";
 import {ResponseModel} from "../models/responseModel";
 
 @Injectable({

@@ -1,4 +1,4 @@
-import {HttpInterceptorFn, HttpRequest} from '@angular/common/http';
+import {HttpInterceptorFn} from '@angular/common/http';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const securedRoutes = ['/profile', '/checkout', '/my-orders'];

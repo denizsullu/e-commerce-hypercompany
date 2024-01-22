@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {FormGroup, FormControl, Validators, FormBuilder, ReactiveFormsModule} from "@angular/forms"
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms"
 import {Router, RouterLink} from "@angular/router";
 import {AuthService} from "../../services/auth.service";
 import {ToastrService} from "ngx-toastr";

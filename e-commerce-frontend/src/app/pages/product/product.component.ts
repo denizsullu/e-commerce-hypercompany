@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {SidebarCategoryComponent} from "../../components/sidebar-category/sidebar-category.component";
 import {ProductMainComponent} from "../../components/product-main/product-main.component";
 import {SearchBarComponent} from "../../components/search-bar/search-bar.component";

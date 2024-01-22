@@ -7,7 +7,6 @@ import {MatIcon} from "@angular/material/icon";
 import {CartItems} from "../../models/cartItems";
 import {AuthService} from "../../services/auth.service";
 import {AsyncPipe} from "@angular/common";
-import {routes} from "../../app.routes";
 
 
 @Component({
