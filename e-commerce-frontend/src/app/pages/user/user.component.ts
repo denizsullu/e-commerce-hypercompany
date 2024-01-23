@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {UserleftsideComponent} from "../../components/userleftside/userleftside.component";
-import {UsercontentComponent} from "../../components/usercontent/usercontent.component";
+import {UserleftsideComponent} from "../../components/user/userleftside/userleftside.component";
+import {UsercontentComponent} from "../../components/user/usercontent/usercontent.component";
 import {RouterOutlet} from "@angular/router";
 
 @Component({

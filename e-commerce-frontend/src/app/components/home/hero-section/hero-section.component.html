@@ -1,0 +1,96 @@
+<div class="relative">
+  <!-- before:h-5 before:bg-white before:absolute before:bottom-[-2rem] before:z-50 before:w-1/2 before:rotate-1 after:content-[''] after:absolute after:bottom-[-2rem] after:right-0 after:w-1/2 after:h-5 after:bg-white after:-rotate-1 -->
+
+  <!-- Slider  -->
+  @defer (on timer(500ms)) {
+    <!-- Slider implementation with ngx-slick-carousel -->
+    <ngx-slick-carousel
+      class="carousel"
+      [config]="slideConfig"
+    >
+      @for (slide of slides; track slide) {
+        <div ngxSlickItem
+             class="slide relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
+          <img
+            src="{{ slide.img }}"
+            alt=""
+            class="w-full xl:h-[500px] bg-cover bg-no-repeat bg-origin-content bg-center z-40"
+          />
+        </div>
+      }
+    </ngx-slick-carousel>
+  } @placeholder (minimum 500ms) {
+    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
+
+    </div>
+  } @loading (after 150ms; minimum 1500ms) {
+    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
+
+    </div>
+  } @error {
+    <div class="flex justify-center items-center h-[500px]">
+      <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+    </div>
+  }
+
+  <!-- Slider text and sign up -->
+
+  <div
+    class="container justify-between items-center absolute top-14 left-1/2 -translate-x-1/2 hidden lg:flex">
+    <!-- Slider logo and text -->
+    <div class="flex flex-col gap-y-6">
+      <img
+        src="../../../../assets/navbar/header-icons/getir-logo.svg"
+        alt=""
+        class="w-[200px]"
+      />
+      <h3 class="hypercompany hidden xl:block">Dakikalar içinde kargoda</h3>
+    </div>
+    @if (authService.isAuthenticated$ | async) {
+
+    } @else {
+      <!-- Slider text and sign up -->
+      <div class="w-[500px] rounded-lg bg-gray-50 p-4">
+        <h4 class="text-primary-brand-color text-center loginh4">
+          Giriş yap veya kayıt ol
+        </h4>
+          <!--         Content for sign-up/login including input fields and buttons-->
+          <form class="flex gap-x-3 flex-col" [formGroup]="loginForm">
+            <mat-form-field class="flex-1">
+              <mat-label>E-posta Adresi</mat-label>
+              <input formControlName="username"  matInput />
+            </mat-form-field>
+            <mat-form-field class="flex-1">
+              <mat-label>Parola</mat-label>
+              <input formControlName="password" type="password" matInput/>
+            </mat-form-field>
+            <button
+              (click)="login()"
+              type="button"
+              class="py-3 px-6 flex justify-center items-center bg-yellow-300 hover:bg-secondary-brand-color hover:text-yellow-300 text-secondary-brand-color w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
+            >
+              Giriş Yap
+            </button>
+          </form>
+
+
+        <div
+          routerLink="/register"
+          class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 before:me-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:ms-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600"
+        >
+          Or
+        </div>
+        <button
+          type="button"
+          class="py-3 px-6 flex justify-center items-center bg-secondary-brand-color hover:bg-yellow-300 hover:text-secondary-brand-color text-yellow-300 w-full transition ease-in duration-200 text-center text-base font-medium rounded-lg"
+        >
+          Kayıt Ol
+        </button>
+
+
+      </div>
+    }
+
+  </div>
+</div>
+
