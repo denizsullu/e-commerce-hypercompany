@@ -49,16 +49,18 @@
 
                 </div>
                 <div class="ml-3 space-y-2">
-                  <div class="font-thin text-md text-black">Deniz Sullu</div>
-                  <div class="text-slate-400 text-xs">+905418509323</div>
+                  <div class="font-thin text-md text-black">{{user.name}}</div>
+                  <div class="text-slate-400 text-xs">{{user.surname}}</div>
                 </div>
               </div>
               <div class=" bg-white text-black font-normal z-50">
-                <a href="#"
+                <a routerLink="/userdashboard/address"
                    class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Adreslerim</a>
-                <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Favori
+                <a routerLink="/userdashboard/favorite-products"
+                  href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Favori
                   Ürünlerim</a>
-                <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Geçmiş
+                <a routerLink="/userdashboard/orders"
+                  href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Geçmiş
                   Siparişlerim</a>
                 <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Ödeme
                   Yöntemlerim</a>
@@ -69,7 +71,7 @@
                 <hr class="">
                 <a
                   (click)="logout()"
-                  class="block px-4 py-3 mb-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Çıkış
+                  class="block px-4 py-3 mb-2 hover:bg-custom-lavender hover:text-secondary-brand-color cursor-pointer">Çıkış
                   yap
                 </a>
               </div>

@@ -4,7 +4,6 @@ import {HttpClient} from "@angular/common/http";
 import {TokenModel} from "../models/TokenModel";
 import {BehaviorSubject, Observable, tap} from "rxjs";
 import {RegisterModel} from "../models/registerModel";
-import {isPlatformBrowser} from "@angular/common";
 
 
 @Injectable({

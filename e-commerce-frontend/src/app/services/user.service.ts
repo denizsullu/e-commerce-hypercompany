@@ -1,14 +1,20 @@
 import {Injectable} from '@angular/core';
-import {AuthService} from "./auth.service";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+import {UserDetail} from "../models/userDetail";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  apiUrl = "http://localhost:8080/auth/user/"
+  constructor(private httpService:HttpClient) { }
 
-  constructor(private authService:AuthService) { }
 
-
+getUserDetails(username:string):Observable<UserDetail>{
+    let newPath = this.apiUrl +username;
+    return this.httpService.get<UserDetail>(newPath);
+}
 
 
 

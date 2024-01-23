@@ -10,7 +10,10 @@ import {provideToastr} from "ngx-toastr";
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideClientHydration(),
     provideHttpClient(withFetch()), provideAnimations(),
-    provideToastr({positionClass: "toast-bottom-right"}),
+    provideToastr({
+      positionClass: "toast-top-right",
+
+    }),
 
   ]
 };
