@@ -4,8 +4,11 @@ package com.hypercompany.ecommerce.service;
 import com.hypercompany.ecommerce.model.Role;
 import com.hypercompany.ecommerce.model.User;
 import com.hypercompany.ecommerce.model.dto.requests.CreateUserRequest;
+import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -22,6 +25,7 @@ public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder passwordEncoder;
 
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<User> user = userRepository.findByUsername(username);
@@ -31,10 +35,6 @@ public class UserService implements UserDetailsService {
     public UserService(UserRepository userRepository, BCryptPasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
-    }
-
-    public Optional<User> getByUsername(String username){
-        return userRepository.findByUsername(username);
     }
     public User createUser(CreateUserRequest request){
 
@@ -53,4 +53,6 @@ public class UserService implements UserDetailsService {
         return userRepository.save(newUser);
 
     }
+
+
 }

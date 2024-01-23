@@ -31,7 +31,7 @@ public class SecurityConfig {
        return http.csrf(AbstractHttpConfigurer::disable)
                .authorizeHttpRequests(x ->
                        x
-                               .requestMatchers("/auth/login","/auth/register").permitAll()
+                               .requestMatchers("/auth/login","/auth/register","/auth/**").permitAll()
                                .requestMatchers("/api/**").permitAll() // controllerda @PreAuthorize("hasRole('ROLE_ADMIN')") yazdığımız için burada izin veriyoruz
                )
                .sessionManagement(x -> x.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

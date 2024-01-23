@@ -24,6 +24,9 @@ public class Product {
     private String productImage;
     private int productQuantity;
 
+
+
+
     @ManyToOne()
     @JoinColumn(name = "brand_id")
     private Brand brand;
