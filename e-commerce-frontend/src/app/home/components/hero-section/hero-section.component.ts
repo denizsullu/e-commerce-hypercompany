@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
-import {SlickCarouselModule} from 'ngx-slick-carousel';
 import {MatInputModule} from '@angular/material/input';
 import {AsyncPipe} from "@angular/common";
-import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {ToastrService} from "ngx-toastr";
 import {Router, RouterLink} from "@angular/router";
 import {AuthService} from "../../../auth/services/auth.service";
+import {CarouselModule, OwlOptions} from "ngx-owl-carousel-o";
 
 
 
@@ -13,11 +13,11 @@ import {AuthService} from "../../../auth/services/auth.service";
   selector: 'app-hero-section',
   standalone: true,
   imports: [
-    SlickCarouselModule,
     MatInputModule,
     AsyncPipe,
     ReactiveFormsModule,
-    RouterLink
+    RouterLink,
+    CarouselModule
 
   ],
   templateUrl: './hero-section.component.html',
@@ -45,7 +45,32 @@ export class HeroSectionComponent {
       img: 'assets/navbar/header-icons/getir-mainpage-4.webp',
     },
   ];
-
+  customOptions: OwlOptions = {
+    loop: true,
+    autoplay:true,
+    autoplaySpeed:1000,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 100,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: false
+  }
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,

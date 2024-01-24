@@ -1,29 +1,16 @@
 <!-- Slider Image -->
 <div class="container py-8 ">
   <h3 class="text-sm font-semibold mb-3">Kampanyalar</h3>
-
-  @defer (on timer(500ms)) {
-    <ngx-slick-carousel
-      class="carousel"
-      [config]="slideConfig"
-    >
-      @for (slide of campaigns; track slide) {
-        <div ngxSlickItem
-             class="slide px-2">
-
-          <img
-            src="{{ slide.image }}"
-            alt=""
-            class="w-full rounded-lg"
-          />
-        </div>
-      }
-    </ngx-slick-carousel>
-  } @placeholder (minimum 500ms) {
-    <div class="flex justify-center items-center h-64">
-      <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
-    </div>
-  }
-
+  <owl-carousel-o [options]="customOptions">
+    @for (slide of campaigns; track slide){
+      <ng-container >
+        <ng-template id="slide.id" carouselSlide>
+          <div class="px-2">
+            <img [src]="slide.image" class="w-full rounded-lg">
+          </div>
+        </ng-template>
+      </ng-container>
+    }
+  </owl-carousel-o>
 
 </div>

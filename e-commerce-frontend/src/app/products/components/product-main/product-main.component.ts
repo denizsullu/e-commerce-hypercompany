@@ -8,6 +8,7 @@ import {switchMap} from "rxjs";
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
 import {CartService} from "../../../cart/services/cart.service";
+import {MatProgressSpinner} from "@angular/material/progress-spinner";
 
 
 
@@ -19,6 +20,7 @@ import {CartService} from "../../../cart/services/cart.service";
     RouterLink,
     TitleCasePipe,
     MatIcon,
+    MatProgressSpinner,
 
   ],
   templateUrl: './product-main.component.html',

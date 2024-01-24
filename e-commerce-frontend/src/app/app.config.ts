@@ -1,19 +1,26 @@
-import {ApplicationConfig} from '@angular/core';
-import {provideRouter, withComponentInputBinding, withPreloading} from '@angular/router';
+import {APP_INITIALIZER, ApplicationConfig} from '@angular/core';
+import {provideRouter, withComponentInputBinding} from '@angular/router';
 
 import {routes} from './app.routes';
 import {provideClientHydration} from '@angular/platform-browser';
-import {provideHttpClient, withFetch} from "@angular/common/http";
+import {provideHttpClient, withInterceptors} from "@angular/common/http";
 import {provideAnimations} from '@angular/platform-browser/animations';
 import {provideToastr} from "ngx-toastr";
+import {authInterceptor} from "./shared/interceptors/auth.interceptor";
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes,withComponentInputBinding()), provideClientHydration(),
-    provideHttpClient(withFetch()), provideAnimations(),
+    // {provide:APP_INITIALIZER, useFactory: () => {
+    //     console.log("Öncelikli yapılandırmalar gerçekleştirildi")
+    //   }},
+    provideRouter(routes,withComponentInputBinding()), /*provideClientHydration()*/
+    provideHttpClient(withInterceptors([authInterceptor])), provideAnimations(),
     provideToastr({
       positionClass: "toast-top-right",
     }),
+
+
+
 
 
   ]

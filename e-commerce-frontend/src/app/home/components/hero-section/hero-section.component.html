@@ -2,41 +2,24 @@
   <!-- before:h-5 before:bg-white before:absolute before:bottom-[-2rem] before:z-50 before:w-1/2 before:rotate-1 after:content-[''] after:absolute after:bottom-[-2rem] after:right-0 after:w-1/2 after:h-5 after:bg-white after:-rotate-1 -->
 
   <!-- Slider  -->
-  @defer (on timer(500ms)) {
     <!-- Slider implementation with ngx-slick-carousel -->
-    <ngx-slick-carousel
-      class="carousel"
-      [config]="slideConfig"
-    >
-      @for (slide of slides; track slide) {
-        <div ngxSlickItem
-             class="slide relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
-          <img
-            src="{{ slide.img }}"
-            alt=""
-            class="w-full xl:h-[500px] bg-cover bg-no-repeat bg-origin-content bg-center z-40"
-          />
-        </div>
-      }
-    </ngx-slick-carousel>
-  } @placeholder (minimum 500ms) {
-    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
+  <owl-carousel-o [options]="customOptions">
+    @for (slide of slides; track slide){
+      <ng-container>
+        <ng-template id="slide.id" carouselSlide>
+          <div class="slide relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
+            <img [src]="slide.img" class="w-full xl:h-[500px] bg-cover bg-no-repeat bg-origin-content bg-center z-40">
+          </div>
+        </ng-template>
+      </ng-container>
+    }
+  </owl-carousel-o>
 
-    </div>
-  } @loading (after 150ms; minimum 1500ms) {
-    <div class="flex justify-center items-center h-[500px] bg-primary-brand-color">
-
-    </div>
-  } @error {
-    <div class="flex justify-center items-center h-[500px]">
-      <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
-    </div>
-  }
 
   <!-- Slider text and sign up -->
 
   <div
-    class="container justify-between items-center absolute top-14 left-1/2 -translate-x-1/2 hidden lg:flex">
+    class="container justify-between items-center absolute top-14 left-1/2 -translate-x-1/2 hidden lg:flex z-50">
     <!-- Slider logo and text -->
     <div class="flex flex-col gap-y-6">
       <img
