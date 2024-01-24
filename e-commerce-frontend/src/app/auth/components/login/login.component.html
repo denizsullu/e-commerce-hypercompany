@@ -1,0 +1,50 @@
+<div class="flex flex-col items-center justify-center min-h-[calc(100vh-3.5rem)] px-6 py-12 bg-gradient-to-r from-blue-900 to-green-100 lg:px-8">
+  <div class="sm:w-full sm:max-w-md w-full">
+    <img class="mx-auto h-20 rounded-full" src="../../../../assets/navbar/header-icons/hyperCompany.svg" alt="Your Company">
+  </div>
+
+  <div class="mt-10 sm:w-full sm:max-w-md w-full">
+    <form class="space-y-6" [formGroup]="loginForm">
+      <div>
+        <label for="email" class="block text-lg font-medium text-white">Email adresi</label>
+        <div class="mt-2 relative">
+          <input id="email" type="email" autocomplete="email" formControlName="username"
+                 class="block w-full px-4 py-3 rounded-md bg-white bg-opacity-70 text-gray-900 placeholder:text-gray-500 focus:ring-indigo-500 focus:border-indigo-500">
+          <p class="mt-2 text-sm text-pink-300 invisible peer-invalid:visible">
+            Please provide a valid email address
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between">
+          <label for="password" class="block text-lg font-medium text-white">Parola</label>
+          <div class="text-sm">
+            <a class="font-medium text-indigo-500 hover:text-indigo-800">
+              Parolamı unuttum?
+            </a>
+          </div>
+        </div>
+        <div class="mt-2 relative">
+          <input id="password" name="password" type="password" autocomplete="current-password" formControlName="password"
+                 class="block w-full px-4 py-3 rounded-md bg-white bg-opacity-70 text-gray-900 placeholder:text-gray-500 focus:ring-indigo-500 focus:border-indigo-500">
+        </div>
+      </div>
+
+      <div>
+        <button (click)="login()"
+                class="flex w-full justify-center rounded-md bg-indigo-700 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 items-center">
+          <mat-icon class="mr-2">login</mat-icon>Giriş yap
+        </button>
+      </div>
+      <p class="text-center text-white">Hesabınız yok mu?</p>
+      <button
+        routerLink="/register"
+        type="button"
+              class="flex w-full justify-center rounded-md bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 items-center">
+        <mat-icon class="text-white mr-2">person_add</mat-icon>Kayıt ol
+
+      </button>
+    </form>
+  </div>
+</div>
