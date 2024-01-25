@@ -30,7 +30,7 @@ public class User implements UserDetails {
     private boolean credentialsNonExpired;
 
     @OneToMany(mappedBy = "user")
-    private List<Cart> carts;
+    private List<CartItem> carts;
 
     @OneToMany(mappedBy = "user")
     private List<Address> addresses;
@@ -40,9 +40,6 @@ public class User implements UserDetails {
 
     @OneToMany(mappedBy = "user")
     private List<CreditCard> creditCards;
-
-
-
 
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)

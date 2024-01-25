@@ -1,20 +1,16 @@
-package com.hypercompany.ecommerce.model.dto.responses;
+package com.hypercompany.ecommerce.model.dto.requests;
 
-import com.hypercompany.ecommerce.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetByUserDetails {
-    private Long id;
+public class UpdateUserRequest {
     private String name;
     private String surname;
     private String username;
-    private Set<Role> authorities;
+    private String password;
 
 }

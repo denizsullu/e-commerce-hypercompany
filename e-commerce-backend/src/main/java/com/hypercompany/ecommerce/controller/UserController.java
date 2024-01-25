@@ -4,9 +4,10 @@ package com.hypercompany.ecommerce.controller;
 import com.hypercompany.ecommerce.model.User;
 import com.hypercompany.ecommerce.model.dto.requests.AutRequest;
 import com.hypercompany.ecommerce.model.dto.requests.CreateUserRequest;
+import com.hypercompany.ecommerce.model.dto.requests.UpdateUserRequest;
 import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.model.dto.responses.TokenResponse;
-import com.hypercompany.ecommerce.service.CustomerService;
+import com.hypercompany.ecommerce.service.CustomerManager;
 import com.hypercompany.ecommerce.service.JwtService;
 import com.hypercompany.ecommerce.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,7 @@ public class UserController {
     private final UserService userService;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
-    private final CustomerService customerService;
+    private final CustomerManager customerService;
 
     @PostMapping("/register")
     public User addUser(@RequestBody CreateUserRequest request) {
@@ -58,6 +59,10 @@ public class UserController {
         return customerService.getByUsername(username);
     }
 
+    @PostMapping("/user/update/{username}")
+    public void updateUser(@PathVariable("username") String username,@RequestBody UpdateUserRequest request){
+         customerService.updateCustomer(username,request);
+    }
 
 
 
