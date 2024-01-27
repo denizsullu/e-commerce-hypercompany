@@ -6,21 +6,25 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "address")
+@Table(name = "favoriProducts")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Address {
+public class FavoriProduct {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int productId;
+    private String productName;
+    private String productDescription;
+    private double productPrice;
+    private String productImage;
 
-    private String publicAddress;
-
-
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "user_id")
     private User user;
+
+
+
 }

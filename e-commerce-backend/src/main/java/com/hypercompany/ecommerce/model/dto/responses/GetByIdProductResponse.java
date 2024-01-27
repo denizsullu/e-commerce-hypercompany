@@ -13,7 +13,6 @@ public class GetByIdProductResponse {
     private String productDescription;
     private double productPrice;
     private String productImage;
-    private int productQuantity;
     private String brandName;
     private String categoryName;
 }

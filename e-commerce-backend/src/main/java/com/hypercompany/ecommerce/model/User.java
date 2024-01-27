@@ -41,6 +41,9 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user")
     private List<CreditCard> creditCards;
 
+    @OneToMany(mappedBy = "user")
+    private List<FavoriProduct> favoriProducts;
+
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @JoinTable(name = "authorities", joinColumns = @JoinColumn(name = "user_id"))

@@ -7,13 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateProductRequest {
+public class CreateFavoriProduct {
     private int productId;
     private String productName;
     private String productDescription;
     private double productPrice;
     private String productImage;
-    private int stock;
-    private int brandId;
-    private int categoryId;
+    private int userId;
 }

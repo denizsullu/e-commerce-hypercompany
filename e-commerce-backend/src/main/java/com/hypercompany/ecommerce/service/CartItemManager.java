@@ -10,6 +10,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 public class CartItemManager implements CartItemService{
@@ -34,6 +36,19 @@ public class CartItemManager implements CartItemService{
 
     @Override
     public void addCartItem(CreateCartItemRequest createCartItemRequest) {
-        cartItemRepository.save(modelMapper.forRequest().map(createCartItemRequest, CartItem.class));
+        List<CartItem> existingCartItems = cartItemRepository.findByUserIdAndProductName(
+                createCartItemRequest.getUserId(), createCartItemRequest.getProductName());
+
+        if (!existingCartItems.isEmpty()) {
+            CartItem cartItem = existingCartItems.get(0);
+            cartItem.setUserProductQuantity(cartItem.getUserProductQuantity() + 1);
+            cartItemRepository.save(cartItem);
+        } else {
+
+            CartItem newCartItem = modelMapper.forRequest().map(createCartItemRequest, CartItem.class);
+            newCartItem.setUserProductQuantity(1);
+            cartItemRepository.save(newCartItem);
+        }
     }
+
 }

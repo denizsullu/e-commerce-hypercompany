@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GetAllCartItemResponse {
+    private int cartItemId;
     private String productName;
+    private int productId;
     private String productDescription;
     private double productPrice;
     private String productImage;

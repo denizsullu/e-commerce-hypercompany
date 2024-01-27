@@ -12,7 +12,7 @@ public class CreateProductRequest {
     private String productDescription;
     private double productPrice;
     private String productImage;
-    private int productQuantity;
+    private int stock;
     private int brandId;
     private int categoryId;
 
