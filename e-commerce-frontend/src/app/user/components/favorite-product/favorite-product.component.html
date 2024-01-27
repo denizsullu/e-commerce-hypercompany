@@ -1,18 +1,21 @@
-<div class="container mx-auto p-6 ">
+<div class="container mx-auto p-6">
   <h2 class="text-lg font-semibold mb-4">Favori Ürünlerim</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-    <!-- Repeat this block for each product -->
-    <div class="flex flex-col items-center bg-white rounded-lg border shadow-md overflow-hidden hover:bg-slate-200">
-      <div class="relative">
-        <img class="rounded-t-lg" src="../../../../assets/feature-grid-card-svg/featurecard-Grid1.svg" alt="" />
+    @for(favoriteProduct of favoriteProducts;track favoriteProduct.productId){
+      <div class="group flex flex-col items-center bg-white rounded-lg border shadow-md overflow-hidden hover:bg-slate-200 relative">
+        <div class="relative w-full h-48">
+          <img class="object-cover w-full h-full rounded-t-lg" [src]="favoriteProduct.productImage" alt="Product Image" />
+        </div>
+        <div class="p-4">
+          <p class="text-lg font-semibold text-gray-800">{{favoriteProduct.productPrice}}</p>
+          <p class="text-gray-700">{{favoriteProduct.productName}}</p>
+          <p class="text-gray-500 text-sm">2 Ürün</p>
+        </div>
+        <button (click)="removeProductFromFavorites(favoriteProduct.productId)"
+                class="hidden absolute top-1 right-1 group-hover:flex text-white hover:text-red-400 border rounded-full p-1 bg-slate-300">
+          <mat-icon>delete</mat-icon>
+        </button>
       </div>
-      <div class="p-4">
-        <p class="text-lg font-semibold text-gray-800">₺58.20</p>
-        <p class="text-gray-700">Lipton Tek Dem & Ülker All Star İkilisi</p>
-        <p class="text-gray-500 text-sm">2 Ürün</p>
-      </div>
-    </div>
-
-
+    }
   </div>
 </div>

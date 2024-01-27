@@ -21,8 +21,8 @@
         Türkçe (TR)
       </button>
       @if (authService.isAuthenticated$ | async) {
-        <div class="relative">
-          <button (click)="toggleMenu()"
+        <div class="relative" >
+          <button (click)="toggleMenu()" appClickOutside (clickOutside)="isMenuVisible = false"
                   class="flex items-center gap-x-2 text-white text-opacity-80 transition-all hover:text-opacity-100">
             <mat-icon class="text-white">person</mat-icon>
             Profil
@@ -49,17 +49,17 @@
 
                 </div>
                 <div class="ml-3 space-y-2">
-                  <div class="font-thin text-md text-black">{{user.name}}</div>
-                  <div class="text-slate-400 text-xs">{{user.id}}</div>
+                  <div class="font-thin text-md text-black">{{currentUser.name}}</div>
+                  <div class="text-slate-400 text-xs">{{currentUser.surname}}</div>
                 </div>
               </div>
               <div class=" bg-white text-black font-normal z-50">
-                <a routerLink="/userdashboard/address"
+                <a routerLink="/user/address"
                    class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Adreslerim</a>
-                <a routerLink="/userdashboard/favorite-products"
+                <a routerLink="/user/favorite-products"
                   href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Favori
                   Ürünlerim</a>
-                <a routerLink="/userdashboard/orders"
+                <a routerLink="/user/orders"
                   href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Geçmiş
                   Siparişlerim</a>
                 <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Ödeme
@@ -84,8 +84,8 @@
           <mat-icon class="text-white">shopping_cart</mat-icon>
 
           Sepet
-          @if (CartItems.length) {
-            <div [matBadge]="CartItems.length" matBadgeSize="medium" class="absolute top-0 -left-2"
+          @if (true) {
+            <div [matBadge]="totalItemCount > 0 ? totalItemCount: null" matBadgeSize="medium" class="absolute top-0 -left-2"
                  matBadgeColor="accent"></div>
           }
 

@@ -33,26 +33,22 @@ export class LoginComponent implements OnInit{
     })
   }
 
-  login(){
-    if(this.loginForm.valid){
+  login() {
+    if (this.loginForm.valid) {
       let loginModel = this.loginForm.getRawValue();
+
       this.authService.login(loginModel).subscribe({
-        next: (response) => {
-          this.toastrService.info(response.message);
-          localStorage.setItem("token", response.token);
-          console.log(response.token)
-          this.router.navigate(["/products"])
+        next: (userData) => {
+          this.toastrService.info('Başarıyla giriş yapıldı.');
+          this.router.navigate(['/products']);
         },
         error: (error) => {
           this.toastrService.error('Giriş başarısız', 'Kullanıcı adı veya parola hatalı');
           console.error(error);
-        },
-        complete: () => {
-
         }
       });
-
     }
-  }
+
+}
 
 }

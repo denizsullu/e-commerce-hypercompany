@@ -8,7 +8,6 @@ import {AuthService} from "../../../auth/services/auth.service";
 import {CarouselModule, OwlOptions} from "ngx-owl-carousel-o";
 
 
-
 @Component({
   selector: 'app-hero-section',
   standalone: true,
@@ -28,7 +27,7 @@ export class HeroSectionComponent {
 
 
   constructor(private formBuilder: FormBuilder, public authService: AuthService, private toastrService: ToastrService, private router: Router) {
-     this.createLoginForm();
+    this.createLoginForm();
   }
 
   slides = [
@@ -47,8 +46,8 @@ export class HeroSectionComponent {
   ];
   customOptions: OwlOptions = {
     loop: true,
-    autoplay:true,
-    autoplaySpeed:1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
@@ -57,15 +56,6 @@ export class HeroSectionComponent {
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
         items: 1
       }
     },
@@ -86,30 +76,27 @@ export class HeroSectionComponent {
 
   createLoginForm() {
     this.loginForm = this.formBuilder.group({
-      username: ["", [Validators.required,Validators.email]],
+      username: ["", [Validators.required, Validators.email]],
       password: ["", Validators.required]
     })
   }
 
   login() {
     if (this.loginForm.valid) {
-      let loginModel = Object.assign({}, this.loginForm.value)
+      let loginModel = Object.assign({}, this.loginForm.value);
+
       this.authService.login(loginModel).subscribe({
-        next: (response) => {
-          this.toastrService.info(response.message);
-          localStorage.setItem("token", response.token);
-          console.log(response.token)
-          this.router.navigate(["/products"])
+        next: (userData) => {
+          this.toastrService.info('Başarıyla giriş yapıldı.');
+          this.router.navigate(['/products']);
         },
         error: (error) => {
           this.toastrService.error('Giriş başarısız', 'Kullanıcı adı veya parola hatalı');
           console.error(error);
-        },
-        complete: () => {
-
         }
       });
-
     }
+
+
   }
 }

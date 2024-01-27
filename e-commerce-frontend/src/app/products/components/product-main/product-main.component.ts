@@ -4,12 +4,13 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
 import {MatIcon} from "@angular/material/icon";
 import {ToastrService} from "ngx-toastr";
 
-import {switchMap} from "rxjs";
+import {switchMap, take} from "rxjs";
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
 import {CartService} from "../../../cart/services/cart.service";
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
-
+import {AuthService} from "../../../auth/services/auth.service";
+import {FavoriProductService} from "../../../user/service/favori-product.service";
 
 
 @Component({
@@ -32,8 +33,11 @@ export class ProductMainComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private activatedRoute: ActivatedRoute,
-    private toastr: ToastrService,
-    private cartService: CartService) {
+    private toastrService: ToastrService,
+    private cartService: CartService,
+    private authService:AuthService,
+    private favoriteProductService:FavoriProductService
+    ) {
   }
 
 @Input() categoryId:number;
@@ -54,18 +58,46 @@ export class ProductMainComponent implements OnInit {
         console.log("Kategoriler çekilirken hata meydana geldi")
       }
     });
-    console.log(this.categoryId)
   }
-
-
   addToCart(product: Product) {
-    this.toastr.success("Sepete Eklendi", product.productName)
-    this.cartService.addToCart(product)
+    this.authService.currentUser$.pipe(take(1)).subscribe({
+      next: (user) => {
+        if (user && user.id) {
+          const productToAdd = { ...product, userId: user.id };
+          this.cartService.addToCart(productToAdd).subscribe({
+            next: (response) => {
+              console.log("Ürün başarıyla sepete eklendi");
+              this.toastrService.success("Ürün başarıyla sepete eklendi",product.productName)
+              this.cartService.loadCartItems(user.id)
+            },
+            error: (error) => {
+              console.log("Sepete ekleme sırasında hata oluştu");
+
+            }
+          });
+        } else {
+          this.toastrService.info("Lütfen önce giriş yapın");
+
+        }
+      },
+      error: (error) => {
+        console.error("Kullanıcı bilgisi alınırken hata oluştu", error);
+
+      }
+    });
   }
 
-  addToFavorite(product: Product) {
-    this.toastr.info("Favorilere eklendi", product.productName)
+  addProductToFavorites(product: Product) {
+    this.favoriteProductService.addFavoriteProduct(product).subscribe(
+      response => {
+        console.log('Ürün favorilere eklendi', response);
+      },
+      error => {
+        console.error('Bir hata oluştu', error);
+      }
+    );
   }
+
 
 
 }

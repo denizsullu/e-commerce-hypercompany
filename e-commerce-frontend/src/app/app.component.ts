@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {NavbarComponent} from "./shared/components/navbar/navbar.component";
 import {FooterComponent} from "./shared/components/footer/footer.component";
+import {BehaviorSubject, Observable, Subject} from "rxjs";
 
 
 
@@ -15,4 +16,7 @@ import {FooterComponent} from "./shared/components/footer/footer.component";
 })
 export class AppComponent {
   title = 'e-commerce-frontend';
+
+
+
 }

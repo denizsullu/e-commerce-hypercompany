@@ -1,26 +1,28 @@
-<div class="flex-col mt-10 gap-y-8 w-[270px] hidden lg:flex">
+<div class="flex-col mt-10 gap-y-8 w-[270px] hidden lg:flex relative">
   <!--  left side-->
-  <div class="bg-white rounded-lg p-6 flex items-center shadow-lg relative">
+  <div class="bg-white rounded-lg p-6 flex items-center shadow-lg">
     <div class="grid grid-cols-1">
-      <div class="font-normal text-lg">Deniz Sullu</div>
-      <hr class="size-8 w-full mt-2">
-      <div class="text-sm text-gray-600 flex items-center mt-1 justify-center flex">
-        <mat-icon class="text-primary-brand-color text-lg">person</mat-icon>
-        denizsulluhacettepe.edu.tr
+      <div class="text-lg text-gray-800">{{currentUser.name | titlecase}} {{currentUser.surname | titlecase}}</div>
+      <hr class="border-t border-gray-200 mb-4">
+      <div class="text-sm text-gray-600 flex">
+        <mat-icon class="text-primary-brand-color mr-2 items-center justify-center">person</mat-icon>
+        {{ currentUser.username }}
       </div>
-      <hr class="size-8 w-full mt-2">
-      <div class="text-sm flex items-center mt-2 relative">
-        <mat-icon class="text-primary-brand-color text-lg">phone</mat-icon>
-        +905418509323
-        <mat-icon class="text-green-600 text-2xl absolute -top-2 right-0">check</mat-icon>
+      <hr class="border-t border-gray-200 mb-4">
+      <div class="text-sm text-gray-600 flex items-center justify-center relative">
+        <mat-icon class="text-primary-brand-color mr-2">phone</mat-icon>
+        +90541850932
+        <mat-icon class="text-primary-brand-color ml-2">check</mat-icon>
       </div>
-      <hr class="size-8 w-full mt-2">
-      <mat-icon class="size-5 absolute -top-4 right-10 text-slate-500">edit_square</mat-icon>
+      <hr class="border-t border-gray-200 ">
+      <mat-icon class="text-slate-500 absolute top-2 right-4">edit_square</mat-icon>
     </div>
+
   </div>
 
 
-    <div class="bg-white rounded-lg shadow-lg">
+
+  <div class="bg-white rounded-lg shadow-lg ">
       <ul class="">
         <li routerLink="address" routerLinkActive="active"
           class="text-gray-700 hover:text-purple-600 cursor-pointer px-5 py-4 hover:bg-purple-200 hover:text-secondary-brand-color font-medium">Adreslerim</li>
@@ -34,11 +36,12 @@
         <li class="text-gray-700 hover:text-purple-600 cursor-pointer px-5 py-4 hover:bg-purple-200 hover:text-secondary-brand-color font-medium">Ödeme Yöntemlerim</li>
         <hr class="w-full">
         <li class="text-gray-700 hover:text-purple-600 cursor-pointer px-5 py-4 hover:bg-purple-200 hover:text-secondary-brand-color font-medium">İletişim Tercihlerim</li>
-
       </ul>
+
     </div>
 
 </div>
+
 <div class="hidden">
 <app-changeuserdetails></app-changeuserdetails>
 </div>

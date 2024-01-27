@@ -1,37 +1,43 @@
 import {Injectable} from '@angular/core';
+import {CartItem} from "../model/cartItem";
+import {HttpClient} from "@angular/common/http";
+import {BehaviorSubject, Observable, tap} from "rxjs";
+import {environment} from "../../../environments/environment";
 import {Product} from "../../products/models/product";
-import {CartItems} from "../../home/models/cartItems";
-import {CartItem} from "../../home/models/cartItem";
+
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  private cartItemsSubject = new BehaviorSubject<CartItem[]>([]);
+  public cartItems$ = this.cartItemsSubject.asObservable();
+  constructor(private httpClient: HttpClient) { }
 
-  constructor() { }
+
+  loadCartItems(userId: number) {
+    let newPath = environment.apiEndpoint + "api/cart/get/" + userId;
+    this.httpClient.get<CartItem[]>(newPath).subscribe(cartItems => {
+      this.cartItemsSubject.next(cartItems);
+    });
+  }
 
   addToCart(product:Product){
-    let item = CartItems.find(c =>c.product.productId === product.productId);
-    if(item){
-      item.quantity +=1;
-    }
-    else{
-      let cartItem = new CartItem();
-      cartItem.product = product;
-      cartItem.quantity = 1;
-      CartItems.push(cartItem)
-    }
-  }
-  removeFromCart(product:Product){
-    let item:CartItem | undefined = CartItems.find(c =>c.product.productId === product.productId);
-    if(item !== undefined){
-      CartItems.splice(CartItems.indexOf(item),1)
-    }
-
+    let newPath: string = environment.apiEndpoint + "api/cart/add";
+    return this.httpClient.post(newPath,product);
   }
 
-  list():CartItem[]{
-    return CartItems;
+  deleteCartItem(cartItemId: number) {
+    let deletePath = environment.apiEndpoint + "api/cart/" + cartItemId;
+    return this.httpClient.delete(deletePath);
   }
+  deleteAllCartItems(userId: number): Observable<any> {
+    let deleteAllPath = environment.apiEndpoint + 'api/cart/delete/' + userId;
+    return this.httpClient.delete(deleteAllPath);
+  }
+
+
+
+
 }

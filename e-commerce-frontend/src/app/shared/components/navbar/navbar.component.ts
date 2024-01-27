@@ -7,12 +7,10 @@ import {AsyncPipe} from "@angular/common";
 
 import {NavbarCartComponent} from "../../../cart/components/navbar-cart/navbar-cart.component";
 
-import {CartItems} from "../../../home/models/cartItems";
 import {ClickOutsideDirective} from "../../directives/click-outside.directive";
 import {UserDetail} from "../../../user/models/userDetail";
 import {AuthService} from "../../../auth/services/auth.service";
-import {UserService} from "../../../admin/services/user.service";
-import {TokenService} from "../../../auth/services/token.service";
+import {CartService} from "../../../cart/services/cart.service";
 
 
 @Component({
@@ -22,22 +20,24 @@ import {TokenService} from "../../../auth/services/token.service";
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent implements OnInit{
-  protected readonly CartItems = CartItems;
+export class NavbarComponent {
   isMenuVisible: boolean = false;
   isCartVisible: boolean = false;
-  user:UserDetail;
+  currentUser: UserDetail | null = null;
+  totalItemCount: number = 0;
+  constructor(public authService: AuthService,private cartService:CartService) {}
 
+  ngOnInit() {
+    this.authService.currentUser$.subscribe(user => {
+      this.currentUser = user;
 
-  constructor(public  authService:AuthService,private userService:UserService,private tokenService:TokenService) {
+    });
+    this.cartService.cartItems$.subscribe(cartItems=>{
+      this.totalItemCount = cartItems.length
+    })
   }
 
-  ngOnInit(): void {
-    const user = this.tokenService.getUserDetailsFromToken().sub
-    this.getUserDetails(user)
 
-
-    }
 
   toggleMenu(): void {
     this.isMenuVisible = !this.isMenuVisible;
@@ -46,21 +46,12 @@ export class NavbarComponent implements OnInit{
   toggleCart(): void {
     this.isCartVisible = !this.isCartVisible
   }
+
   logout() {
     this.authService.logout();
-    this.isMenuVisible =false
+    this.isMenuVisible = false
     this.isCartVisible = false;
   }
 
-  getUserDetails(username:string){
-    this.userService.getUserDetails(username).subscribe({
-      next: (response:UserDetail) =>{
-        this.user = response;
-      },
-      error: (error) =>{
-        console.log("User detayı çekilemedi",error)
-      }
-    })
-  }
 
 }
