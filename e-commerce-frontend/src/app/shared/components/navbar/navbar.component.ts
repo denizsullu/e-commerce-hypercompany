@@ -21,6 +21,7 @@ import {CartService} from "../../../cart/services/cart.service";
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+
   isMenuVisible: boolean = false;
   isCartVisible: boolean = false;
   currentUser: UserDetail | null = null;

@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {AddressService} from "../../service/addressService";
 import {AddressModel} from "../../models/addressModel";
 import {ToastrService} from "ngx-toastr";
 import {MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious} from "@angular/material/stepper";
@@ -9,7 +8,7 @@ import {MatFormField, MatFormFieldModule, MatLabel} from "@angular/material/form
 import {MatInputModule} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 import {AuthService} from "../../../auth/services/auth.service";
-import {take} from "rxjs";
+import {AddressService} from "../../service/address.service";
 
 @Component({
     selector: 'app-address',
@@ -40,6 +39,10 @@ export class AddressComponent {
     toggleStepper() {
         this.isStepperVisible = !this.isStepperVisible;
     }
+    resetStepper() {
+        this.firstFormGroup.reset();
+        this.secondFormGroup.reset();
+    }
 
     constructor(private addressService: AddressService,
                 private toastrService: ToastrService,
@@ -47,6 +50,7 @@ export class AddressComponent {
                 private authService:AuthService) {}
 
     ngOnInit() {
+      this.addressService.refreshUserAddresses();
         this.loadAddresses();
         this.firstFormGroup = this._formBuilder.group({
             firstCtrl: ['', Validators.required],
@@ -69,31 +73,31 @@ export class AddressComponent {
         });
     }
 
-    submitAddress() {
-        const addressTitle = this.firstFormGroup.value.firstCtrl; //eklenecek
-        const publicAddress = this.secondFormGroup.value.secondCtrl;
+  submitAddress() {
+    const addressTitle = this.firstFormGroup.value.firstCtrl; //eklenecek
+    const publicAddress = this.secondFormGroup.value.secondCtrl;
 
-        this.authService.currentUser$.pipe(take(1)).subscribe(currentUser => {
-            if (currentUser && currentUser.id) {
-                const addressData = {
-                    id:"",
-                    publicAddress: publicAddress,
-                    userId: currentUser.id,
-                };
+    const userId = this.authService.getCurrentUserId();
+    if (userId !== null) {
+      const addressData = {
+        publicAddress: publicAddress,
+        userId: userId,
+      };
 
-                this.addressService.addAddress(addressData).subscribe(
-                    response => {
-                        console.log('Address successfully added', response);
-                        this.toastrService.info("Adresiniz başarıyla veritabanına eklendi")
-                        this.loadAddresses()
-                        this.isStepperVisible= false
-
-                    },
-                    error => {
-                        console.error('Error adding address', error);
-                    }
-                );
-            }
-        });
+      this.addressService.addAddress(addressData).subscribe({
+        next: (response) => {
+          console.log('Address successfully added', response);
+          this.resetStepper();
+          this.toastrService.info("Adresiniz başarıyla veritabanına eklendi");
+          this.loadAddresses();
+          this.isStepperVisible = false;
+        },
+        error: (error) => {
+          console.error('Error adding address', error);
+        }
+      });
     }
+  }
+
+
 }

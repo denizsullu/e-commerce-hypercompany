@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 import {BehaviorSubject, Observable, switchMap, tap} from 'rxjs';
-import { LoginModel } from "../models/loginModel";
-import { TokenModel } from "../models/TokenModel";
-import { RegisterModel } from "../models/registerModel";
-import { environment } from "../../../environments/environment";
-import { TokenService } from "./token.service";
-import { UserService } from "../../admin/services/user.service";
+import {LoginModel} from "../models/loginModel";
+import {TokenModel} from "../models/TokenModel";
+import {RegisterModel} from "../models/registerModel";
+import {environment} from "../../../environments/environment";
+import {TokenService} from "./token.service";
+import {UserService} from "../../admin/services/user.service";
 import {UserDetail} from "../../user/models/userDetail";
 import {CartService} from "../../cart/services/cart.service";
 
@@ -24,7 +24,7 @@ export class AuthService {
     private httpClient: HttpClient,
     private tokenService: TokenService,
     private userService: UserService,
-    private cartService: CartService
+    private cartService: CartService,
   ) {
     this.loadUserFromLocalStorage();
   }
@@ -41,6 +41,11 @@ export class AuthService {
     );
   }
 
+  getCurrentUserId(): number | null {
+    const currentUser = this.currentUserSubject.value;
+    return currentUser ? currentUser.id : null;
+  }
+
   private setSession(token: string): void {
     localStorage.setItem("token", token);
     const tokenDetails = this.tokenService.getUserDetailsFromToken();
@@ -53,7 +58,6 @@ export class AuthService {
     this.isAuthenticatedSubject.next(true);
     this.cartService.loadCartItems(userData.id);
   }
-
 
 
   private loadUserFromLocalStorage(): void {

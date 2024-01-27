@@ -60,32 +60,24 @@ export class ProductMainComponent implements OnInit {
     });
   }
   addToCart(product: Product) {
-    this.authService.currentUser$.pipe(take(1)).subscribe({
-      next: (user) => {
-        if (user && user.id) {
-          const productToAdd = { ...product, userId: user.id };
-          this.cartService.addToCart(productToAdd).subscribe({
-            next: (response) => {
-              console.log("Ürün başarıyla sepete eklendi");
-              this.toastrService.success("Ürün başarıyla sepete eklendi",product.productName)
-              this.cartService.loadCartItems(user.id)
-            },
-            error: (error) => {
-              console.log("Sepete ekleme sırasında hata oluştu");
-
-            }
-          });
-        } else {
-          this.toastrService.info("Lütfen önce giriş yapın");
-
+    const userId = this.authService.getCurrentUserId();
+    if (userId !== null) {
+      const productToAdd = { ...product, userId: userId };
+      this.cartService.addToCart(productToAdd).subscribe({
+        next: (response) => {
+          console.log("Ürün başarıyla sepete eklendi");
+          this.toastrService.success("Ürün başarıyla sepete eklendi", product.productName);
+          this.cartService.loadCartItems(userId);
+        },
+        error: (error) => {
+          console.error("Sepete ekleme sırasında hata oluştu", error);
         }
-      },
-      error: (error) => {
-        console.error("Kullanıcı bilgisi alınırken hata oluştu", error);
-
-      }
-    });
+      });
+    } else {
+      this.toastrService.info("Lütfen önce giriş yapın");
+    }
   }
+
 
   addProductToFavorites(product: Product) {
     this.favoriteProductService.addFavoriteProduct(product).subscribe(

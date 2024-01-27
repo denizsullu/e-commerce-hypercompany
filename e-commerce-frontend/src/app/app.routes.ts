@@ -26,7 +26,7 @@ export const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'cart', component: CartComponent},
   {path: 'user', loadChildren: () => import('./user/user.routes').then(m => m.routes),canActivate:[loginGuard]},
-  {path: 'checkout',component:CheckoutComponent},
+  {path: 'checkout',component:CheckoutComponent, canActivate: [loginGuard]},
   {path: '**', loadComponent:() => import('./shared/components/page-not-found/page-not-found.component').then(m => m.PageNotFoundComponent)},
 ];
 

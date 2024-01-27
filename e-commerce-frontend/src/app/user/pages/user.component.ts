@@ -4,6 +4,7 @@ import {RouterOutlet} from "@angular/router";
 import {UserleftsideComponent} from "../components/userleftside/userleftside.component";
 import {UsercontentComponent} from "../components/usercontent/usercontent.component";
 
+
 @Component({
   selector: 'app-user',
   standalone: true,
@@ -12,5 +13,6 @@ import {UsercontentComponent} from "../components/usercontent/usercontent.compon
   styleUrl: './user.component.scss'
 })
 export class UserComponent {
+
 
 }

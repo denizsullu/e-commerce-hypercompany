@@ -31,29 +31,26 @@ export class NavbarCartComponent implements OnInit{
   constructor(private cartService:CartService, private authService:AuthService, private toastService:ToastrService) {}
 
   ngOnInit() {
-    this.authService.currentUser$.pipe(
-      take(1),
-      switchMap(user => {
-        if (user && user.id) {
-          this.cartService.loadCartItems(user.id);
-        }
-        return this.cartService.cartItems$;
-      })
-    ).subscribe(cartItems => {
-      this.cartItems = cartItems;
-    });
+    const userId = this.authService.getCurrentUserId();
+    if (userId !== null) {
+      this.cartService.loadCartItems(userId);
+      this.cartService.cartItems$.subscribe(cartItems => {
+        this.cartItems = cartItems;
+      });
+    }
   }
+
 
   onDeleteCartItem(cartItemId: number) {
     this.cartService.deleteCartItem(cartItemId).subscribe(() => {
-      this.authService.currentUser$.pipe(take(1)).subscribe(user => {
-        if (user && user.id) {
-          this.cartService.loadCartItems(user.id);
-          this.toastService.info("Ürün sepetten silindi")
-        }
-      });
+      const userId = this.authService.getCurrentUserId();
+      if (userId !== null) {
+        this.cartService.loadCartItems(userId);
+      }
+      this.toastService.info("Ürün sepetten silindi");
     });
   }
+
   onClose() {
     this.closeCart.emit();
   }

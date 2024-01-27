@@ -22,6 +22,9 @@ export class CartService {
       this.cartItemsSubject.next(cartItems);
     });
   }
+  getCartItems(): Observable<CartItem[]> {
+    return this.cartItems$;
+  }
 
   addToCart(product:Product){
     let newPath: string = environment.apiEndpoint + "api/cart/add";
@@ -37,6 +40,21 @@ export class CartService {
     return this.httpClient.delete(deleteAllPath);
   }
 
+    increaseCartItemQuantity(productId: number, userId: number): Observable<any> {
+        return this.httpClient.post(`${environment.apiEndpoint}api/cart/increase`, null, {
+            params: { productId: productId.toString(), userId: userId.toString() }
+        }).pipe(
+            tap(() => this.loadCartItems(userId))
+        );
+    }
+
+    decreaseCartItemQuantity(productId: number, userId: number): Observable<any> {
+        return this.httpClient.post(`${environment.apiEndpoint}api/cart/decrease`, null, {
+            params: { productId: productId.toString(), userId: userId.toString() }
+        }).pipe(
+            tap(() => this.loadCartItems(userId))
+        );
+    }
 
 
 
