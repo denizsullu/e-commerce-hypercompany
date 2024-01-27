@@ -5,6 +5,7 @@ import com.hypercompany.ecommerce.model.dto.responses.GetAllCartItemResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.service.CartItemService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,23 +16,34 @@ import java.util.List;
 @CrossOrigin("*")
 public class CartItemController {
 
-    private final CartItemService customerService;
+    private final CartItemService cartService;
 
     @GetMapping("/get/{username}")
     public List<GetAllCartItemResponse> getByUsername(@PathVariable("username") int userid){
-        return customerService.getAllCartItems(userid);
+        return cartService.getAllCartItems(userid);
     }
     @DeleteMapping("/{id}")
     public void deleteCartItem(@PathVariable("id") int id){
-        customerService.deleteCartItem(id);
+        cartService.deleteCartItem(id);
     }
     @DeleteMapping("/delete/{userid}")
     public void deleteAllCartItems(@PathVariable("userid") int userid){
-        customerService.deleteAllCartItems(userid);
+        cartService.deleteAllCartItems(userid);
     }
     @PostMapping("/add")
     public void addCartItem(@RequestBody CreateCartItemRequest createCartItemRequest){
-        customerService.addCartItem(createCartItemRequest);
+        cartService.addCartItem(createCartItemRequest);
+    }
+
+    @PostMapping("/increase")
+    public void increaseCartItemQuantity(@RequestParam int productId, @RequestParam int userId) {
+        this.cartService.increaseCartItemQuantity(productId, userId);
+
+    }
+
+    @PostMapping("/decrease")
+    public void decreaseCartItemQuantity(@RequestParam int productId, @RequestParam int userId) {
+        this.cartService.decreaseCartItemQuantity(productId, userId);
     }
 
 }

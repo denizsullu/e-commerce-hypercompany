@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Table(name = "creditCard")
 @Getter
@@ -20,12 +21,15 @@ public class CreditCard {
     private Integer id;
     private String cardNumber;
     private String cardHolderName;
-    private LocalDate expiryDate;
+    private String expiryDate;
     private String securityCode;
 
     @ManyToOne
     @JoinColumn(name = "user_id",nullable = false)
     private User user;
+
+    @OneToMany(mappedBy = "creditCard")
+    private List<Order> orders;
 
 
 }

@@ -12,4 +12,9 @@ public interface CartItemService {
    void deleteAllCartItems(int userid);
    void addCartItem(CreateCartItemRequest createCartItemRequest);
 
+   void increaseCartItemQuantity(int productId, int userId);
+   void decreaseCartItemQuantity(int productId, int userId);
+
+
+
 }

@@ -31,7 +31,7 @@ public class ProductsController {
     }
 
     @PostMapping("/addMultiple")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+   @PreAuthorize("hasRole('ROLE_ADMIN')")
     @ResponseStatus(code = HttpStatus.CREATED)
     public  ResponseEntity<ApiResponse> addMultiple(@RequestBody List<CreateProductRequest> requestList){
         for (CreateProductRequest request : requestList) {

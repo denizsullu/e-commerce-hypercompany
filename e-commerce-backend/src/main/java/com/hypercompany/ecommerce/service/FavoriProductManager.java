@@ -27,7 +27,7 @@ public class FavoriProductManager implements FavoriProductService {
             FavoriProduct favoriProduct = modelMapperService.forResponse().map(createFavoriProduct, FavoriProduct.class);
             favoriProductRepository.save(favoriProduct);
         } else {
-            throw new RuntimeException("Bu ürün zaten favorilerinizde mevcut");
+            System.out.println("Bu ürün zaten favorilerinizde mevcut");
         }
 
 
