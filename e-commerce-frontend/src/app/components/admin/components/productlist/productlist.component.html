@@ -1,0 +1,81 @@
+<div class="container mx-auto px-4 sm:px-8">
+  <div class="py-8">
+    <div class="flex flex-row mb-1 sm:mb-0 justify-between w-full">
+      <h2 class="text-2xl leading-tight">Ürünler</h2>
+      <div class="text-end">
+        <button type="button"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Yeni Ürün Ekle
+        </button>
+      </div>
+    </div>
+    <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+      <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+        <table class="min-w-full leading-normal">
+          <thead>
+          <tr>
+            <th scope="col"
+                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+              Ürün Görseli
+            </th>
+            <th scope="col"
+                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+              Ürün Adı
+            </th>
+            <th scope="col"
+                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+              Fiyat
+            </th>
+            <th scope="col"
+                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+              Stok Adedi
+            </th>
+            <th scope="col"
+                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+              İşlemler
+            </th>
+          </tr>
+          </thead>
+          @for (product of products; track product.productId) {
+          <tbody>
+          <tr class="hover:bg-gray-100">
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <a [routerLink]="['/product',product.productId]" class="block relative">
+                    <img alt="ürün görseli" [src]="product.productImage"
+                         class="mx-auto object-cover size-28 "/>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <p class="text-gray-900 whitespace-no-wrap">{{product.productName}}</p>
+            </td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <p class="text-gray-900 whitespace-no-wrap">{{product.productPrice | turkishLira}}</p>
+            </td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <p class="text-gray-900 whitespace-no-wrap">{{product.productPrice}}</p>
+            </td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <div class="inline-flex" role="group">
+                <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-l-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                  Düzenle
+                </a>
+                <a (click)="deleteProduct(product.productId)"
+                  class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-r-lg hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 cursor-pointer">
+                  Sil
+                </a>
+              </div>
+
+            </td>
+          </tr>
+          <!-- Diğer ürün satırları benzer şekilde eklenebilir -->
+          </tbody>
+        }
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

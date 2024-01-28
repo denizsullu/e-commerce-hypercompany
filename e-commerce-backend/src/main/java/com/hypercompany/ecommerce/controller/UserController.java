@@ -5,6 +5,7 @@ import com.hypercompany.ecommerce.model.User;
 import com.hypercompany.ecommerce.model.dto.requests.AutRequest;
 import com.hypercompany.ecommerce.model.dto.requests.CreateUserRequest;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateUserRequest;
+import com.hypercompany.ecommerce.model.dto.responses.GetAllUserResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.model.dto.responses.TokenResponse;
 import com.hypercompany.ecommerce.service.CustomerManager;
@@ -18,6 +19,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/auth")
@@ -62,6 +65,11 @@ public class UserController {
     @PostMapping("/user/update/{username}")
     public void updateUser(@PathVariable("username") String username,@RequestBody UpdateUserRequest request){
          customerService.updateCustomer(username,request);
+    }
+
+    @GetMapping("/user/all")
+    public List<GetAllUserResponse> getAllUsers(){
+        return customerService.getAllCustomers();
     }
 
 

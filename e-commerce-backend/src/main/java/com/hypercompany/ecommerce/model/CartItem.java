@@ -22,6 +22,10 @@ public class CartItem {
     private double productPrice;
     private String productImage;
     private int userProductQuantity;
+    private double totalPrice;
+    public double getTotalPrice() {
+        return this.productPrice * this.userProductQuantity;
+    }
 
     @ManyToOne
     @JoinColumn(name = "user_id")

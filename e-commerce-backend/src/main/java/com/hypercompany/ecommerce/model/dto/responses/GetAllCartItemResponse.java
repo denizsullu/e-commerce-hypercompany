@@ -15,6 +15,7 @@ public class GetAllCartItemResponse {
     private double productPrice;
     private String productImage;
     private int productQuantity;
+    private double productTotalPrice;
     private int userId;
 
 }

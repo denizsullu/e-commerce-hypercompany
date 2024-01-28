@@ -17,8 +17,8 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String orderDate;
     private Double totalAmount;
+    private String status;
 
 
     @ManyToOne

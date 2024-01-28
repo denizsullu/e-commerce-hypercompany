@@ -2,6 +2,7 @@ package com.hypercompany.ecommerce.service;
 
 import com.hypercompany.ecommerce.model.User;
 import com.hypercompany.ecommerce.model.dto.requests.UpdateUserRequest;
+import com.hypercompany.ecommerce.model.dto.responses.GetAllUserResponse;
 import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.repository.UserRepository;
 import lombok.AllArgsConstructor;
@@ -9,6 +10,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
@@ -43,6 +45,11 @@ public class CustomerManager {
 
 
 
+    }
+
+    public List<GetAllUserResponse> getAllCustomers(){
+        return customerRepository.findAll().stream().
+                map(user -> modelMapper.map(user,GetAllUserResponse.class)).toList();
     }
 
 

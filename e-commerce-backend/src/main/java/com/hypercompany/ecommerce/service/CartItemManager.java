@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -20,9 +21,21 @@ public class CartItemManager implements CartItemService {
 
     @Override
     public List<GetAllCartItemResponse> getAllCartItems(int userid) {
-        return cartItemRepository.findAllByUserId(userid).stream().map(cartItem -> modelMapper
-                .forResponse().map(cartItem, GetAllCartItemResponse.class)).toList();
+        List<CartItem> cartItems = cartItemRepository.findAllByUserId(userid);
+
+        double total = cartItems.stream()
+                .mapToDouble(CartItem::getTotalPrice)
+                .sum();
+
+        return cartItems.stream()
+                .map(cartItem -> modelMapper
+                        .forResponse()
+                        .map(cartItem, GetAllCartItemResponse.class))
+                .peek(response -> response.setProductTotalPrice(total))
+                .collect(Collectors.toList());
     }
+
+
 
     @Override
     public void deleteCartItem(int id) {
@@ -43,11 +56,13 @@ public class CartItemManager implements CartItemService {
         if (!existingCartItems.isEmpty()) {
             CartItem cartItem = existingCartItems.get(0);
             cartItem.setUserProductQuantity(cartItem.getUserProductQuantity() + 1);
+            cartItem.setTotalPrice(cartItem.getProductPrice() * cartItem.getUserProductQuantity());
             cartItemRepository.save(cartItem);
         } else {
 
             CartItem newCartItem = modelMapper.forRequest().map(createCartItemRequest, CartItem.class);
             newCartItem.setUserProductQuantity(1);
+            newCartItem.setTotalPrice(newCartItem.getProductPrice() * newCartItem.getUserProductQuantity());
             cartItemRepository.save(newCartItem);
         }
     }
@@ -57,6 +72,7 @@ public class CartItemManager implements CartItemService {
         CartItem cartItem = this.cartItemRepository.findByUserIdAndProductId(userId, productId);
         if (cartItem != null) {
             cartItem.setUserProductQuantity(cartItem.getUserProductQuantity() + 1);
+            cartItem.setTotalPrice(cartItem.getProductPrice() * cartItem.getUserProductQuantity());
             cartItemRepository.save(cartItem);
         } else {
 
@@ -70,6 +86,7 @@ public class CartItemManager implements CartItemService {
             int currentQuantity = cartItem.getUserProductQuantity();
             if (currentQuantity > 1) {
                 cartItem.setUserProductQuantity(currentQuantity - 1);
+                cartItem.setTotalPrice(cartItem.getProductPrice() * cartItem.getUserProductQuantity());
                 cartItemRepository.save(cartItem);
             } else {
 
@@ -77,4 +94,6 @@ public class CartItemManager implements CartItemService {
             }
         }
     }
+
+
 }
