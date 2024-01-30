@@ -6,7 +6,6 @@ import {CategorylistComponent} from "./components/categorylist/categorylist.comp
 import {OrdersadminComponent} from "./components/ordersadmin/ordersadmin.component";
 
 
-
 export const routes: Routes = [
     {path: '', component: AdminComponent, children: [
             {path: '', redirectTo: 'userlist', pathMatch: 'full'},

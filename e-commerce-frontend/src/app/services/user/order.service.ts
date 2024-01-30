@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
 import {CreateOrder} from "../../models/createOrder";
 import {Observable} from "rxjs";
 import {ResponseModel} from "../../models/responseModel";
-import {GetAllUserResponse} from "../../models/user/getAllUserResponse";
 import {GetAllByUserOrder} from "../../models/user/getAllByUserOrder";
+
 @Injectable({
   providedIn: 'root'
 })

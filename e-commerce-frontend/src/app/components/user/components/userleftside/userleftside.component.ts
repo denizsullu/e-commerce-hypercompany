@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {MatDivider} from "@angular/material/divider";
 import {MatIcon} from "@angular/material/icon";
 import {ChangeuserdetailsComponent} from "../changeuserdetails/changeuserdetails.component";
@@ -25,7 +25,7 @@ import {AuthService} from "../../../../services/auth/auth.service";
 export class UserleftsideComponent {
   currentUser:UserDetail | null;
   changeToogle:boolean = false;
-  toogleChange(updatedToogle?:boolean){
+    closeComponent(updatedToogle?:boolean){
     this.changeToogle = !this.changeToogle;
   }
 constructor(private authService:AuthService) {}

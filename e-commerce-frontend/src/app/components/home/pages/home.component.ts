@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {HeroSectionComponent} from "../components/hero-section/hero-section.component";
 import {CategoriesComponent} from "../components/categories/categories.component";
 import {CampaignsComponent} from "../components/campaigns/campaigns.component";

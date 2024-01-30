@@ -14,14 +14,21 @@ import {AuthService} from "../../../../services/auth/auth.service";
     styleUrl: './changeuserdetails.component.scss'
 })
 export class ChangeuserdetailsComponent {
-    @Output() toogleChange = new EventEmitter<boolean>();
+    @Output() toggleChange = new EventEmitter<boolean>();
     userDetailsForm: FormGroup;
-username:string;
-getUsername(){
-    this.authService.currentUser$.subscribe(response=>{
-        this.username=response.username;
-    });
-}
+    username: string;
+
+    closeComponent() {
+        this.toggleChange.emit(false);
+        this.getUsername();
+    }
+
+    getUsername() {
+        this.authService.currentUser$.subscribe(response => {
+            this.username = response.username;
+        });
+    }
+
     constructor(private userService: UserService,
                 private toastService: ToastrService,
                 private formBuilder: FormBuilder,
@@ -30,10 +37,6 @@ getUsername(){
     ) {
     }
 
-    closeComponent() {
-        this.toogleChange.emit(false);
-        this.getUsername();
-    }
 
     updateUserDetailsForm() {
         this.userDetailsForm = this.formBuilder.group({
@@ -51,14 +54,14 @@ getUsername(){
 
     updateUserDetails() {
         if (this.userDetailsForm.valid) {
-            let userDetails:UpdateUser ={
+            let userDetails: UpdateUser = {
                 pastUsername: this.username,
                 ...this.userDetailsForm.value,
             };
             this.userService.updateUser(userDetails).subscribe(response => {
                 this.authService.logout();
                 this.routerService.navigate(["/login"]);
-                this.toastService.success("Kullanıcı bilgileri başarıyla güncellendi","lütfen tekrar giriş yapınız");
+                this.toastService.success("Kullanıcı bilgileri başarıyla güncellendi", "lütfen tekrar giriş yapınız");
                 localStorage.clear();
             });
         } else {

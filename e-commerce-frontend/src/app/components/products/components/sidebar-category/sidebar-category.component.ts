@@ -5,7 +5,6 @@ import {Category} from "../../../../models/product/category";
 import {CategoryService} from "../../../../services/category.service";
 
 
-
 @Component({
   selector: 'app-sidebar-category',
   standalone: true,

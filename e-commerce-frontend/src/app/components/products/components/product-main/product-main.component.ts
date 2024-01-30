@@ -1,10 +1,10 @@
-import {Component, Inject, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {CurrencyPipe, TitleCasePipe} from "@angular/common";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {MatIcon} from "@angular/material/icon";
 import {ToastrService} from "ngx-toastr";
 
-import {Subscription, switchMap, take} from "rxjs";
+import {switchMap} from "rxjs";
 import {Product} from "../../../../models/product/product";
 
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
@@ -12,8 +12,6 @@ import {ProductService} from "../../../../services/product.service";
 import {CartService} from "../../../../services/cart.service";
 import {AuthService} from "../../../../services/auth/auth.service";
 import {FavoriProductService} from "../../../../services/user/favori-product.service";
-import {SearchService} from "../../../../services/search.service";
-
 
 
 @Component({
@@ -46,6 +44,7 @@ export class ProductMainComponent implements OnInit {
   }
 
 @Input() categoryId:number;
+
   ngOnInit(): void {
     this.activatedRoute.params.pipe(
       switchMap(params => {

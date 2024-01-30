@@ -2,9 +2,6 @@ import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {NavbarComponent} from "./components/shared/components/navbar/navbar.component";
 import {FooterComponent} from "./components/shared/components/footer/footer.component";
-import {BehaviorSubject, Observable, Subject} from "rxjs";
-
-
 
 
 @Component({

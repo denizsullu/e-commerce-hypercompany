@@ -1,17 +1,8 @@
 import {Routes} from '@angular/router';
-
-
-import {LoginComponent} from "./components/auth/components/login/login.component";
 import {loginGuard} from "./guards/login.guard";
-
-import {RegisterComponent} from "./components/auth/components/register/register.component";
-
-import {CartComponent} from "./components/cart/cart.component";
 import {CheckoutComponent} from "./components/cart/components/checkout/checkout.component";
 import {adminGuard} from "./guards/admin.guard";
 import {HomeComponent} from "./components/home/pages/home.component";
-import {ProductDetailsComponent} from "./components/products/components/product-details/product-details.component";
-import {ProductComponent} from "./components/products/pages/product.component";
 
 
 export const routes: Routes = [

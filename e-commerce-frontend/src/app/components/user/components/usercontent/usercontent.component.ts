@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 import {FavoriteProductComponent} from "../favorite-product/favorite-product.component";
 import {PastorderComponent} from "../pastorder/pastorder.component";

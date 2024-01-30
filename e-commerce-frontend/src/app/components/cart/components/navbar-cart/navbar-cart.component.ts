@@ -10,7 +10,6 @@ import {MatIcon} from "@angular/material/icon";
 import {TurkishLiraPipe} from "../../../../pipes/turkish-lira.pipe";
 
 
-
 @Component({
   selector: 'app-navbar-cart',
   standalone: true,

@@ -13,7 +13,6 @@ import {CartService} from "../../../../services/cart.service";
 import {FavoriProductService} from "../../../../services/user/favori-product.service";
 
 
-
 @Component({
   selector: 'app-product-details',
   standalone: true,

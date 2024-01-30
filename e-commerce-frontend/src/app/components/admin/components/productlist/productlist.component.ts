@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ProductService} from "../../../../services/product.service";
 import {Product} from "../../../../models/product/product";
 import {TurkishLiraPipe} from "../../../../pipes/turkish-lira.pipe";
 import {RouterLink} from "@angular/router";
 import {ToastrService} from "ngx-toastr";
-import {CreateProductRequest} from "../../../../models/product/createProductRequest";
 import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {UpdateproductComponent} from "./updateproduct/updateproduct.component";
 

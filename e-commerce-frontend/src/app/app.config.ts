@@ -1,4 +1,4 @@
-import {APP_INITIALIZER, ApplicationConfig} from '@angular/core';
+import {ApplicationConfig} from '@angular/core';
 import {provideRouter, withComponentInputBinding} from '@angular/router';
 
 import {routes} from './app.routes';
@@ -10,10 +10,7 @@ import {authInterceptor} from "./interceptors/auth.interceptor";
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    // {provide:APP_INITIALIZER, useFactory: () => {
-    //     console.log("Öncelikli yapılandırmalar gerçekleştirildi")
-    //   }},
-    provideRouter(routes,withComponentInputBinding()), /*provideClientHydration()*/
+    provideRouter(routes,withComponentInputBinding()), provideClientHydration(),
     provideHttpClient(withInterceptors([authInterceptor])), provideAnimations(),
     provideToastr({
       positionClass: "toast-top-right",

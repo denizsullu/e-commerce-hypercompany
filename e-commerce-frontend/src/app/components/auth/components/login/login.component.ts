@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
                     if (this.authService.isAdmin().valueOf() == true) {
                         this.router.navigate(['/admin']);
                     } else {
-                        this.router.navigate(['/products/category/6']);
+                        this.router.navigate(['/products']);
                     }
                     this.toastrService.info('Başarıyla giriş yapıldı.');
 

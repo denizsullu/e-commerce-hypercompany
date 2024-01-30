@@ -79,6 +79,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 
 
     ngOnInit() {
+
         this.subscription.add(
             this.cartService.getCartItems().subscribe(cartItems => {
                 this.cartItems = cartItems;
@@ -99,6 +100,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
                 this.creditCards = cards;
             })
         );
+
     }
 
     increaseQuantity(productId: number, userId: number) {
@@ -136,9 +138,11 @@ export class CheckoutComponent implements OnInit, OnDestroy {
         });
     }
 
-    ngOnDestroy() {
+    ngOnDestroy(): void {
         this.subscription.unsubscribe();
     }
+
+
 
 
 }

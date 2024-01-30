@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
-import { AuthService } from "../auth/auth.service";
+import {Injectable} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {AuthService} from "../auth/auth.service";
 import {BehaviorSubject, Observable, tap} from "rxjs";
-import { environment } from "../../../environments/environment";
-import { CreditCardModel } from "../../models/user/creditCard";
-import { CreateCreditCardRequest } from "../../models/user/createCreditCardRequest";
+import {environment} from "../../../environments/environment";
+import {CreditCardModel} from "../../models/user/creditCard";
+import {CreateCreditCardRequest} from "../../models/user/createCreditCardRequest";
 
 @Injectable({
   providedIn: 'root'

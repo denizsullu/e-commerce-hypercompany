@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {OrderService} from "../../../../services/user/order.service";
 import {GetAllByUserOrder} from "../../../../models/user/getAllByUserOrder";
 import {FormsModule} from "@angular/forms";

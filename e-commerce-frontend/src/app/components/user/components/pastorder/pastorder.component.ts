@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {OrderService} from "../../../../services/user/order.service";
 import {GetAllByUserOrder} from "../../../../models/user/getAllByUserOrder";
