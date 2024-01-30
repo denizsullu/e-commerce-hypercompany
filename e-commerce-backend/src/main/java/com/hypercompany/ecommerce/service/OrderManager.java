@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 @Service
 @AllArgsConstructor
+
 public class OrderManager implements OrderService{
     private final OrderRepository orderRepository;
     private final ModelMapperService modelMapperService;
@@ -33,5 +34,14 @@ public class OrderManager implements OrderService{
     public List<GetAllOrder> getAll() {
         List<Order> orders = orderRepository.findAll();
         return orders.stream().map(order -> modelMapperService.forResponse().map(order,GetAllOrder.class)).toList();
+    }
+
+    @Override
+    public void changeOrderStatus(int orderId, String status) {
+        Optional<Order> order = orderRepository.findById(orderId);
+        if (order.isPresent()){
+            order.get().setStatus(status);
+            orderRepository.save(order.get());
+        }
     }
 }

@@ -42,27 +42,48 @@
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                   <div class="flex items-center">
                     <div class="ml-3">
-                      <p class="text-gray-900 whitespace-no-wrap">{{order.id}}</p>
+                      <p class="text-gray-900 whitespace-no-wrap">{{ order.id }}</p>
                     </div>
                   </div>
                 </td>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <p class="text-gray-900 whitespace-no-wrap">{{order.userName}}</p>
+                  <p class="text-gray-900 whitespace-no-wrap">{{ order.userName }}</p>
                 </td>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                   <p class="text-gray-900 whitespace-no-wrap">01/01/2024</p>
                 </td>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <p class="text-gray-900 whitespace-no-wrap">{{order.totalAmount}}</p>
+                  <p class="text-gray-900 whitespace-no-wrap">{{ order.totalAmount | turkishLira }}</p>
                 </td>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-      <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-        <span aria-hidden="true" class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
-        <span class="relative">{{ order.status }}</span>
-      </span>
+                  @if (order.status == "Hazırlanıyor") {
+                    <span class="relative inline-block px-3 py-1 font-semibold text-orange-900 leading-tight">
+    <span aria-hidden="true" class="absolute inset-0 bg-orange-200 opacity-50 rounded-full"></span>
+   <span class="relative">{{ order.status }}</span>
+                  </span>
+                  } @else if (order.status == "Yolda") {
+                    <span class="relative inline-block px-3 py-1 font-semibold text-blue-900 leading-tight">
+    <span aria-hidden="true" class="absolute inset-0 bg-blue-200 opacity-50 rounded-full"></span>
+    <span class="relative">{{ order.status }}</span>
+                  </span>
+                  } @else {
+                    <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+    <span aria-hidden="true" class="absolute inset-0 bg-green-200 opacity-50 rounded-full"></span>
+    <span class="relative">{{ order.status }}</span>
+                    </span>
+                  }
+
+
                 </td>
                 <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <a href="#" class="text-blue-600 hover:text-blue-900">Düzenle</a>
+                  <select
+                    class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    [(ngModel)]="selectedStatus" (ngModelChange)="changeOrderStatus(order.id, selectedStatus)">
+                    <option value="Hazırlanıyor">Hazırlanıyor</option>
+                    <option value="Yolda">Yolda</option>
+                    <option value="Tamamlandı">Tamamlandı</option>
+                  </select>
+
                 </td>
               </tr>
             }

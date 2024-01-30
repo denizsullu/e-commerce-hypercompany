@@ -25,4 +25,9 @@ export class OrderService {
         let newPath = environment.apiEndpoint + "api/orders/getall";
         return this.httpService.get<GetAllByUserOrder[]>(newPath);
     }
+
+    updateOrder(orderId:number,status:string):Observable<any>{
+        let newPath = environment.apiEndpoint + "api/orders/changeorderstatus/"+orderId+"/"+status;
+        return this.httpService.put<ResponseModel>(newPath,{});
+    }
 }

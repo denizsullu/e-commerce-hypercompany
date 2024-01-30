@@ -42,7 +42,7 @@ public class CategoriesController {
         return this.categoryService.getById(id);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("delete/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public void delete(@PathVariable int id){
         this.categoryService.delete(id);

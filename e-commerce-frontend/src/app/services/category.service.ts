@@ -15,8 +15,16 @@ export class CategoryService {
       let newPath = environment.apiEndpoint + "api/categories/getAll";
     return this.httpClient.get<Category[]>(newPath);
   }
-  addCategory(createCategory: CreateCategory): Observable<Category> {
+  addCategory(createCategory: CreateCategory): Observable<any> {
       let newPath = environment.apiEndpoint + "api/categories/add";
       return this.httpClient.post<Category>(newPath, createCategory);
   }
+    updateCategory(category: Category): Observable<any> {
+        let newPath = environment.apiEndpoint + "api/categories/update";
+        return this.httpClient.put<Category>(newPath, category);
+    }
+    deleteCategory(categoryId: number): Observable<any> {
+        let newPath = environment.apiEndpoint + "api/categories/delete/"+ categoryId;
+        return this.httpClient.delete<Category>(newPath);
+    }
 }

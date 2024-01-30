@@ -3,7 +3,11 @@
     <div class="flex flex-row mb-1 sm:mb-0 justify-between w-full">
       <h2 class="text-2xl leading-tight">Kategoriler</h2>
       <div class="text-end">
-        <!-- Burada yeni kategori ekleme butonu veya başka işlemler olabilir -->
+        <button
+                type="button"
+                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Yeni Kategori Ekle
+        </button>
       </div>
     </div>
     <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -30,7 +34,14 @@
                 <p class="text-gray-900 whitespace-no-wrap">15</p>
               </td>
               <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                <a href="#" class="text-blue-600 hover:text-blue-800">Düzenle</a>
+                <button
+                        class="bg-secondary-brand-color hover:bg-brand-color text-white font-bold py-2 px-4 rounded">
+                  Düzenle
+                </button>
+                <button (click)="deleteCategory(category.categoryId)"
+                        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                  Sil
+                </button>
               </td>
             </tr>
           }

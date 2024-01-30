@@ -38,4 +38,11 @@ public class OrderController {
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
+    @PutMapping("/changeorderstatus/{orderId}/{status}")
+    public ResponseEntity<ApiResponse> changeOrderStatus(@PathVariable int orderId, @PathVariable String status){
+        this.orderService.changeOrderStatus(orderId,status);
+        ApiResponse response = new ApiResponse(true,"Order status successfully changed.");
+        return ResponseEntity.status(HttpStatus.OK).body(response);
+    }
+
 }

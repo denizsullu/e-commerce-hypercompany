@@ -22,6 +22,18 @@ categories:Category[] = [];
             this.categories  = response;
         });
     }
+    addCategory():void{
+
+    }
+    updateCategory():void{
+
+    }
+    deleteCategory(categoryId:number):void{
+        this.categoryList.deleteCategory(categoryId).subscribe(response => {
+            this.getAllCategoryDetails();
+        });
+
+    }
 
 
 }
