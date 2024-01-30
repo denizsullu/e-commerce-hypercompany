@@ -65,5 +65,3 @@ spring.cache.caffeine.spec=maximumSize=5000,expireAfterAccess=6000s
 
 ## Conclusion and Contact
 This project is a testament to a full-stack development skillset, emphasizing user experience, performance optimization, and secure development. For inquiries or feedback, contact [denizsullu@protonmail.com](mailto:denizsullu@protonmail.com).
-
-Thank you for considering our project. It stands as a valuable asset for e-commerce endeavors.
