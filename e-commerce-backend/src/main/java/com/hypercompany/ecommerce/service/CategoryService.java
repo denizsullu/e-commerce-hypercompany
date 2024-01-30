@@ -15,4 +15,6 @@ public interface CategoryService {
     void add(CreateCategoryRequest createCategoryRequest);
     void update(UpdateCategoryRequest updateCategoryRequest);
     void delete(int id);
+
+    void addAll(List<CreateCategoryRequest> createCategoryRequestList);
 }

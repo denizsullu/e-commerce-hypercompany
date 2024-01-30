@@ -49,4 +49,11 @@ public class CategoryManager implements CategoryService{
     public void delete(int id) {
         this.categoryRepository.deleteById(id);
     }
+
+    @Override
+    public void addAll(List<CreateCategoryRequest> createCategoryRequestList) {
+        List<Category> categories = createCategoryRequestList.stream().map(createCategoryRequest ->
+                this.modelMapperService.forRequest().map(createCategoryRequest, Category.class)).toList();
+        this.categoryRepository.saveAll(categories);
+    }
 }

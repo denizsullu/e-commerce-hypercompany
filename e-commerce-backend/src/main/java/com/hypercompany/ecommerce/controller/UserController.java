@@ -13,6 +13,7 @@ import com.hypercompany.ecommerce.service.JwtService;
 import com.hypercompany.ecommerce.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -58,16 +59,19 @@ public class UserController {
     }
 
     @GetMapping("/user/{username}")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public GetByUserDetails getByUsername(@PathVariable("username") String username){
         return customerService.getByUsername(username);
     }
 
-    @PostMapping("/user/update/{username}")
-    public void updateUser(@PathVariable("username") String username,@RequestBody UpdateUserRequest request){
-         customerService.updateCustomer(username,request);
+    @PutMapping("/user/update")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
+    public void updateUser(@RequestBody UpdateUserRequest request){
+         customerService.updateCustomer(request);
     }
 
     @GetMapping("/user/all")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public List<GetAllUserResponse> getAllUsers(){
         return customerService.getAllCustomers();
     }

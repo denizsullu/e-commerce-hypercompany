@@ -7,6 +7,7 @@ import com.hypercompany.ecommerce.model.dto.responses.GetByIdCategoryResponse;
 import com.hypercompany.ecommerce.service.CategoryService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,12 +26,14 @@ public class CategoriesController {
     }
 
     @PostMapping("/add")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @ResponseStatus(code = HttpStatus.CREATED)
     public void add(@RequestBody CreateCategoryRequest createCategoryRequest){
         this.categoryService.add(createCategoryRequest);
     }
 
     @PutMapping("/update")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public void update(@RequestBody UpdateCategoryRequest updateCategoryRequest){
         this.categoryService.update(updateCategoryRequest);
     }
@@ -40,7 +43,14 @@ public class CategoriesController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public void delete(@PathVariable int id){
         this.categoryService.delete(id);
+    }
+
+    @PostMapping("/addAll")
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public void addAll(@RequestBody List<CreateCategoryRequest> createCategoryRequestList){
+        this.categoryService.addAll(createCategoryRequestList);
     }
 }

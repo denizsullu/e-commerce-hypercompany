@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GetAllAddressResponse {
     private Integer id;
+    private String title;
     private String publicAddress;
 
 }

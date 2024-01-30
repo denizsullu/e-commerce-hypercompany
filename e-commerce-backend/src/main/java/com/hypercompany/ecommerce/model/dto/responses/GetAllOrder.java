@@ -12,6 +12,7 @@ public class GetAllOrder {
     private Double totalAmount;
     private String status;
     private Integer userId;
-    private Integer addressId;
-    private Integer creditCardId;
+    private String userName;
+    private String addressDetail;
+    private String creditCardLastFour;
 }

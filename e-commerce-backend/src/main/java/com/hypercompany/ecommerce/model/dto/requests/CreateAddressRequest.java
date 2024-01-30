@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreateAddressRequest {
     private Integer id;
+    private String title;
     private String publicAddress;
     private int userId;
 }

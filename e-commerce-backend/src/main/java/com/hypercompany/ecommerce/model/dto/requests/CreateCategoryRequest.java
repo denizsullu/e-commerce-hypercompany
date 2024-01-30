@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateCategoryRequest {
-    @NotEmpty
-    @Size(min = 2, max = 30)
-    private String name;
+    private String categoryName;
+    private String categoryImage;
 
 }

@@ -24,8 +24,8 @@ public class CustomerManager {
         return modelMapper.map(customerRepository.findByUsername(username), GetByUserDetails.class);
     }
 
-   public void updateCustomer(String username, UpdateUserRequest request){
-        Optional<User> user =  customerRepository.findByUsername(username);
+   public void updateCustomer(UpdateUserRequest request){
+        Optional<User> user =  customerRepository.findByUsername(request.getPastUsername());
         if(user.isPresent()){
             User user1 = user.get();
             if(request.getName()!=null && !request.getName().isEmpty()){

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UpdateUserRequest {
+    private String pastUsername;
     private String name;
     private String surname;
     private String username;

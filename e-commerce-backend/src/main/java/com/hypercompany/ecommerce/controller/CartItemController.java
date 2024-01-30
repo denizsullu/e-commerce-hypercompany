@@ -6,6 +6,7 @@ import com.hypercompany.ecommerce.model.dto.responses.GetByUserDetails;
 import com.hypercompany.ecommerce.service.CartItemService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,29 +20,35 @@ public class CartItemController {
     private final CartItemService cartService;
 
     @GetMapping("/get/{username}")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public List<GetAllCartItemResponse> getByUsername(@PathVariable("username") int userid){
         return cartService.getAllCartItems(userid);
     }
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public void deleteCartItem(@PathVariable("id") int id){
         cartService.deleteCartItem(id);
     }
     @DeleteMapping("/delete/{userid}")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public void deleteAllCartItems(@PathVariable("userid") int userid){
         cartService.deleteAllCartItems(userid);
     }
     @PostMapping("/add")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public void addCartItem(@RequestBody CreateCartItemRequest createCartItemRequest){
         cartService.addCartItem(createCartItemRequest);
     }
 
     @PostMapping("/increase")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public void increaseCartItemQuantity(@RequestParam int productId, @RequestParam int userId) {
         this.cartService.increaseCartItemQuantity(productId, userId);
 
     }
 
     @PostMapping("/decrease")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public void decreaseCartItemQuantity(@RequestParam int productId, @RequestParam int userId) {
         this.cartService.decreaseCartItemQuantity(productId, userId);
     }
