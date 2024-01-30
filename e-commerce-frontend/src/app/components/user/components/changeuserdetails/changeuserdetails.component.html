@@ -1,43 +1,25 @@
+<div id="myModal" class="fixed inset-0 z-10 overflow-auto bg-black bg-opacity-50">
+  <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg w-full mx-auto my-20 p-6">
+    <div class="flex justify-between items-center border-b-2 border-gray-100 px-5 py-3">
+      <span class="text-lg font-bold">Hesap Bilgilerini Güncelle</span>
+      <button onclick="closeComponent()" id="closeModal" class="text-gray-400 hover:text-gray-600">
+        &times;
+      </button>
+    </div>
+    <form [formGroup]="userDetailsForm" (ngSubmit)="updateUserDetails()" class="space-y-6">
+    <div class="px-5 py-3">
+      <input formControlName="name" class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full" type="text" placeholder="Ad" />
+      <input formControlName="surname" class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full" type="text" placeholder="Soyad" />
+      <input formControlName="username" class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full" type="text" placeholder="Kullanıcı Adı" />
+      <input formControlName="password" class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full" type="password" placeholder="Parola" />
+      <input class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full bg-red-100" type="tel" placeholder="+905418509323" disabled />
+    </div>
+      <div class="px-5 py-3">
+        <button class="px-4 py-2 bg-purple-500 text-white w-full rounded hover:bg-purple-700">
+          Kaydet
+        </button>
+      </div>
+    </form>
 
-<div
-  id="myModal"
-style="position: fixed; z-index: 10; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5);"
->
-
-<div
-  class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full"
-  style="margin: 15% auto; padding: 20px;"
->
-  <div class="flex justify-between items-center border-b-2 border-gray-100 px-5 py-3">
-    <span class="text-lg font-bold">Hesap bilgilerini güncelle</span>
-    <button id="closeModal" class="text-gray-400 hover:text-gray-600">
-      &times;
-    </button>
   </div>
-  <div class="px-5 py-3">
-    <input
-      class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full"
-      type="text"
-      placeholder="Deniz Sullu"
-    />
-    <input
-      class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full"
-      type="email"
-      placeholder="denizsullu@hacettepe.edu.tr"
-    />
-    <input
-      class="mb-3 px-3 py-2 border border-gray-300 rounded-md w-full bg-red-100"
-      type="tel"
-      placeholder="+905418509323"
-      disabled
-    />
-  </div>
-  <div class="px-5 py-3">
-    <button
-      class="px-4 py-2 bg-purple-500 text-white w-full rounded hover:bg-purple-700"
-    >
-      Kaydet
-    </button>
-  </div>
-</div>
 </div>

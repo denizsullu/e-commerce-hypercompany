@@ -3,7 +3,8 @@
     <div class="flex flex-row mb-1 sm:mb-0 justify-between w-full">
       <h2 class="text-2xl leading-tight">Ürünler</h2>
       <div class="text-end">
-        <button type="button"
+        <button (click)="togglePopup()"
+                type="button"
                 class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Yeni Ürün Ekle
         </button>
@@ -14,68 +15,153 @@
         <table class="min-w-full leading-normal">
           <thead>
           <tr>
-            <th scope="col"
-                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+            <th scope="col" class="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               Ürün Görseli
             </th>
-            <th scope="col"
-                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+            <th scope="col" class="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               Ürün Adı
             </th>
-            <th scope="col"
-                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+            <th scope="col" class="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               Fiyat
             </th>
-            <th scope="col"
-                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+            <th scope="col" class="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               Stok Adedi
             </th>
-            <th scope="col"
-                class="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
+            <th scope="col" class="px-5 py-3 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               İşlemler
             </th>
           </tr>
           </thead>
           @for (product of products; track product.productId) {
-          <tbody>
-          <tr class="hover:bg-gray-100">
-            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-              <div class="flex items-center">
-                <div class="flex-shrink-0">
-                  <a [routerLink]="['/product',product.productId]" class="block relative">
-                    <img alt="ürün görseli" [src]="product.productImage"
-                         class="mx-auto object-cover size-28 "/>
-                  </a>
+            <tbody>
+            <tr class="hover:bg-gray-200">
+              <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <a [routerLink]="['/product',product.productId]" class="block relative">
+                      <img alt="ürün görseli" [src]="product.productImage"
+                           class="mx-auto object-cover size-28 "/>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-              <p class="text-gray-900 whitespace-no-wrap">{{product.productName}}</p>
-            </td>
-            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-              <p class="text-gray-900 whitespace-no-wrap">{{product.productPrice | turkishLira}}</p>
-            </td>
-            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-              <p class="text-gray-900 whitespace-no-wrap">{{product.productPrice}}</p>
-            </td>
-            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-              <div class="inline-flex" role="group">
-                <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-l-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+              </td>
+              <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">{{ product.productName }}</p>
+              </td>
+              <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">{{ product.productPrice | turkishLira }}</p>
+              </td>
+              <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p class="text-gray-900 whitespace-no-wrap">{{ product.productPrice }}</p>
+              </td>
+              <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <button (click)="togglePopupUpdate()"
+                  class="bg-secondary-brand-color hover:bg-brand-color text-white font-bold py-2 px-4 rounded">
                   Düzenle
-                </a>
-                <a (click)="deleteProduct(product.productId)"
-                  class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-r-lg hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50 cursor-pointer">
+                </button>
+                <button (click)="deleteProduct(product.productId)"
+                        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                   Sil
-                </a>
-              </div>
+                </button>
+              </td>
 
-            </td>
-          </tr>
-          <!-- Diğer ürün satırları benzer şekilde eklenebilir -->
-          </tbody>
-        }
+            </tr>
+            </tbody>
+          }
         </table>
       </div>
     </div>
   </div>
 </div>
+
+
+@if (showPopup) {
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-75 overflow-y-auto h-full w-full flex justify-center items-center">
+    <div class="relative bg-white rounded-lg shadow-xl p-6 w-11/12 md:w-3/4 lg:w-1/2">
+      <button (click)="togglePopup()"
+        class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <h3 class="text-xl font-semibold text-gray-800 text-center">Yeni Ürün Ekle</h3>
+      <form [formGroup]="productAddForm" class="mt-4">
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <!--      Product Name-->
+          <div class="sm:col-span-2">
+            <label for="productName" class="block text-sm font-semibold leading-6 text-gray-900">Ürün Adı</label>
+            <div class="mt-2.5">
+              <input type="text" name="first-name" id="productName" formControlName="productName"
+                     autocomplete="organization"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--  Product Description-->
+          <div class="sm:col-span-2">
+            <label for="productDescription" class="block text-sm font-semibold leading-6 text-gray-900">Ürün
+              Açıklaması</label>
+            <div class="mt-2.5">
+              <input type="text" name="productDescription" id="productDescription" formControlName="productDescription"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--      Product Price-->
+          <div class="sm:col-span-2">
+            <label for="productPrice" class="block text-sm font-semibold leading-6 text-gray-900">Ürün Fiyatı</label>
+            <div class="mt-2.5">
+              <input type="number" name="price" id="productPrice" formControlName="productPrice"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--      Product Image Link-->
+          <div class="sm:col-span-2">
+            <label for="productImage" class="block text-sm font-semibold leading-6 text-gray-900">Ürün Linki</label>
+            <div class="mt-2.5">
+              <input type="text" name="productImage" id="productImage" formControlName="productImage"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--      Product Quantity-->
+          <div class="sm:col-span-2">
+            <label for="stock" class="block text-sm font-semibold leading-6 text-gray-900">Ürün Adedi</label>
+            <div class="mt-2.5">
+              <input type="number" name="productQuantity" id="stock" formControlName="stock" min="1"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--      Product BrandId-->
+          <div class="sm:col-span-2">
+            <label for="productBrandId" class="block text-sm font-semibold leading-6 text-gray-900">Marka Id</label>
+            <div class="mt-2.5">
+              <input type="number" name="productBrandId" id="productBrandId" formControlName="brandId" min="1"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <!--      Product CategoryId-->
+          <div class="sm:col-span-2">
+            <label for="categoryId" class="block text-sm font-semibold leading-6 text-gray-900">CategoriId</label>
+            <div class="mt-2.5">
+              <input type="number" name="categoryId" id="categoryId" formControlName="categoryId" min="1"
+                     class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <button (click)="add()"
+                  class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Ekle
+          </button>
+          <button></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+}
+
+
+@if(showPopupUpdate){
+  <app-updateproduct ></app-updateproduct>
+}
+

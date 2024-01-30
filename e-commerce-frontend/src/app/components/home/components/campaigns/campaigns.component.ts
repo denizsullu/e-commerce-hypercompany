@@ -12,32 +12,36 @@ import {CarouselModule, OwlOptions} from "ngx-owl-carousel-o";
   styleUrl: './campaigns.component.scss'
 })
 export class CampaignsComponent {
-  customOptions: OwlOptions = {
-    loop: true,
-    autoplay:true,
-    autoplaySpeed:1000,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 100,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 3
-      }
-    },
-    nav: false
-  }
+    customOptions: OwlOptions = {
+        loop: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: false,
+        dots: false,
+        navSpeed: 1000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            400: {
+                items: 2
+            },
+            740: {
+                items: 3
+            },
+            940: {
+                items: 3
+            }
+        },
+        nav: true,
+        navText: [
+            '<span class="material-icons">arrow_back_ios</span>',
+            '<span class="material-icons">arrow_forward_ios</span>'
+        ]
+    };
+
 
   campaigns = [
     {

@@ -10,6 +10,7 @@ import {MatButton} from "@angular/material/button";
 import {AddressModel} from "../../../../models/user/addressModel";
 import {AddressService} from "../../../../services/user/address.service";
 import {AuthService} from "../../../../services/auth/auth.service";
+import {CreateAddressModel} from "../../../../models/user/createAddressModel";
 
 
 @Component({
@@ -41,6 +42,7 @@ export class AddressComponent {
     toggleStepper() {
         this.isStepperVisible = !this.isStepperVisible;
     }
+
     resetStepper() {
         this.firstFormGroup.reset();
         this.secondFormGroup.reset();
@@ -49,10 +51,11 @@ export class AddressComponent {
     constructor(private addressService: AddressService,
                 private toastrService: ToastrService,
                 private _formBuilder: FormBuilder,
-                private authService:AuthService) {}
+                private authService: AuthService) {
+    }
 
     ngOnInit() {
-      this.addressService.refreshUserAddresses();
+        this.addressService.refreshUserAddresses();
         this.loadAddresses();
         this.firstFormGroup = this._formBuilder.group({
             firstCtrl: ['', Validators.required],
@@ -61,6 +64,7 @@ export class AddressComponent {
             secondCtrl: ['', Validators.required],
         });
     }
+
 
     loadAddresses() {
         this.addressService.getUserAddresses().subscribe(addresses => {
@@ -75,31 +79,32 @@ export class AddressComponent {
         });
     }
 
-  submitAddress() {
-    const addressTitle = this.firstFormGroup.value.firstCtrl; //eklenecek
-    const publicAddress = this.secondFormGroup.value.secondCtrl;
+    submitAddress() {
+        const addressTitle = this.firstFormGroup.value.firstCtrl;
+        const publicAddress = this.secondFormGroup.value.secondCtrl;
 
-    const userId = this.authService.getCurrentUserId();
-    if (userId !== null) {
-      const addressData = {
-        publicAddress: publicAddress,
-        userId: userId,
-      };
+        const userId = this.authService.getCurrentUserId();
+        if (userId !== null) {
+            const addressData: CreateAddressModel  = {
+                publicAddress: publicAddress,
+                title: addressTitle,
+                userId: userId
+            };
 
-      this.addressService.addAddress(addressData).subscribe({
-        next: (response) => {
-          console.log('Address successfully added', response);
-          this.resetStepper();
-          this.toastrService.info("Adresiniz başarıyla veritabanına eklendi");
-          this.loadAddresses();
-          this.isStepperVisible = false;
-        },
-        error: (error) => {
-          console.error('Error adding address', error);
+            this.addressService.addAddress(addressData).subscribe({
+                next: (response) => {
+                    console.log('Address successfully added', response);
+                    this.resetStepper();
+                    this.toastrService.info("Adresiniz başarıyla veritabanına eklendi");
+                    this.loadAddresses();
+                    this.isStepperVisible = false;
+                },
+                error: (error) => {
+                    console.error('Error adding address', error);
+                }
+            });
         }
-      });
     }
-  }
 
 
 }

@@ -21,7 +21,7 @@ import {NgClass} from "@angular/common";
 import {CalculateKdvPipe} from "../../../../pipes/calculate-kdv.pipe";
 import {Router, RouterLink} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
-import {OrderService} from "../../../../services/order.service";
+import {OrderService} from "../../../../services/user/order.service";
 import {CreateOrder} from "../../../../models/createOrder";
 
 @Component({

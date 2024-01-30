@@ -1,17 +1,29 @@
-:host ::ng-deep .slick-prev::before {
-  color: #fcba03;
-  font-size: 26px;
-  line-height: 1;
-  opacity: 1;
-  left: -20;
-  z-index: 100;
-  fill: red;
+:host ::ng-deep .owl-nav {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
-:host ::ng-deep .slick-next::before {
-  color: #fcba03;
-  font-size: 26px;
-  line-height: 1;
-  opacity: 1;
-  right: 0;
+:host ::ng-deep .owl-nav .owl-prev,
+:host ::ng-deep .owl-nav .owl-next {
+  position: absolute;
+  background: transparent;
+  color: #5d3ebc;
+  transition: background 0.3s;
+}
+
+:host ::ng-deep .owl-nav .owl-prev {
+  left: calc(-25px - 0.5em);
+}
+
+:host ::ng-deep .owl-nav .owl-next {
+  right: calc(-25px - 0.5em);
+}
+
+/* Hover efektini devre dışı bırak */
+:host ::ng-deep .owl-nav .owl-prev:hover,
+:host ::ng-deep .owl-nav .owl-next:hover {
+  background: transparent;
+  color: #4c3398;
 }

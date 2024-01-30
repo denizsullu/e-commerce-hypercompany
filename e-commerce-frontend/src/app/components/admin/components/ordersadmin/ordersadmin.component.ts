@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {OrderService} from "../../../../services/user/order.service";
+import {GetAllByUserOrder} from "../../../../models/user/getAllByUserOrder";
 
 @Component({
   selector: 'app-ordersadmin',
@@ -8,5 +10,16 @@ import { Component } from '@angular/core';
   styleUrl: './ordersadmin.component.scss'
 })
 export class OrdersadminComponent {
+    orders:GetAllByUserOrder[]=[];
+    constructor(private orderService:OrderService) { }
 
+    ngOnInit(): void {
+        this.getAllOrders();
+    }
+    getAllOrders(){
+        this.orderService.getAllOrders().subscribe(response=>{
+            this.orders = response
+            console.log(this.orders)
+        })
+    }
 }

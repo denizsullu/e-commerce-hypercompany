@@ -5,10 +5,10 @@
     <div class="grid grid-cols-1 bg-white rounded-2xl px-5 py-4 w-full">
         @for (address of addresses; track addresses) {
             <div class="flex gap-x-3 ">
-                <mat-icon class=" text-slate-500">home</mat-icon>
-                <h3 class="items-center justify-center flex">Ev</h3>
+                <mat-icon class=" text-slate-500 hover:text-primary-brand-color">home</mat-icon>
+                <h3 class="items-center justify-center flex">{{address.title}}</h3>
                 <p>{{ address.publicAddress }}</p>
-                <mat-icon (click)="onDeleteAddress(address.id)" class=" text-slate-500">delete</mat-icon>
+                <mat-icon (click)="onDeleteAddress(address.id)" class=" text-slate-500 cursor-pointer hover:text-red-600">delete</mat-icon>
             </div>
         }
 
@@ -17,14 +17,14 @@
         <h4 class="font-bold ">Adres Ekle</h4>
         <div class="flex gap-x-3 justify-between ">
             <div class="flex">
-                <mat-icon class=" text-slate-500">home</mat-icon>
+                <mat-icon class=" text-slate-500 hover:text-primary-brand-color">home</mat-icon>
                 <h3 class="items-center justify-center flex font-semibold">Ev adresi ekle</h3>
             </div>
-            <mat-icon (click)="toggleStepper()" class=" text-slate-500">add</mat-icon>
+            <mat-icon (click)="toggleStepper()" class=" text-slate-500 cursor-pointer transition-all hover:text-primary-brand-color">add</mat-icon>
         </div>
 
         @if (isStepperVisible) {
-            <mat-stepper #stepper class="min-w-[900px]">
+            <mat-stepper #stepper class="min-w-[900px] transition-all">
                 <mat-step [stepControl]="firstFormGroup">
                     <form [formGroup]="firstFormGroup">
                         <ng-template matStepLabel>Adres Başlığı</ng-template>
@@ -33,7 +33,7 @@
                             <input matInput placeholder="Canım Evim v.s" formControlName="firstCtrl" required>
                         </mat-form-field>
                         <div>
-                            <button mat-button matStepperNext>İleri</button>
+                            <button mat-button matStepperNext [disabled]="!firstFormGroup.valid">İleri</button>
                         </div>
                     </form>
                 </mat-step>
@@ -47,7 +47,7 @@
                         </mat-form-field>
                         <div>
                             <button mat-button matStepperPrevious>Geri</button>
-                            <button mat-button matStepperNext>İleri</button>
+                            <button mat-button matStepperNext [disabled]="!secondFormGroup.valid">İleri</button>
                         </div>
                     </form>
                 </mat-step>

@@ -3,7 +3,9 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {UserDetail} from "../../models/user/userDetail";
 import {environment} from "../../../environments/environment";
-import {GetAllUserResponse} from "../../models/user/GetAllUserResponse";
+import {GetAllUserResponse} from "../../models/user/getAllUserResponse";
+import {UpdateUser} from "../../models/user/updateUser";
+
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +25,10 @@ getAllUserDetails():Observable<GetAllUserResponse[]>{
     return this.httpService.get<GetAllUserResponse[]>(newPath);
 }
 
+updateUser(updateUser:UpdateUser):Observable<any>{
+    let newPath = environment.apiEndpoint+"auth/user/update";
+    return this.httpService.put<UpdateUser>(newPath,updateUser);
 
+  }
 
 }

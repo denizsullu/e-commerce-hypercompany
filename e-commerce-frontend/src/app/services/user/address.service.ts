@@ -5,6 +5,7 @@ import {BehaviorSubject, catchError, Observable, tap, throwError} from 'rxjs';
 import {AddressModel} from "../../models/user/addressModel";
 import {environment} from "../../../environments/environment";
 import {PostAddress} from "../../models/user/postAddress";
+import {CreateAddressModel} from "../../models/user/createAddressModel";
 
 @Injectable({
   providedIn: 'root'
@@ -52,7 +53,7 @@ export class AddressService {
     );
   }
 
-  addAddress(newAddress: PostAddress): Observable<AddressModel> {
+  addAddress(newAddress: CreateAddressModel): Observable<any> {
     const url = environment.apiEndpoint + 'api/address/save';
     return this.httpClient.post<AddressModel>(url, newAddress).pipe(
       tap(() => {

@@ -1,6 +1,5 @@
-
-
 export interface AddressModel {
-  id: number;
-  publicAddress: string;
+    id: number;
+    title: string;
+    publicAddress: string;
 }

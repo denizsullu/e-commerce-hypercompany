@@ -1,18 +1,19 @@
 <div class="container mx-auto p-6">
-  <h2 class="text-lg font-semibold mb-4">Favori Ürünlerim</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+  <h2 class="text-2xl font-bold mb-6 text-gray-800">Favori Ürünlerim</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
     @for(favoriteProduct of favoriteProducts;track favoriteProduct.productId){
-      <div class="group flex flex-col items-center bg-white rounded-lg border shadow-md overflow-hidden hover:bg-slate-200 relative">
-        <div class="relative w-full h-48">
+      <div
+        class="group flex flex-col items-center bg-white rounded-lg border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out relative cursor-pointer">
+        <div [routerLink]="'/product/' + favoriteProduct.productId"
+          class="relative w-full h-56">
           <img class="object-cover w-full h-full rounded-t-lg" [src]="favoriteProduct.productImage" alt="Product Image" />
         </div>
-        <div class="p-4">
-          <p class="text-lg font-semibold text-gray-800">{{favoriteProduct.productPrice}}</p>
-          <p class="text-gray-700">{{favoriteProduct.productName}}</p>
-          <p class="text-gray-500 text-sm">2 Ürün</p>
+        <div class="p-5">
+          <p class="text-xl font-semibold text-gray-900">{{favoriteProduct.productName}}</p>
+          <p class="text-gray-800">{{favoriteProduct.productDescription}}</p>
         </div>
-        <button (click)="removeProductFromFavorites(favoriteProduct.productId)"
-                class="hidden absolute top-1 right-1 group-hover:flex text-white hover:text-red-400 border rounded-full p-1 bg-slate-300">
+        <button (click)="removeProductFromFavorites(favoriteProduct.id)"
+                class="hidden absolute top-3 right-3 group-hover:flex text-gray-600 hover:text-red-500 border rounded-full p-2 bg-white hover:bg-red-100 transition-colors duration-300 ease-in-out">
           <mat-icon>delete</mat-icon>
         </button>
       </div>

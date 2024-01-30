@@ -5,13 +5,15 @@ import {MatIcon} from "@angular/material/icon";
 import {FavoriteProducts} from "../../../../models/product/favoriteProducts";
 import {FavoriProductService} from "../../../../services/user/favori-product.service";
 import {AuthService} from "../../../../services/auth/auth.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-favorite-product',
   standalone: true,
-  imports: [
-    MatIcon
-  ],
+    imports: [
+        MatIcon,
+        RouterLink
+    ],
   templateUrl: './favorite-product.component.html',
   styleUrl: './favorite-product.component.scss'
 })

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {AuthService} from "../auth/auth.service";
 import {Observable, of, switchMap, take} from "rxjs";
-import {AddressModel} from "../../models/user/addressModel";
 import {environment} from "../../../environments/environment";
 import {FavoriteProducts} from "../../models/product/favoriteProducts";
 import {Product} from "../../models/product/product";

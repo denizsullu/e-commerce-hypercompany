@@ -2,9 +2,9 @@
 <div class="container py-8 ">
   <h3 class="text-sm font-semibold mb-3">Kampanyalar</h3>
   <owl-carousel-o [options]="customOptions">
-    @for (slide of campaigns; track slide){
-      <ng-container >
-        <ng-template id="slide.id" carouselSlide>
+    @for (slide of campaigns; track slide.id) {
+      <ng-container>
+        <ng-template carouselSlide>
           <div class="px-2">
             <img [src]="slide.image" class="w-full rounded-lg">
           </div>
@@ -12,5 +12,7 @@
       </ng-container>
     }
   </owl-carousel-o>
+
+
 
 </div>

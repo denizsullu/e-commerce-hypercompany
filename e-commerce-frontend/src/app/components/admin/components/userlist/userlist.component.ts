@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {UserService} from "../../../../services/user/user.service";
-import {GetAllUserResponse} from "../../../../models/user/GetAllUserResponse";
+import {GetAllUserResponse} from "../../../../models/user/getAllUserResponse";
 
 @Component({
     selector: 'app-userlist',

@@ -4,6 +4,7 @@ import {Product} from "../models/product/product";
 import {Observable} from "rxjs";
 import {ResponseModel} from "../models/responseModel";
 import {environment} from "../../environments/environment";
+import {CreateProductRequest} from "../models/product/createProductRequest";
 @Injectable({
   providedIn: 'root'
 })
@@ -25,7 +26,7 @@ export class ProductService{
     return this.httpClient.get<Product>(newPath);
   }
 
-  add(product:Product):Observable<ResponseModel>{
+  add(product:CreateProductRequest):Observable<ResponseModel>{
       let newPath = environment.apiEndpoint + "api/products/add";
     return this.httpClient.post<ResponseModel>(newPath,product)
   }

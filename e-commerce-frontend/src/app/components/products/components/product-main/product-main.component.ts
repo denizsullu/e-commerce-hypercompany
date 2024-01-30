@@ -4,7 +4,7 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
 import {MatIcon} from "@angular/material/icon";
 import {ToastrService} from "ngx-toastr";
 
-import {switchMap, take} from "rxjs";
+import {Subscription, switchMap, take} from "rxjs";
 import {Product} from "../../../../models/product/product";
 
 import {MatProgressSpinner} from "@angular/material/progress-spinner";
@@ -12,6 +12,7 @@ import {ProductService} from "../../../../services/product.service";
 import {CartService} from "../../../../services/cart.service";
 import {AuthService} from "../../../../services/auth/auth.service";
 import {FavoriProductService} from "../../../../services/user/favori-product.service";
+import {SearchService} from "../../../../services/search.service";
 
 
 
@@ -32,13 +33,15 @@ import {FavoriProductService} from "../../../../services/user/favori-product.ser
 export class ProductMainComponent implements OnInit {
   products: Product[];
 
+
   constructor(
     private productService: ProductService,
     private activatedRoute: ActivatedRoute,
     private toastrService: ToastrService,
     private cartService: CartService,
     private authService:AuthService,
-    private favoriteProductService:FavoriProductService
+    private favoriteProductService:FavoriProductService,
+
     ) {
   }
 

@@ -32,24 +32,24 @@ export class HeroSectionComponent {
 
   slides = [
     {
-      img: 'assets/navbar/header-icons/getir-mainpage-1.webp',
+      img: 'assets/home/slider/getir-mainpage-1.webp',
     },
     {
-      img: 'assets/navbar/header-icons/getir-mainpage-2.webp',
+      img: 'assets/home/slider/getir-mainpage-2.webp',
     },
     {
-      img: 'assets/navbar/header-icons/getir-mainpage-3.webp',
+      img: 'assets/home/slider/getir-mainpage-3.webp',
     },
     {
-      img: 'assets/navbar/header-icons/getir-mainpage-4.webp',
+      img: 'assets/home/slider/getir-mainpage-4.webp',
     },
   ];
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
     autoplaySpeed: 1000,
-    mouseDrag: true,
-    touchDrag: true,
+    mouseDrag: false,
+    touchDrag: false,
     pullDrag: false,
     dots: false,
     navSpeed: 100,

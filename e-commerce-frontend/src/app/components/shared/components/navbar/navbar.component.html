@@ -3,7 +3,7 @@
     <div class="container h-14 flex items-center justify-between md:flex-row">
       <!-- Hyper Company Logo -->
       <a routerLink="/" class="w-40">
-        <img src="../../../../../assets/navbar/header-icons/hyperCompany.svg" alt="Logo">
+        <img src="../../../../../assets/home/hyperCompany.svg" alt="Logo">
       </a>
 
       <!-- Hamburger Icon for Mobile -->
@@ -21,6 +21,7 @@
           <mat-icon class="text-white">public</mat-icon>
           Türkçe (TR)
         </button>
+
         @if (authService.isAuthenticated$ | async) {
           <div class="relative" >
             <button (click)="toggleMenu()" appClickOutside (clickOutside)="isMenuVisible = false"
@@ -63,15 +64,19 @@
                   <a routerLink="/user/orders"
                      href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Geçmiş
                     Siparişlerim</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Ödeme
+                  <a routerLink="/user/credit-cards"
+                    class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Ödeme
                     Yöntemlerim</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Fatura
+                  <a routerLink="/user/favorite-products"
+                    class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">Fatura
                     Bilgileri</a>
-                  <a href="#" class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">İletişim
+                  <a routerLink="/user/credit-cards"
+                    class="block px-4 py-2 hover:bg-custom-lavender hover:text-secondary-brand-color">İletişim
                     Tercihlerim</a>
                   <hr class="">
                   <a
                     (click)="logout()"
+                    routerLink="/"
                     class="block px-4 py-3 mb-2 hover:bg-custom-lavender hover:text-secondary-brand-color cursor-pointer">Çıkış
                     yap
                   </a>

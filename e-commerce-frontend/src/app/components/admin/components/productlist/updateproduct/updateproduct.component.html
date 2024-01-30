@@ -1,0 +1,44 @@
+<!-- Pop-up başlangıcı -->
+<div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
+  <!-- Pop-up içeriği -->
+  <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+    <!-- Başlık -->
+    <div class="text-lg font-semibold">Ürün Güncelleme</div>
+
+    <!-- Form başlangıcı -->
+    <form class="mt-4">
+      <!-- Ürün ID -->
+      <label for="productId" class="block">Ürün ID</label>
+      <input type="number" id="productId" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+
+      <!-- Ürün Adı -->
+      <label for="productName" class="block mt-2">Ürün Adı</label>
+      <input type="text" id="productName" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+
+      <!-- Ürün Açıklaması -->
+      <label for="productDescription" class="block mt-2">Ürün Açıklaması</label>
+      <textarea id="productDescription" class="w-full h-24 px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"></textarea>
+
+      <!-- Ürün Fiyatı -->
+      <label for="productPrice" class="block mt-2">Fiyat</label>
+      <input type="number" id="productPrice" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+
+      <!-- Stok Adedi -->
+      <label for="stock" class="block mt-2">Stok Adedi</label>
+      <input type="number" id="stock" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+
+      <!-- Güncelleme Butonu -->
+      <button type="submit" class="w-full mt-4 px-4 py-2 text-white bg-blue-600 rounded-md focus:bg-blue-700 focus:outline-none">Güncelle</button>
+    </form>
+    <!-- Form bitişi -->
+
+    <!-- Pop-up kapatma butonu -->
+    <button
+      class="absolute top-0 right-0 mt-4 mr-4 text-gray-700 hover:text-gray-600">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+</div>
+<!-- Pop-up bitişi -->

@@ -14,7 +14,8 @@
         <mat-icon class="text-primary-brand-color ml-2">check</mat-icon>
       </div>
       <hr class="border-t border-gray-200 ">
-      <mat-icon class="text-slate-500 absolute top-2 right-4">edit_square</mat-icon>
+      <mat-icon (click)="toogleChange()"
+        class="text-slate-500 absolute top-2 right-4">edit_square</mat-icon>
     </div>
 
   </div>
@@ -42,6 +43,8 @@
 
 </div>
 
-<div class="hidden">
-<app-changeuserdetails></app-changeuserdetails>
-</div>
+@if(changeToogle){
+  <app-changeuserdetails (toogleChange)="toogleChange($event)"></app-changeuserdetails>
+}
+
+

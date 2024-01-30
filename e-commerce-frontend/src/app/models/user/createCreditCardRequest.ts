@@ -1,8 +1,8 @@
 export interface CreateCreditCardRequest {
-  id?: number;
-  userId: number;
-  cardNumber: string;
-  expirationDate: string;
-  cvc: string;
-  cardHolderName: string;
+    id?: number;
+    userId: number;
+    cardNumber: string;
+    expiryDate: string;
+    securityCode: string;
+    cardHolderName: string;
 }

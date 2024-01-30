@@ -24,6 +24,10 @@ import {AuthService} from "../../../../services/auth/auth.service";
 })
 export class UserleftsideComponent {
   currentUser:UserDetail | null;
+  changeToogle:boolean = false;
+  toogleChange(updatedToogle?:boolean){
+    this.changeToogle = !this.changeToogle;
+  }
 constructor(private authService:AuthService) {}
   ngOnInit(){
   this.authService.currentUser$.subscribe(user =>{
