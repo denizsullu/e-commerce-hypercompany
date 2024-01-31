@@ -7,6 +7,8 @@ import com.hypercompany.ecommerce.model.dto.responses.GetAllByUserOrder;
 import com.hypercompany.ecommerce.model.dto.responses.GetAllOrder;
 import com.hypercompany.ecommerce.service.OrderService;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -23,15 +25,18 @@ public class OrderController {
     private final OrderService orderService;
 
   @GetMapping("/getallbyuserid/{userId}")
+  @Cacheable(value = "orders")
     public List<GetAllByUserOrder> getAllByUserId(@PathVariable int userId){
         return this.orderService.getAllOrdersByUserId(userId);
     }
     @GetMapping("/getall")
+    @Cacheable(value = "orders")
     public List<GetAllOrder> getAll(){
         return this.orderService.getAll();
     }
 
     @PostMapping("/create")
+    @CacheEvict(value = "orders", allEntries = true)
     public ResponseEntity<ApiResponse> add(@RequestBody CreateOrderRequest createOrderRequest) {
         this.orderService.createOrder(createOrderRequest);
         ApiResponse response = new ApiResponse(true, "Order successfully created.");
@@ -39,6 +44,7 @@ public class OrderController {
     }
 
     @PutMapping("/changeorderstatus/{orderId}/{status}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<ApiResponse> changeOrderStatus(@PathVariable int orderId, @PathVariable String status){
         this.orderService.changeOrderStatus(orderId,status);
         ApiResponse response = new ApiResponse(true,"Order status successfully changed.");

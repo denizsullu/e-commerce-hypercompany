@@ -12,6 +12,8 @@ import com.hypercompany.ecommerce.service.CustomerManager;
 import com.hypercompany.ecommerce.service.JwtService;
 import com.hypercompany.ecommerce.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -60,18 +62,21 @@ public class UserController {
 
     @GetMapping("/user/{username}")
     @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
+    @Cacheable(value = "users")
     public GetByUserDetails getByUsername(@PathVariable("username") String username){
         return customerService.getByUsername(username);
     }
 
     @PutMapping("/user/update")
     @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
+    @CacheEvict(value = "users",allEntries = true)
     public void updateUser(@RequestBody UpdateUserRequest request){
          customerService.updateCustomer(request);
     }
 
     @GetMapping("/user/all")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @Cacheable(value = "users")
     public List<GetAllUserResponse> getAllUsers(){
         return customerService.getAllCustomers();
     }

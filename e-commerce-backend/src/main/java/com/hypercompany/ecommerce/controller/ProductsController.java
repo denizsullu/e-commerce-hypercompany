@@ -25,12 +25,15 @@ public class ProductsController {
 
     @PostMapping("/add")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     public ResponseEntity<ApiResponse> add(@RequestBody CreateProductRequest request) {
         this.productService.add(request);
         return new ResponseEntity<>(new ApiResponse(true, "Ürün Başarıyla Eklendi"), HttpStatus.CREATED);
     }
 
     @PostMapping("/addMultiple")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     public ResponseEntity<ApiResponse> addMultiple(@RequestBody List<CreateProductRequest> requestList) {
         for (CreateProductRequest request : requestList) {
             this.productService.add(request);
@@ -39,18 +42,21 @@ public class ProductsController {
     }
 
     @GetMapping("/getAllByCategoryId/{id}")
-    @Cacheable(value = "productsCategory")
+    @Cacheable(value = "products")
     public List<GetAllProductResponse> getAllByCategoryId(@PathVariable int id) {
         return this.productService.getAllByCategoryId(id);
     }
 
     @GetMapping("/{id}")
+    @Cacheable(value = "products")
     public GetByIdProductResponse getById(@PathVariable int id) {
         return this.productService.getById(id);
     }
 
 
     @PutMapping("/update")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     public ResponseEntity<ApiResponse> update(@RequestBody UpdateProductRequest UpdateProductRequest) {
         this.productService.update(UpdateProductRequest);
         return new ResponseEntity<>(new ApiResponse(true, "Product successfully updated"), HttpStatus.OK);
@@ -64,6 +70,7 @@ public class ProductsController {
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "products", allEntries = true)
     public ResponseEntity<ApiResponse> delete(@PathVariable int id) {
 
         this.productService.delete(id);
