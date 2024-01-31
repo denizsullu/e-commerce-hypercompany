@@ -28,7 +28,7 @@ export class ProductlistComponent {
     togglePopup() {
         this.showPopup = !this.showPopup;
     }
-    togglePopupUpdate() {
+    togglePopupUpdate(togglePopupUpdate?: boolean) {
         this.showPopupUpdate = !this.showPopupUpdate;
     }
 

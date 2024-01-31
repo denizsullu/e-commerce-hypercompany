@@ -1,5 +1,5 @@
 # HyperCompany Bootcamp E-Commerce Project
-
+Proje details -> [proje.pdf](Documentation.pdf)
 ## Project Overview
 
 Welcome to the HyperCompany Bootcamp E-Commerce project. This comprehensive full-stack web application is designed to showcase a blend of modern technologies and best practices. It aims to provide a robust and user-friendly e-commerce platform using Angular, Spring Boot 3, and PostgreSQL.
@@ -65,3 +65,4 @@ spring.cache.caffeine.spec=maximumSize=5000,expireAfterAccess=6000s
 
 ## Conclusion and Contact
 This project is a testament to a full-stack development skillset, emphasizing user experience, performance optimization, and secure development. For inquiries or feedback, contact [denizsullu@protonmail.com](mailto:denizsullu@protonmail.com).
+

@@ -39,6 +39,8 @@ export class AddressComponent {
     firstFormGroup: FormGroup;
     secondFormGroup: FormGroup;
 
+
+
     toggleStepper() {
         this.isStepperVisible = !this.isStepperVisible;
     }
@@ -55,6 +57,8 @@ export class AddressComponent {
     }
 
     ngOnInit() {
+
+
         this.addressService.refreshUserAddresses();
         this.loadAddresses();
         this.firstFormGroup = this._formBuilder.group({

@@ -162,6 +162,6 @@
 
 
 @if(showPopupUpdate){
-  <app-updateproduct ></app-updateproduct>
+  <app-updateproduct (popUpUpdate)="togglePopupUpdate($event)"></app-updateproduct>
 }
 

@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -28,13 +29,13 @@ public class CartItemManager implements CartItemService {
                 .sum();
 
         return cartItems.stream()
+                .sorted(Comparator.comparing(CartItem::getId))
                 .map(cartItem -> modelMapper
                         .forResponse()
                         .map(cartItem, GetAllCartItemResponse.class))
                 .peek(response -> response.setProductTotalPrice(total))
                 .collect(Collectors.toList());
     }
-
 
 
     @Override

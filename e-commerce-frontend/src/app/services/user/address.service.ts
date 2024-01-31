@@ -1,10 +1,13 @@
-import {Injectable} from '@angular/core';
+import {Injectable, signal} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {AuthService} from "../auth/auth.service";
 import {BehaviorSubject, catchError, Observable, tap, throwError} from 'rxjs';
 import {AddressModel} from "../../models/user/addressModel";
 import {environment} from "../../../environments/environment";
 import {CreateAddressModel} from "../../models/user/createAddressModel";
+
+class Signal<T> {
+}
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +17,7 @@ export class AddressService {
   public userAddresses$ = this.userAddressesSubject.asObservable();
 
   constructor(private httpClient: HttpClient, private authService: AuthService) {
+    this.loadUserAddresses();
   }
 
     loadUserAddresses(): void {
@@ -23,6 +27,7 @@ export class AddressService {
             this.httpClient.get<AddressModel[]>(url).pipe(
                 tap(addresses => {
                     this.userAddressesSubject.next(addresses);
+
                 }),
                 catchError(err => {
                     console.error('Adres yükleme sırasında bir hata oluştu', err);

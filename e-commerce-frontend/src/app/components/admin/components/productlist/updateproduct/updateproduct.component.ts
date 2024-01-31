@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 
 @Component({
@@ -11,7 +11,10 @@ import {FormsModule} from "@angular/forms";
   styleUrl: './updateproduct.component.scss'
 })
 export class UpdateproductComponent {
-
+@Output() popUpUpdate = new EventEmitter<boolean>();
+    closePopUp() {
+        this.popUpUpdate.emit(false);
+    }
     constructor() {}
 
     ngOnInit(): void {

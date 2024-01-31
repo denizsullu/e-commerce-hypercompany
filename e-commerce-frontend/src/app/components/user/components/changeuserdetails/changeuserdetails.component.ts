@@ -5,11 +5,12 @@ import {ToastrService} from "ngx-toastr";
 import {UpdateUser} from "../../../../models/user/updateUser";
 import {Router} from "@angular/router";
 import {AuthService} from "../../../../services/auth/auth.service";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
     selector: 'app-changeuserdetails',
     standalone: true,
-    imports: [ReactiveFormsModule],
+    imports: [ReactiveFormsModule, MatIcon],
     templateUrl: './changeuserdetails.component.html',
     styleUrl: './changeuserdetails.component.scss'
 })
@@ -20,7 +21,6 @@ export class ChangeuserdetailsComponent {
 
     closeComponent() {
         this.toggleChange.emit(false);
-        this.getUsername();
     }
 
     getUsername() {

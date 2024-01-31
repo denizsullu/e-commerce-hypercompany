@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes,withComponentInputBinding()), provideClientHydration(),
     provideHttpClient(withInterceptors([authInterceptor])), provideAnimations(),
     provideToastr({
-      positionClass: "toast-top-right",
+      positionClass: "toast-bottom-right",
     }),
 
 

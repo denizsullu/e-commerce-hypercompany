@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import {CategoryService} from "../../../../services/category.service";
 import {Category} from "../../../../models/product/category";
+import {CreateCategory} from "../../../../models/product/createCategory";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-categorylist',
@@ -11,7 +13,7 @@ import {Category} from "../../../../models/product/category";
 })
 export class CategorylistComponent {
 categories:Category[] = [];
-    constructor(private categoryList:CategoryService) {
+    constructor(private categoryList:CategoryService,private toastrService:ToastrService) {
     }
 
     ngOnInit(): void {
@@ -22,9 +24,12 @@ categories:Category[] = [];
             this.categories  = response;
         });
     }
-    addCategory():void{
-
-    }
+   addCategory(createCategory:CreateCategory):void{
+        this.categoryList.addCategory(createCategory).subscribe(response => {
+            this.toastrService.info("Categori eklendi","Başarılı");
+            this.getAllCategoryDetails();
+        })
+   }
     updateCategory():void{
 
     }

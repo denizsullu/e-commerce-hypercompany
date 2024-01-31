@@ -128,7 +128,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
             next: (response) => {
                 this.toastService.success('Hemen kapına geliyoruz','Sipariş başarıyla oluşturuldu');
                 this.cartService.deleteAllCartItems(orderRequest.userId).subscribe();
-                this.routerService.navigate(['/']);
+                this.routerService.navigate(['/user/orders']);
             },
             error: (err) => {
                 console.log(err)

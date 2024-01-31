@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import org.checkerframework.checker.units.qual.A;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 @Service
@@ -33,9 +34,11 @@ public class OrderManager implements OrderService{
     @Override
     public List<GetAllOrder> getAll() {
         List<Order> orders = orderRepository.findAll();
-        return orders.stream().map(order -> modelMapperService.forResponse().map(order,GetAllOrder.class)).toList();
+        return orders.stream()
+                .sorted(Comparator.comparing(Order::getId).reversed())
+                .map(order -> modelMapperService.forResponse().map(order, GetAllOrder.class))
+                .toList();
     }
-
     @Override
     public void changeOrderStatus(int orderId, String status) {
         Optional<Order> order = orderRepository.findById(orderId);
