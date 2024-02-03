@@ -31,6 +31,7 @@ export class NavbarComponent {
 
     private destroy$ = new Subject<void>();
 
+
     ngOnInit() {
         this.authService.currentUser$.pipe(
             takeUntil(this.destroy$)
