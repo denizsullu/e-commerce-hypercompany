@@ -36,6 +36,7 @@ public class UserController {
     private final CustomerManager customerService;
 
     @PostMapping("/register")
+    @CacheEvict(value = "users",allEntries = true)
     public User addUser(@RequestBody CreateUserRequest request) {
 
         return userService.createUser(request);

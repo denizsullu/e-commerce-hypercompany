@@ -45,6 +45,7 @@ public class OrderController {
 
     @PutMapping("/changeorderstatus/{orderId}/{status}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @CacheEvict(value = "orders", allEntries = true)
     public ResponseEntity<ApiResponse> changeOrderStatus(@PathVariable int orderId, @PathVariable String status){
         this.orderService.changeOrderStatus(orderId,status);
         ApiResponse response = new ApiResponse(true,"Order status successfully changed.");
